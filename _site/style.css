@@ -1,0 +1,53 @@
+[hidden], .hidden {
+    display: none;
+}
+
+body {
+    font: bolder 100% cursive;
+}
+
+nav {
+    --bgcolor: lightblue;
+    --bgcolor-active: lightgreen;
+    display: flex;
+}
+
+nav>* {
+    padding: 5px 20px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    background-color: var(--bgcolor);
+    transition: all .3s ease-in;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    /* font-size: 150%; */
+}
+
+nav>*:hover {
+    background-color: var(--bgcolor-active);
+}
+
+nav>*.active {
+    background-color: var(--bgcolor-active);
+}
+
+nav>a {
+    text-decoration: none;
+}
+
+section {
+    font-family: Didot, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
+}
+
+footer {
+    columns: 3;
+}
+
+imgrow {
+    display: flex;
+    justify-content: space-around;
+}
+
+img.blend {
+
+}
