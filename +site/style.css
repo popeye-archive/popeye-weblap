@@ -320,9 +320,11 @@ body>header nav span[grow] {
 }
 
 body>header nav a {
-	padding: 0.5em 1em;
+	padding: 0.2em 0.5em;
+	margin: 0.5em 1em;
+	border-radius: 0.5em;
+	border-radius: calc(var(--fade-len) + 0.1em);
 	--fade-len: 0.5em;
-	border-radius: 1em;
 	/* box-shadow: 0 0 20px 0 black; */
 	/* box-shadow: 0 0 0.5em 0.4em #20200080; */
 	/* box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8); */
