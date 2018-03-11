@@ -1,6 +1,7 @@
 /*
 * Közös
 */
+
 [hidden], .hidden {
 	display: none;
 }
@@ -28,113 +29,131 @@ a {
 /* For smaller screens */
 
 @media only screen and (max-width: 1023px) {
-  body {
+	body {
 		font-size: 0.8em;
 		line-height: 1.5em;
-  }
+	}
 }
 
 /* For mobile devices */
 
 @media handheld, only screen and (max-width: 767px) {
-
-  body {
-    font-size: 16px;
-    -webkit-text-size-adjust: none;
-  }
-  
-  body, .container {
-    width: 100%;
-    min-width: 0;
-    margin-left: 0px;
-    margin-right: 5px;
-    padding-left: 5px;
-    padding-right: 0px;
-  }
-  
-  .tura {
-    width: auto;
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	body {
+		font-size: 16px;
+		-webkit-text-size-adjust: none;
+	}
+	body, .container {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 5px;
+		padding-left: 5px;
+		padding-right: 0px;
+	}
+	.tura {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
-.container,
-header,
-footer {
-  display: block;
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 755px;
-  overflow: hidden;
-  width: 100%;
+header, footer {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 header {
-  overflow: visible;
+	box-shadow: 0 0 20px 0 black;
+	background: #1d1d1de0;
+	color: white;
+	overflow: visible;
+}
+
+footer {
+	box-shadow: 0 0 20px 0 black;
+	background: #1d1d1de0;
+	color: white;
+	overflow: hidden;
 }
 
 .container {
-  background: #fffed0;
-  -moz-box-shadow: 0 0 10px 3px #000;
-  -webkit-box-shadow: 0 0 10px 3px #000;
-  box-shadow: 0 0 10px 3px #000;
-  margin-bottom: 20px;
-  padding: 0;
-  position: relative;
+	background: #fffed0;
+	box-shadow: 0 0 10px 3px #000;
+	max-width: 1140px;
+	min-width: 755px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	display: block;
 }
 
 .main {
-  padding: 20px;
-  position: relative;
+	padding: 20px;
+	position: relative;
 }
 
-a { color: #cd2c2c; text-decoration: none;}
-a:visited { color: #cd2c2c; }
-a:hover, a:focus { color: #9c0f0f; text-decoration: underline;}
-a:hover, a:active, a:focus { outline: 0; }
+a {
+	color: #cd2c2c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #cd2c2c;
+}
+
+a:hover, a:focus {
+	color: #9c0f0f;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+	outline: 0;
+}
 
 ul li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 h3 {
-  margin: 20px 0 5px 0;
+	margin: 20px 0 5px 0;
 }
 
 ul, ol {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 nav {
-  -webkit-box-shadow: 0 0 5px 5px #000;
-  -moz-box-shadow: 0 0 5px 5px #000;
-  box-shadow: 0 0 5px 5px #000;
-  background: #000;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000);
+	-webkit-box-shadow: 0 0 5px 5px #000;
+	-moz-box-shadow: 0 0 5px 5px #000;
+	box-shadow: 0 0 5px 5px #000;
+	background: #000;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000);
 }
 
 nav a {
-  float: left;
-  font-size: 1.3em;
-  font-weight: bold;
-  padding: 20px;
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 20px;
 }
 
-nav a,
-nav a:hover,
-nav a:visited {
-  color: #fff;
+nav a, nav a:hover, nav a:visited {
+	color: #fff;
 }
 
 
 /*
 * Navigáció — menü
 */
+
 nav {
 	--bgcolor: lightblue;
 	--bgcolor-active: lightgreen;
@@ -161,12 +180,11 @@ nav>*.active {
 }
 
 
-/* 
+/*
 * Naptár, túra kártyák
 */
-.kategoria h2 {
 
-}
+.kategoria h2 {}
 
 .tura {
 	display: flex;
@@ -211,6 +229,7 @@ nav>*.active {
 /*
 * Lábléc
 */
+
 body>footer {
 	/* columns: 3; */
 }
@@ -222,6 +241,9 @@ body>footer {
 
 #elerhetoseg h2 {
 	column-span: all;
+	text-align: center;
 }
 
-
+#elerhetoseg div {
+	break-inside: avoid;
+}
