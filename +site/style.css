@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	--max-width: 80em;
+	--max-width: 80rem;
 }
 
 [hidden], .hidden {
@@ -36,7 +36,7 @@ ul, ol {
 a {
 	text-decoration: none;
 	font-weight: bolder;
-	transition: --transition;
+	transition: all 0.1s ease-in;
 	color: #cac2b2;
 	color: #bfa36c;
 	color: #ffdd99;
@@ -94,7 +94,7 @@ body {
 	color: #ffb860;
 }
 
-article>h1 {
+section>article>h1 {
 	margin: 0.5em 3em 1em;
 	font-size: 2.25rem;
 	font-weight: bold;
@@ -107,7 +107,7 @@ article>h1 {
 	color: goldenrod;
 }
 
-article {
+section>article {
 	font-size: 1.2em;
 	--background: #90602080; /* barack *//* -> .container */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
@@ -199,8 +199,7 @@ body>footer {
 */
 
 body {
-	--transition: all 0.3s ease-in-out;
-	transition: --transition;
+	transition: all 0.1s ease-in;
 	background: url("/kepek/back.jpg");
 	margin: 0;
 	--border-radius: 2em;
@@ -322,10 +321,11 @@ body>header nav span[grow] {
 
 body>header nav a {
 	padding: 0.5em 1em;
-	/* border-radius: 5px; */
-	box-shadow: 0 0 20px 0 black;
-	box-shadow: 0 0 0.5em 0.4em #20200080;
-	box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8);
+	--fade-len: 0.5em;
+	border-radius: 1em;
+	/* box-shadow: 0 0 20px 0 black; */
+	/* box-shadow: 0 0 0.5em 0.4em #20200080; */
+	/* box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8); */
 }
 
 body>header nav a.active {
@@ -341,7 +341,6 @@ body>header nav a.active {
 body>header nav a:focus, body>header nav a:hover, body>header nav a:active {
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #90602080; /* barack *//* -> .container */
-	--fade-len: 1em;
 	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
 	/* box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background); */
 	background: var(--background);
@@ -378,36 +377,38 @@ body>footer section h3 {
 * Naptár, túra kártyák
 */
 
-.kategoria h2 {
+.kategoria {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.kategoria {
-	clear: both;
+.kategoria h3 {
+    width: 100%;
+    text-align: center;
 }
 
 .tura {
-	float: left;
+	width: 10em;
+  margin: 0.4em;
+  border-radius: 0.25em;
 	display: flex;
-	flex-flow: column;
-	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 1);
+	flex-flow: column nowrap;
 	position: relative;
-	width: 10rem;
-	transition: --transition;
+	transition: all 0.1s ease-in;
+	box-shadow: 2px 4px 16px 4px #80400080;
+	box-shadow: 2px 4px 8px 4px #80400080;
 }
 
 .tura:hover, .tura:focus-within {
-	box-shadow: 0 0 40px 2px rgba(128, 128, 128, 1);
+	box-shadow: 3px 6px 16px 8px #804000a0;
 }
 
 /* .tura a:visited {} */
 
 .tura h4 {
-	color: #cd2c2c;
 }	
 
 .tura:hover h4, .tura:focus-within h4 {
-	color: #9c0f0f;
-	text-decoration: underline;
 }
 
 .tura img {
@@ -417,13 +418,13 @@ body>footer section h3 {
 
 .tura h4 {
 	/* position: absolute; */
-	font-size: 1.3em;
-	margin: 5px;
+	/* font-size: 1.3em; */
+	margin: 0.5em;
 }
 
 .tura .ar {
-	font-size: 1.0em;
-	margin: 5px;
+	/* font-size: 1.0rem; */
+	margin: 0.5em;
 }
 
 .tura .reszletek {
@@ -433,7 +434,7 @@ body>footer section h3 {
 
 .tura:hover .reszletek {
 	/* margin-left: 2em; */
-	margin-right: 0;
+	margin-right: 1.5em;
 }
 
 
