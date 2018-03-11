@@ -3,7 +3,7 @@
   "short_name": "Kalandtúrák",
   "start_url": "/",
   "icons": [{
-    "src": "/_site/icons/android-chrome-144x144.png",
+    "src": "/+site/icons/android-chrome-144x144.png",
     "sizes": "144x144",
     "type": "image/png"
   }],
