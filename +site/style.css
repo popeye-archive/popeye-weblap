@@ -6,19 +6,13 @@
 	display: none;
 }
 
-body {
-	/* font: bolder 100% cursive; */
-	transition: all 0.3s ease-in-out;
-	background: url("/kepek/back.jpg");
-}
-
-section {
-	font-family: Didot, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
-}
-
 a {
 	text-decoration: none;
 	font-weight: bolder;
+}
+
+a:hover, a:active, a:focus {
+	outline: 0;
 }
 
 
@@ -60,6 +54,12 @@ a {
 	}
 }
 
+body {
+	/* font: bolder 100% cursive; */
+	transition: all 0.3s ease-in-out;
+	background: url("/kepek/back.jpg");
+}
+
 header, footer {
 	width: 100%;
 	margin: 0 auto;
@@ -99,22 +99,8 @@ footer {
 	position: relative;
 }
 
-a {
-	color: #cd2c2c;
-	text-decoration: none;
-}
-
-a:visited {
-	color: #cd2c2c;
-}
-
-a:hover, a:focus {
-	color: #9c0f0f;
-	text-decoration: underline;
-}
-
-a:hover, a:active, a:focus {
-	outline: 0;
+section {
+	font-family: Didot, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
 }
 
 ul li {
@@ -184,19 +170,31 @@ nav>*.active {
 * Naptár, túra kártyák
 */
 
-.kategoria h2 {}
+.kategoria h2 {
+}
 
 .tura {
 	display: flex;
 	flex-flow: column;
-	box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.6);
+	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 1);
 	position: relative;
-	width: 135px;
+	margin: 2rem;
+	width: 16rem;
 }
 
-.tura:hover {
-	box-shadow: 0 0 40px 2px rgba(128, 128, 128, 0.6);
-	font-size: 1.2em;
+.tura:hover, .tura:focus-within {
+	box-shadow: 0 0 40px 2px rgba(128, 128, 128, 1);
+}
+
+/* .tura a:visited {} */
+
+.tura h3 {
+	color: #cd2c2c;
+}	
+
+.tura:hover h3, .tura:focus-within h3 {
+	color: #9c0f0f;
+	text-decoration: underline;
 }
 
 .tura img {
@@ -235,12 +233,12 @@ body>footer {
 }
 
 #elerhetoseg {
-	columns: 2 auto;
+	columns: 3 auto;
 	column-gap: 2em;
 }
 
 #elerhetoseg h2 {
-	column-span: all;
+	/* column-span: all; */
 	text-align: center;
 }
 
