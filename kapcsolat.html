@@ -4,42 +4,18 @@ title: Popeye Leskó Kalandtúrák - Kapcsolat
 ---
 
 <section id="kapcsolat">
-<style>
-  img[src$="/fabry.jpg"] {
-    box-shadow: 1px 3px 14px 2px #202020b0;
-    border-radius: 16px;
-    margin: auto;
-  }
-
-  .fade {
-    --radius: 1em;
-    height: 138px;
-    box-shadow: 2px 4px 16px 4px #202020b0;
-  }
-  .fade img {
-    border-radius: var(--radius);
-  }
-  /* img[src$="/laci.jpg"] {
-    border-radius: 65px;
-  } */
-  .fade:after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    /* box-shadow: inset 0px 0px 40px 10px var(bgcolor); */
-    box-shadow: inset 0px 0px 10px 5px #fffed0e6;
-    border-radius: calc( var(--radius) - 2px);
-  }
-</style>
 
 <header class="flexrow">
-<img src="/kepek/montazs.png" alt="PopeyeLesko. Síutak, kerékpártúrák, vízitúrák, vadvízi evezés.">
-<img src="/kepek/fabry.jpg" alt="PopeyeLesko Fábry Sándor ajánlásával">
+  <img src="/kepek/montazs.png" alt="PopeyeLesko. Síutak, kerékpártúrák, vízitúrák, vadvízi evezés.">
+  <style>
+    header.flexrow { justify-content: space-around; }
+    img[src$="/fabry.jpg"] { border-radius: 16px; box-shadow: 1px 3px 14px 2px #202020b0; }
+  </style>
+  <img src="/kepek/fabry.jpg" alt="PopeyeLesko. Fábry Sándor ajánlásával.">
 </header>
 
 <article id="rolunk">
-<h2>Köszöntünk Kedves Túrázó!</h2>
+<header>Köszöntünk Kedves Túrázó!</header>
 <p>Ismét váltunk ! „Házasságunk „ az OTP Travellel nem volt rossz és csak hálával tartozunk a multicégnek, rá kellett
 azonban döbbennünk, hogy mivel az ő utaskörük teljesen más, a web oldaluk pedig elsősorban szállások és társasutak
 eladására lett kitalálva, így a mai rohanó piaci világban hátrányba kerülünk. Ezért úgy döntöttünk, hogy
@@ -53,11 +29,39 @@ az egyszerűség kedvéért nálunk, de ezeket az utakat is minden esetben kiuta
 iroda felügyeli szakmailag.</p>
 <p>Neked továbbra sincs más dolgod, mint hogy részt vegyél programjainkon, jól érezd magad és számtalan élménnyel gazdagodj.</p>
 <h4>Ehhez kívánunk jó időt, utat (vizet, havat), tartalmas szórakozást — a Leskó család: Laci, Marcsi, Eszter, Bence és Lackó</h4>
+<style>
+  .fade {
+    --radius: 1em;
+    border-radius: var(--radius);
+    box-shadow: 2px 4px 16px 4px #202020b0;
+  }
+  .fade img {
+    border-radius: var(--radius);
+  }
+  /* img[src$="/laci.jpg"] {
+    border-radius: 65px;
+  } */
+  .fade:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* box-shadow: inset 0px 0px 40px 10px var(bgcolor); */
+    box-shadow: inset 0px 0px 10px 5px #fffed0e6;
+    border-radius: var(--radius);
+    border-radius: calc( var(--radius) - 2px);
+  }
+</style>
 <p class="flexrow">
-  <div class="fade"> <img src="/kepek/lesko/laci.jpg" alt="Leskó László"> </div>
-  <div class="fade"> <img src="/kepek/lesko/marcsi.jpg" alt="Marcsi"> </div>
-  <div class="fade"> <img src="/kepek/lesko/eszter_bence.jpg" alt="Eszter, Bence"> </div>
-  <div class="fade"> <img src="/kepek/lesko/lacko.jpg" alt="Lackó"> </div>
+  <style>
+    p.flexrow { justify-items: center; }
+    span { margin: 1em 1.5em; height: 138px; }
+  </style>
+  <span class="fade"> <img src="/kepek/lesko/laci.jpg" alt="Leskó László"> </span>
+  <span class="fade"> <img src="/kepek/lesko/marcsi.jpg" alt="Marcsi"> </span>
+  <span class="fade"> <img src="/kepek/lesko/eszter_bence.jpg" alt="Eszter, Bence" height="138"> </span>
+  <span class="fade"> <img src="/kepek/lesko/lacko.jpg" alt="Lackó"> </span>
 </p>
 </article>
 
