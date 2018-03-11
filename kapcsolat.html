@@ -8,14 +8,15 @@ title: Popeye Leskó Kalandtúrák - Kapcsolat
 <header class="flexrow">
   <img src="/kepek/montazs.png" alt="PopeyeLesko. Síutak, kerékpártúrák, vízitúrák, vadvízi evezés.">
   <style>
-    header.flexrow { justify-content: space-around; }
-    img[src$="/fabry.jpg"] { border-radius: 16px; box-shadow: 1px 3px 14px 2px #202020b0; }
+    #kapcsolat>header { margin: 1em; }
+    #kapcsolat>header.flexrow { justify-content: space-around; }
+    #kapcsolat>header>img[src$="/fabry.jpg"] { border-radius: 16px; box-shadow: 1px 3px 14px 2px #202020b0; }
   </style>
   <img src="/kepek/fabry.jpg" alt="PopeyeLesko. Fábry Sándor ajánlásával.">
 </header>
 
 <article id="rolunk">
-<header>Köszöntünk Kedves Túrázó!</header>
+<h1>Köszöntünk Kedves Túrázó!</h1>
 <p>Ismét váltunk ! „Házasságunk „ az OTP Travellel nem volt rossz és csak hálával tartozunk a multicégnek, rá kellett
 azonban döbbennünk, hogy mivel az ő utaskörük teljesen más, a web oldaluk pedig elsősorban szállások és társasutak
 eladására lett kitalálva, így a mai rohanó piaci világban hátrányba kerülünk. Ezért úgy döntöttünk, hogy
@@ -28,35 +29,25 @@ részében számíthatunk munkájukra.</p>
 az egyszerűség kedvéért nálunk, de ezeket az utakat is minden esetben kiutaztatási engedéllyel rendelkező
 iroda felügyeli szakmailag.</p>
 <p>Neked továbbra sincs más dolgod, mint hogy részt vegyél programjainkon, jól érezd magad és számtalan élménnyel gazdagodj.</p>
-<h4>Ehhez kívánunk jó időt, utat (vizet, havat), tartalmas szórakozást — a Leskó család: Laci, Marcsi, Eszter, Bence és Lackó</h4>
+<p class="highlight group">Ehhez kívánunk jó időt, utat (vizet, havat), tartalmas szórakozást.
+  <span class="float-right">— a Leskó család : Laci, Marcsi, Eszter, Bence és Lackó</span></p>
 <style>
+  .group:after { content:""; display:block; clear:both; }
+  /* .group { display: flow-root; } */
+  span.float-right { float: right; }
   .fade {
-    --radius: 1em;
-    border-radius: var(--radius);
+    --border-radius: 1em;
+    border-radius: var(--border-radius);
     box-shadow: 2px 4px 16px 4px #202020b0;
   }
   .fade img {
-    border-radius: var(--radius);
-  }
-  /* img[src$="/laci.jpg"] {
-    border-radius: 65px;
-  } */
-  .fade:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* box-shadow: inset 0px 0px 40px 10px var(bgcolor); */
-    box-shadow: inset 0px 0px 10px 5px #fffed0e6;
-    border-radius: var(--radius);
-    border-radius: calc( var(--radius) - 2px);
+    border-radius: var(--border-radius);
   }
 </style>
 <p class="flexrow">
   <style>
-    p.flexrow { justify-items: center; }
-    span { margin: 1em 1.5em; height: 138px; }
+    #rolunk>p.flexrow { justify-content: center; }
+    #rolunk>p.flexrow>span { margin: 1em 1.5em; height: 138px; }
   </style>
   <span class="fade"> <img src="/kepek/lesko/laci.jpg" alt="Leskó László"> </span>
   <span class="fade"> <img src="/kepek/lesko/marcsi.jpg" alt="Marcsi"> </span>
