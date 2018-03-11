@@ -1,27 +1,79 @@
 <!doctype html>
 <html lang="hu">
+
 <head>
   <meta charset="utf-8">
   <title>Popeye Leskó Kalandtúrák</title>
   <meta name="description" content="Popeye Leskó Kalandtúrák">
   <meta name="author" content="Popeye Leskó">
 
-  <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-  <link rel="manifest" href="/images/icons/webmanifest.json">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_site/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/_site/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/_site/icons/favicon-16x16.png">
+  <link rel="manifest" href="/_site/icons/webmanifest.json">
   <meta name="theme-color" content="#2d89ef">
   <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png" />
+  <meta name="msapplication-square150x150logo" content="/_site/icons/mstile-150x150.png" />
 
-  <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
+  <link rel="stylesheet" href="/_site/style.css" />
 </head>
 
 <body>
 
-  <script src="https://get.mavo.io/mavo.js"></script>
-  <div mv-app="popeyelesko" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io">
+  <div mv-app="popeyelesko" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
+    <header>
+      <nav>
+        <a href="/" class="active">Túra naptár</a>
+        <a href="/galeria">Galéria</a>
+        <a href="/teli">Téli szezon</a>
+        <a href="/kapcsolat">Kapcsolat</a>
+      </nav>
+    </header>
+
+    <section id="naptar">
+      <div class="kategoria" mv-multiple property="kategoriak">
+        <h2 property="kategoriaNev"></h2>
+        <article class="tura" mv-multiple property="turak">
+          <a mv-href="/[kategoriaId]/[turaId]">
+            <img property="kep">
+            <h3 property="nev"></h3>
+            <p>
+              <span class="ar" property="ar">
+              <span class="reszletek"> <i>⇢↠↣⇾➺➜►➤▶</i> </span>
+            </p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <aside id="promo" property="promo">
+    </aside>
+  
+    <footer id="lablec">
+      <section id="elerhetoseg">
+        <h2>Elérhetőségeink:</h2>
+        <h3>Email:</h3>
+        <ul>
+        <li><a class="address">in<span class="hidden">.nospan.</span>fo<span class="fa-at">(ku<span class="hidden">-at-</span>kac)</span>popeye<span class="hidden">.nospan.</span><span>lesko.</span>hu</a></li>
+        </ul>
+        <h3>Laci elérhetőségei</h3>
+        <ul>
+        <li>22/322728</li>
+        <li>20/9410429</li>
+        </ul>
+        <h3>Marcsi elérhetőségei</h3>
+        <ul>
+        <li>22/322728</li>
+        <li>30/9579495</li>
+      </section>
+    </footer>
+        
   </div>
 
+  <script src="https://get.mavo.io/mavo.js"></script>
+  <script src="/_site/site.js"></script>
+
 </body>
+
 </html>
