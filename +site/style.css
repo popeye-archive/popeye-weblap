@@ -17,7 +17,7 @@ a:hover, a:active, a:focus {
 
 
 /*
-* Korábbi
+* Responsive méretek
 */
 
 /* For smaller screens */
@@ -54,10 +54,16 @@ a:hover, a:active, a:focus {
 	}
 }
 
+
+/*
+* Keret
+*/
+
 body {
 	/* font: bolder 100% cursive; */
 	transition: all 0.3s ease-in-out;
 	background: url("/kepek/back.jpg");
+	margin: 0;
 }
 
 header, footer {
@@ -100,15 +106,11 @@ footer {
 }
 
 section {
-	font-family: Didot, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
+	font-family: serif;
 }
 
 ul li {
 	list-style-type: none;
-}
-
-h3 {
-	margin: 20px 0 5px 0;
 }
 
 ul, ol {
@@ -116,14 +118,38 @@ ul, ol {
 	margin: 0;
 }
 
-nav {
-	-webkit-box-shadow: 0 0 5px 5px #000;
-	-moz-box-shadow: 0 0 5px 5px #000;
-	box-shadow: 0 0 5px 5px #000;
-	background: #000;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000);
+.flexrow {
+	display: flex;
+	justify-content: space-around;
 }
 
+
+/*
+* Navigáció — menü
+*/
+
+nav {
+	--bgcolor: lightblue;
+	--bgcolor-active: lightgreen;
+	background: #000;
+	box-shadow: 0 0 5px 5px #000;
+	display: flex;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000);
+}
+/*
+nav>* {
+	padding: 5px 20px;
+	margin: 10px 10px;
+	border-radius: 5px;
+	background-color: var(--bgcolor);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+}
+
+nav>*:hover, nav>*.active {
+	background-color: var(--bgcolor-active);
+}
+*/
 nav a {
 	float: left;
 	font-size: 1.3em;
@@ -137,49 +163,25 @@ nav a, nav a:hover, nav a:visited {
 
 
 /*
-* Navigáció — menü
-*/
-
-nav {
-	--bgcolor: lightblue;
-	--bgcolor-active: lightgreen;
-	display: flex;
-}
-
-nav>* {
-	padding: 5px 20px;
-	margin: 10px 10px;
-	border-radius: 5px;
-	background-color: var(--bgcolor);
-	transition: all .3s ease-in;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bolder;
-	/* font-size: 150%; */
-}
-
-nav>*:hover {
-	background-color: var(--bgcolor-active);
-}
-
-nav>*.active {
-	background-color: var(--bgcolor-active);
-}
-
-
-/*
 * Naptár, túra kártyák
 */
 
 .kategoria h2 {
 }
 
+.kategoria {
+	clear: both;
+}
+
 .tura {
+	float: left;
 	display: flex;
 	flex-flow: column;
 	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 1);
 	position: relative;
-	margin: 2rem;
-	width: 16rem;
+	margin: 1rem;
+	width: 10rem;
+	transition: all 0.3s ease-in-out;
 }
 
 .tura:hover, .tura:focus-within {
@@ -188,11 +190,11 @@ nav>*.active {
 
 /* .tura a:visited {} */
 
-.tura h3 {
+.tura h4 {
 	color: #cd2c2c;
 }	
 
-.tura:hover h3, .tura:focus-within h3 {
+.tura:hover h4, .tura:focus-within h4 {
 	color: #9c0f0f;
 	text-decoration: underline;
 }
@@ -202,7 +204,7 @@ nav>*.active {
 	/* width: 135px; */
 }
 
-.tura h3 {
+.tura h4 {
 	/* position: absolute; */
 	font-size: 1.3em;
 	margin: 5px;
@@ -234,7 +236,10 @@ body>footer {
 
 #elerhetoseg {
 	columns: 3 auto;
-	column-gap: 2em;
+	column-gap: 2rem;
+	max-width: 64rem;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #elerhetoseg h2 {
