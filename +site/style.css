@@ -14,9 +14,30 @@ body {
 	display: none;
 }
 
+ul li {
+	list-style-type: none;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+}
+
+.flexrow {
+	display: flex;
+	align-items: center;
+	/*justify-content: space-around;*/
+}
+
+
+/*
+* Link színezés
+*/
+
 a {
 	text-decoration: none;
 	font-weight: bolder;
+	transition: --transition;
 	color: #cac2b2;
 	color: #bfa36c;
 	color: #ffdd99;
@@ -25,11 +46,10 @@ a {
 	color: #f0f080;
 	color: #ffddbb;
 }
-
+/*
 a:visited, a:focus, a:hover, a:active {
 	outline: 0;
-	color: inherit;
-}
+}*/
 
 /*
 * The order of :visited, :focus, :hover, :active matters, as it declares its precedence, last effective one being the dominant:
@@ -44,7 +64,7 @@ a:active { color: orange; }
 
 
 /*
-* Tablet méretű kijelzőre
+* Tablet méretű kijelzők
 */
 
 @media only screen and (max-width: 1023px) {
@@ -56,7 +76,7 @@ a:active { color: orange; }
 
 
 /*
-* Mobil méretű kijelzőre
+* Mobil méretű kijelzők
 */
 
 @media handheld, only screen and (max-width: 767px) {
@@ -82,32 +102,20 @@ a:active { color: orange; }
 
 
 /*
-* Keret
+* Keret méretezés
 */
 
 body {
-	transition: all 0.3s ease-in-out;
+	--transition: all 0.3s ease-in-out;
+	transition: --transition;
 	background: url("/kepek/back.jpg");
 	margin: 0;
+	--border-radius: 2em;
 }
 
 body>header, body>footer {
 	width: 100%;
-	margin: 0 auto;
-	display: block;
 	text-align: center;
-}
-
-body>header {
-	box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8);
-	background: rgba(132, 33, 33, 0.66);
-	overflow: visible;
-}
-
-body>footer {
-	box-shadow: 0 0 20px 0 black;
-	background: rgba(45, 26, 6, 0.9);
-	overflow: hidden;
 }
 
 body>header>* {
@@ -115,18 +123,31 @@ body>header>* {
 	margin: 0 auto;
 }
 
+body>footer>section {
+	/* max-width: var(--max-width); */
+	max-width: 64rem;
+	margin: 2em auto;
+}
+
+body>header {
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+body>footer {
+	padding: 2em;
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
 .container {
 	max-width: var(--max-width);
 	/* min-width: 755px; */
-	margin: 1rem auto;
 	width: 100%;
-	background: rgba(202, 131, 90, 0.72);
-	background: rgba(230, 147, 75, 0.37);
-	box-shadow: 0 0 10px 5px rgba(62, 31, 4, 0.66);
 	padding: 0;
+	margin: 2em auto 3em;
+	--border-radius: 4em;
+	border-radius: var(--border-radius);
 	overflow: hidden;
 	position: relative;
-	display: block;
 }
 
 .main {
@@ -134,18 +155,52 @@ body>header>* {
 	position: relative;
 }
 
-ul li {
-	list-style-type: none;
+
+/*
+* Keret színezés
+*/
+
+body>header {
+	--background: #842121a8; /* rgba(132, 33, 33, 0.66); *//* piros */
+	--background: #90602080; /* barack - .container */
+	--background: #2d1a06e6; /* sötétbarna */
+	--background: #202000c0; /* középbarna */
+	--background: #20200080; /* világos barna (fapác) */
+	--fade-len: 1em;
+	box-shadow: 0 0 20px 0 black;
+	box-shadow: 0 0 0.5em 0.4em #20200080;
+	box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8);
+	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
+	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
+	box-shadow: 0em var(--fade-len) var(--fade-len) 0em var(--background);
+	box-shadow: 0em calc(var(--fade-len) - 4px) var(--fade-len) 0em var(--background);
+	background: var(--background);
+	overflow: visible;
 }
 
-ul, ol {
-	padding: 0;
-	margin: 0;
+body>footer {
+	--background: #842121a8; /* rgba(132, 33, 33, 0.66); *//* piros */
+	--background: #90602080; /* barack - .container */
+	--background: #2d1a06e6; /* sötétbarna */
+	--background: #202000c0; /* középbarna */
+	--background: #20200080; /* világos barna (fapác) */
+	--fade-len: 1em;
+	box-shadow: 0 0 20px 0 black;
+	box-shadow: 0 0 0.5em 0.4em #20200080;
+	box-shadow: 0px -20px 24px 0px #30200cf0;
+	box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8);
+	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
+	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
+	background: var(--background);
+	overflow: hidden;
 }
 
-.flexrow {
-	display: flex;
-	justify-content: space-evenly;
+.container {
+	--background: rgba(202, 131, 90, 0.72);
+	--background: rgba(230, 147, 75, 0.37);
+	box-shadow: 0 0 10px 5px rgba(62, 31, 4, 0.66);
+	/*box-shadow: 0em calc(var(--fade-len) - 4px) var(--fade-len) 0em var(--background);*/
+	background: var(--background);
 }
 
 
@@ -157,6 +212,8 @@ body>header nav {
 	--bgcolor: lightblue;
 	--bgcolor-active: lightgreen;
 	display: flex;
+	box-sizing: border-box;
+	padding: 0 2em;
 	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000); */
 }
 /*
@@ -198,8 +255,6 @@ body>footer section {
 	columns: 3 auto;
 	column-gap: 2rem;
 	*/
-	max-width: 64rem;
-	margin: 1rem auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
@@ -251,17 +306,31 @@ body>footer {
 	clear: both;
 }
 
-article {
-	background: #20200080;
-	/* color: black; */
-	border-radius: 5em;
-	margin: 2em;
-	padding: 1em;
-	box-shadow: 0 0 0.5em 0.4em #20200080;
+section>header {
+	margin: 1em;
 }
 
-article h2 {
-	margin: 0.5em 2em 1em;
+article {
+	--background: #842121a8; /* rgba(132, 33, 33, 0.66); *//* piros */
+	--background: #90602080; /* barack - .container */
+	--background: #2d1a06e6; /* sötétbarna */
+	--background: #202000c0; /* középbarna */
+	--background: #20200080; /* világos barna (fapác) */
+	/* color: black; */
+	border-radius: var(--border-radius);
+	margin: 3em;
+	padding: 1em;
+	--fade-len: 8px;
+	--fade-diff: -1.6px;
+	box-shadow: 0 0 0.5em 0.4em #20200080;
+	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) + var(--fade-diff)) var(--background);
+	background: var(--background);
+}
+
+article>header {
+	margin: 0.5em 3em 1em;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .tura {
@@ -271,7 +340,7 @@ article h2 {
 	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 1);
 	position: relative;
 	width: 10rem;
-	transition: all 0.3s ease-in-out;
+	transition: --transition;
 }
 
 .tura:hover, .tura:focus-within {
