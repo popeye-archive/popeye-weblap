@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #f0f040;
 	--max-width: 80em;
 }
 
@@ -59,8 +58,102 @@ a:visited, a:focus, a:hover, a:active {
 * - least important being the feedback of :visited links
 */
 /* a:visited { color: burlywood; } *//* Meglátogatott linkek nem kapnak saját színt: nem mutat jól a navigációs fejlécen */
-a:focus, a:hover { color: #ffff40; }
+a.active { color: #ffb860; }
+a:focus, a:hover { color: #ffff40; color: gold; }
 a:active { color: orange; }
+
+
+/*
+* Szöveg színezés
+*/
+
+body {
+	color: #cac2b2;
+	color: #bfa36c;
+	color: #ffddbb;
+	color: #ffdd99;
+	color: #f0f080;
+	color: #f0f040;
+	color: gold;
+	color: goldenrod;
+	color: #ffb860;
+	color: wheat;
+	color: burlywood;
+	color: lightgoldenrodyellow;
+}
+
+.highlight {
+	font-weight: bold;
+	font-size: 1.05em;
+	color: goldenrod;
+	color: gold;
+	color: #f0f040;
+	color: #f0f080;
+	color: #ffddbb;
+	color: #ffdd99;
+	color: #ffb860;
+}
+
+article>h1 {
+	margin: 0.5em 3em 1em;
+	font-size: 2.25rem;
+	font-weight: bold;
+	color: burlywood;
+	color: wheat;
+	color: lightgoldenrodyellow;
+	color: #ffdd99;
+	color: #ffb860;
+	color: gold;
+	color: goldenrod;
+}
+
+article {
+	font-size: 1.2em;
+	--background: #90602080; /* barack *//* -> .container */
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #20200080; /* világos barna (fapác) */
+	--fade-len: 4em;
+	padding: calc(5em - var(--fade-len));
+	margin: calc(var(--fade-len) + 2em);
+	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
+	border-radius: calc(var(--border-radius) + 4em);
+	background: var(--background);
+}
+
+body>footer h2 {
+	margin: 0;
+	color: #cac2b2;
+	color: #bfa36c;
+	color: burlywood;
+	color: wheat;
+	color: lightgoldenrodyellow;
+	color: #ffdd99;
+	color: #ffb860;
+	color: gold;
+	color: goldenrod;
+}
+body>footer h3 {
+	margin: 0;
+	color: #cac2b2;
+	color: #bfa36c;
+	color: burlywood;
+	color: wheat;
+	color: goldenrod;
+	color: gold;
+	color: #f0f040;
+	color: #f0f080;
+	color: #ffddbb;
+	color: #ffdd99;
+	color: #ffb860;
+}
+
+body>footer {
+	color: #cac2b2;
+	color: #bfa36c;
+	color: #ffdd99;
+	color: wheat;
+	color: burlywood;
+}
 
 
 /*
@@ -129,13 +222,13 @@ body>footer>section {
 	margin: 2em auto;
 }
 
-body>header {
+/* body>header {
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
-}
+} */
 
 body>footer {
 	padding: 2em;
-	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	/* border-radius: var(--border-radius) var(--border-radius) 0 0; */
 }
 
 .container {
@@ -161,8 +254,8 @@ body>footer {
 */
 
 body>header {
-	--background: #842121a8; /* rgba(132, 33, 33, 0.66); *//* piros */
-	--background: #90602080; /* barack - .container */
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #90602080; /* barack *//* -> .container */
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
 	--background: #20200080; /* világos barna (fapác) */
@@ -179,8 +272,8 @@ body>header {
 }
 
 body>footer {
-	--background: #842121a8; /* rgba(132, 33, 33, 0.66); *//* piros */
-	--background: #90602080; /* barack - .container */
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #90602080; /* barack *//* -> .container */
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
 	--background: #20200080; /* világos barna (fapác) */
@@ -197,9 +290,11 @@ body>footer {
 
 .container {
 	--background: rgba(202, 131, 90, 0.72);
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #90602080; /* barack *//* -> .container */
 	--background: rgba(230, 147, 75, 0.37);
 	box-shadow: 0 0 10px 5px rgba(62, 31, 4, 0.66);
-	/*box-shadow: 0em calc(var(--fade-len) - 4px) var(--fade-len) 0em var(--background);*/
+	/*box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);*/
 	background: var(--background);
 }
 
@@ -209,41 +304,50 @@ body>footer {
 */
 
 body>header nav {
-	--bgcolor: lightblue;
-	--bgcolor-active: lightgreen;
 	display: flex;
 	box-sizing: border-box;
 	padding: 0 2em;
 	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000); */
 }
-/*
-body>header nav>* {
-	padding: 5px 20px;
-	margin: 10px 10px;
-	border-radius: 5px;
-	background-color: var(--bgcolor);
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bolder;
-}
 
-body>header nav>*:hover, nav>*.active {
-	background-color: var(--bgcolor-active);
-}
-*/
-body>header nav a {
+body>header nav {
 	font-size: 1.3em;
 	font-weight: bold;
-	padding: 0.5em 1em;
+	/* font-family: Helvetica, Arial, sans-serif; */
 }
 
 body>header nav span[grow] {
 	flex-grow: 1;	/* kitölti a teljes szabad teret a gombok között */
 }
 
-/* nav a, nav a:visited, nav a:focus, nav a:hover, nav a:active {
-	color: #fff;
-} */
-/* nav a:visited { color: inherit; } */
+body>header nav a {
+	padding: 0.5em 1em;
+	/* border-radius: 5px; */
+	box-shadow: 0 0 20px 0 black;
+	box-shadow: 0 0 0.5em 0.4em #20200080;
+	box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8);
+}
+
+body>header nav a.active {
+	--background: #2d1a06e6; /* sötétbarna */
+	--background: #202000c0; /* középbarna */
+	--background: #20200080; /* világos barna (fapác) */
+	--background: #90602080; /* barack *//* -> .container */
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
+	background: var(--background);
+}
+
+body>header nav a:focus, body>header nav a:hover, body>header nav a:active {
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #90602080; /* barack *//* -> .container */
+	--fade-len: 1em;
+	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
+	/* box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background); */
+	background: var(--background);
+}
+
+/* body>header nav a:visited { color: inherit; } */
 
 
 /*
@@ -269,31 +373,6 @@ body>footer section h3 {
 	margin-bottom: 10px;
 }
 
-body>footer h2 {
-	margin: 0;
-	color: #cac2b2;
-	color: #bfa36c;
-	color: wheat;
-	color: burlywood;
-	color: #ffdd99;
-}
-body>footer h3 {
-	margin: 0;
-	color: #cac2b2;
-	color: #bfa36c;
-	color: #ffdd99;
-	color: burlywood;
-	color: wheat;
-}
-
-body>footer {
-	color: #cac2b2;
-	color: #bfa36c;
-	color: #ffdd99;
-	color: wheat;
-	color: burlywood;
-}
-
 
 /*
 * Naptár, túra kártyák
@@ -304,33 +383,6 @@ body>footer {
 
 .kategoria {
 	clear: both;
-}
-
-section>header {
-	margin: 1em;
-}
-
-article {
-	--background: #842121a8; /* rgba(132, 33, 33, 0.66); *//* piros */
-	--background: #90602080; /* barack - .container */
-	--background: #2d1a06e6; /* sötétbarna */
-	--background: #202000c0; /* középbarna */
-	--background: #20200080; /* világos barna (fapác) */
-	/* color: black; */
-	border-radius: var(--border-radius);
-	margin: 3em;
-	padding: 1em;
-	--fade-len: 8px;
-	--fade-diff: -1.6px;
-	box-shadow: 0 0 0.5em 0.4em #20200080;
-	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) + var(--fade-diff)) var(--background);
-	background: var(--background);
-}
-
-article>header {
-	margin: 0.5em 3em 1em;
-	font-size: 1.5em;
-	font-weight: bold;
 }
 
 .tura {
