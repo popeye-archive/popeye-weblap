@@ -2,21 +2,133 @@
 * Közös
 */
 [hidden], .hidden {
-    display: none;
+	display: none;
 }
 
 body {
-    font: bolder 100% cursive;
-    transition: all 0.3s ease-in-out;
+	/* font: bolder 100% cursive; */
+	transition: all 0.3s ease-in-out;
+	background: url("/kepek/back.jpg");
 }
 
 section {
-    font-family: Didot, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
+	font-family: Didot, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    font-weight: bolder;
+a {
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+
+/*
+* Korábbi
+*/
+
+/* For smaller screens */
+
+@media only screen and (max-width: 1023px) {
+  body {
+		font-size: 0.8em;
+		line-height: 1.5em;
+  }
+}
+
+/* For mobile devices */
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+  }
+  
+  body, .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 0px;
+  }
+  
+  .tura {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container,
+header,
+footer {
+  display: block;
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 755px;
+  overflow: hidden;
+  width: 100%;
+}
+
+header {
+  overflow: visible;
+}
+
+.container {
+  background: #fffed0;
+  -moz-box-shadow: 0 0 10px 3px #000;
+  -webkit-box-shadow: 0 0 10px 3px #000;
+  box-shadow: 0 0 10px 3px #000;
+  margin-bottom: 20px;
+  padding: 0;
+  position: relative;
+}
+
+.main {
+  padding: 20px;
+  position: relative;
+}
+
+a { color: #cd2c2c; text-decoration: none;}
+a:visited { color: #cd2c2c; }
+a:hover, a:focus { color: #9c0f0f; text-decoration: underline;}
+a:hover, a:active, a:focus { outline: 0; }
+
+ul li {
+  list-style-type: none;
+}
+
+h3 {
+  margin: 20px 0 5px 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  -webkit-box-shadow: 0 0 5px 5px #000;
+  -moz-box-shadow: 0 0 5px 5px #000;
+  box-shadow: 0 0 5px 5px #000;
+  background: #000;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000);
+}
+
+nav a {
+  float: left;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 20px;
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+  color: #fff;
 }
 
 
@@ -24,28 +136,28 @@ a:hover, a:focus {
 * Navigáció — menü
 */
 nav {
-    --bgcolor: lightblue;
-    --bgcolor-active: lightgreen;
-    display: flex;
+	--bgcolor: lightblue;
+	--bgcolor-active: lightgreen;
+	display: flex;
 }
 
 nav>* {
-    padding: 5px 20px;
-    margin: 10px 10px;
-    border-radius: 5px;
-    background-color: var(--bgcolor);
-    transition: all .3s ease-in;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-    /* font-size: 150%; */
+	padding: 5px 20px;
+	margin: 10px 10px;
+	border-radius: 5px;
+	background-color: var(--bgcolor);
+	transition: all .3s ease-in;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+	/* font-size: 150%; */
 }
 
 nav>*:hover {
-    background-color: var(--bgcolor-active);
+	background-color: var(--bgcolor-active);
 }
 
 nav>*.active {
-    background-color: var(--bgcolor-active);
+	background-color: var(--bgcolor-active);
 }
 
 
@@ -57,41 +169,42 @@ nav>*.active {
 }
 
 .tura {
-    display: flex;
-    flex-flow: column;
-    box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.6);
-    position: relative;
+	display: flex;
+	flex-flow: column;
+	box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.6);
+	position: relative;
+	width: 135px;
 }
 
 .tura:hover {
-    box-shadow: 0 0 40px 2px rgba(128, 128, 128, 0.6);
-    font-size: 1.2em;
+	box-shadow: 0 0 40px 2px rgba(128, 128, 128, 0.6);
+	font-size: 1.2em;
 }
 
 .tura img {
-    width: 100%;
-    /* width: 135px; */
+	width: 100%;
+	/* width: 135px; */
 }
 
 .tura h3 {
-    /* position: absolute; */
-    font-size: 1.3em;
-    margin: 5px;
+	/* position: absolute; */
+	font-size: 1.3em;
+	margin: 5px;
 }
 
 .tura .ar {
-    font-size: 1.0em;
-    margin: 5px;
+	font-size: 1.0em;
+	margin: 5px;
 }
 
 .tura .reszletek {
-    float: right;
-    margin-right: 2em;
+	float: right;
+	margin-right: 2em;
 }
 
 .tura:hover .reszletek {
-    /* margin-left: 2em; */
-    margin-right: 0;
+	/* margin-left: 2em; */
+	margin-right: 0;
 }
 
 
@@ -99,16 +212,16 @@ nav>*.active {
 * Lábléc
 */
 body>footer {
-    /* columns: 3; */
+	/* columns: 3; */
 }
 
 #elerhetoseg {
-    columns: 2 auto;
-    column-gap: 2em;
+	columns: 2 auto;
+	column-gap: 2em;
 }
 
 #elerhetoseg h2 {
-    column-span: all;
+	column-span: all;
 }
 
 

@@ -1,0 +1,155 @@
+.carousel {
+  -webkit-box-shadow: 0 0 4px 0 #444;
+  -moz-box-shadow: 0 0 4px 0 #444;
+  box-shadow: 0 0 4px 0 #444;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .content-cont {
+  height: 250px;
+  margin-top: 0;
+  position: relative;
+}
+
+.carousel .content-cont li {
+  background: #ddd;
+  display: none;
+  text-align: center;
+}
+
+.carousel .content-cont li .keyline {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75000000, endColorstr=#75000000);
+  font-size: 0.9em;
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  width: 100%;
+}
+
+.carousel .content-cont li h2 {
+  color: #fff;
+  font-size: 1.1em;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+}
+
+.carousel .content-cont li.active {
+  display: block;
+}
+
+.carousel li {
+  height: 100%;
+}
+
+.carousel .controls ul {
+  background: none repeat scroll 0 0 #FFFFFF;
+  bottom: 0;
+  height: 14px;
+  opacity: 0.75;
+  padding: 8px;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel .controls li {
+  float: left;
+}
+
+.carousel .controls li .l,
+.carousel .controls li .r {
+  border-color: transparent #777 transparent transparent;
+  border-style: solid;
+  border-width: 8px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  line-height: 0;
+  width: 0;
+}
+
+.carousel .controls li .r {
+  border-color: transparent transparent transparent #777;
+}
+
+.carousel .controls li.active .l {
+  border-color: transparent #000 transparent transparent;
+}
+
+.carousel .controls li.active .r {
+  border-color: transparent transparent transparent #000;
+}
+
+.carousel .controls .left,
+.carousel .controls .right {
+  background: #fff;
+  cursor: pointer;
+  height: 370px;
+  opacity: 0.75;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+}
+
+.carousel .controls .left .control,
+.carousel .controls .right .control {
+  border-color: transparent #000 transparent transparent;
+  border-style: solid;
+  border-width: 12px;
+  display: block;
+  height: 0;
+  line-height: 0;
+  position: absolute;
+  top: 45%;
+  width: 0;
+}
+
+.carousel .controls .right .control {
+  border-color: transparent transparent transparent #000;
+  right: 0;
+}
+
+.carousel .controls .left {
+  left: 0;
+}
+
+.carousel.imageViewer {
+  float: left;
+  margin-right: 20px;
+}
+
+.carousel.imageViewer .content-cont li,
+.carousel.imageViewer {
+  height: 400px;
+}
+
+.carousel.imageViewer .controls .left,
+.carousel.imageViewer .controls .right {
+  height: 470px;
+}
+
+.carousel.gallery_page,
+.carousel.gallery_page .content-cont li {
+  height: 500px;
+  width: 700px;
+}
+
+.carousel img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carousel.gallery_page img {
+  max-height: 94%;
+  max-width: 89%;
+}
+
+/* IE STYLES */
+
