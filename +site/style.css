@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	--max-width: 80rem;
+	--max-width: 80em;
 }
 
 [hidden], .hidden {
@@ -180,6 +180,7 @@ body>footer {
 	body, .container {
 		width: 100%;
 		min-width: 0;
+		min-height: 32em;
 		margin: 0;
 	}
 	
@@ -216,8 +217,8 @@ body>header>* {
 }
 
 body>footer>section {
-	/* max-width: var(--max-width); */
-	max-width: 64rem;
+	max-width: 64em;
+	max-width: calc(var(--max-width) * 0.8); */
 	margin: 2em auto;
 }
 
@@ -310,7 +311,7 @@ body>header nav {
 }
 
 body>header nav {
-	font-size: 1.3em;
+	font-size: 1.25em;
 	font-weight: bold;
 	/* font-family: Helvetica, Arial, sans-serif; */
 }
@@ -358,7 +359,7 @@ body>header nav a:focus, body>header nav a:hover, body>header nav a:active {
 body>footer section {
 	/*
 	columns: 3 auto;
-	column-gap: 2rem;
+	column-gap: 2em;
 	*/
 	display: flex;
 	flex-flow: row;
@@ -391,18 +392,19 @@ body>footer section h3 {
 
 .tura {
 	width: 10em;
-  margin: 0.4em;
-  border-radius: 0.25em;
+  margin: 0.5em;
+  border-radius: 0.4em;
 	display: flex;
 	flex-flow: column nowrap;
 	position: relative;
 	transition: all 0.1s ease-in;
-	box-shadow: 2px 4px 16px 4px #80400080;
-	box-shadow: 2px 4px 8px 4px #80400080;
+	box-shadow: 2px 2px 16px 4px #80400080;
+	box-shadow: 0px 2px 8px 4px #80400080;
 }
 
 .tura:hover, .tura:focus-within {
 	box-shadow: 3px 6px 16px 8px #804000a0;
+	box-shadow: 0px 0px 12px 10px #80400080;
 }
 
 /* .tura a:visited {} */
@@ -420,12 +422,10 @@ body>footer section h3 {
 
 .tura h4 {
 	/* position: absolute; */
-	/* font-size: 1.3em; */
 	margin: 0.5em;
 }
 
 .tura .ar {
-	/* font-size: 1.0rem; */
 	margin: 0.5em;
 }
 
