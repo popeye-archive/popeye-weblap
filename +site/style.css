@@ -2,6 +2,14 @@
 * Közös
 */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #f0f040;
+	--max-width: 80em;
+}
+
 [hidden], .hidden {
 	display: none;
 }
@@ -9,18 +17,35 @@
 a {
 	text-decoration: none;
 	font-weight: bolder;
+	color: #cac2b2;
+	color: #bfa36c;
+	color: #ffdd99;
+	color: wheat;
+	color: burlywood;
+	color: #f0f080;
+	color: #ffddbb;
 }
 
-a:hover, a:active, a:focus {
+a:visited, a:focus, a:hover, a:active {
 	outline: 0;
+	color: inherit;
 }
+
+/*
+* The order of :visited, :focus, :hover, :active matters, as it declares its precedence, last effective one being the dominant:
+* - an element being pressed is :active
+* - overriding the color effective under the mouse :hover
+* - more dominant than the color of the (keyboard) :focus element
+* - least important being the feedback of :visited links
+*/
+/* a:visited { color: burlywood; } *//* Meglátogatott linkek nem kapnak saját színt: nem mutat jól a navigációs fejlécen */
+a:focus, a:hover { color: #ffff40; }
+a:active { color: orange; }
 
 
 /*
-* Responsive méretek
+* Tablet méretű kijelzőre
 */
-
-/* For smaller screens */
 
 @media only screen and (max-width: 1023px) {
 	body {
@@ -29,7 +54,10 @@ a:hover, a:active, a:focus {
 	}
 }
 
-/* For mobile devices */
+
+/*
+* Mobil méretű kijelzőre
+*/
 
 @media handheld, only screen and (max-width: 767px) {
 	body {
@@ -39,11 +67,9 @@ a:hover, a:active, a:focus {
 	body, .container {
 		width: 100%;
 		min-width: 0;
-		margin-left: 0px;
-		margin-right: 5px;
-		padding-left: 5px;
-		padding-right: 0px;
+		margin: 0;
 	}
+	
 	.tura {
 		width: auto;
 		float: none;
@@ -60,7 +86,6 @@ a:hover, a:active, a:focus {
 */
 
 body {
-	/* font: bolder 100% cursive; */
 	transition: all 0.3s ease-in-out;
 	background: url("/kepek/back.jpg");
 	margin: 0;
@@ -76,31 +101,28 @@ body>header, body>footer {
 body>header {
 	box-shadow: 0 0 20px 4px rgba(72, 20, 20, 0.8);
 	background: rgba(132, 33, 33, 0.66);
-	color: white;
 	overflow: visible;
 }
 
 body>footer {
 	box-shadow: 0 0 20px 0 black;
 	background: rgba(45, 26, 6, 0.9);
-	color: white;
 	overflow: hidden;
 }
 
-body>header>*,
-.container {
-	max-width: 80rem;
+body>header>* {
+	max-width: var(--max-width);
+	margin: 0 auto;
 }
 
 .container {
-	max-width: 80rem;
-	min-width: 755px;
+	max-width: var(--max-width);
+	/* min-width: 755px; */
 	margin: 1rem auto;
 	width: 100%;
 	background: rgba(202, 131, 90, 0.72);
 	background: rgba(230, 147, 75, 0.37);
 	box-shadow: 0 0 10px 5px rgba(62, 31, 4, 0.66);
-	margin-bottom: 20px;
 	padding: 0;
 	overflow: hidden;
 	position: relative;
@@ -110,10 +132,6 @@ body>header>*,
 .main {
 	padding: 20px;
 	position: relative;
-}
-
-section {
-	font-family: serif;
 }
 
 ul li {
@@ -127,7 +145,7 @@ ul, ol {
 
 .flexrow {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 
@@ -139,7 +157,7 @@ body>header nav {
 	--bgcolor: lightblue;
 	--bgcolor-active: lightgreen;
 	display: flex;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000);
+	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000); */
 }
 /*
 body>header nav>* {
@@ -156,15 +174,19 @@ body>header nav>*:hover, nav>*.active {
 }
 */
 body>header nav a {
-	float: left;
 	font-size: 1.3em;
 	font-weight: bold;
-	padding: 20px;
+	padding: 0.5em 1em;
 }
 
-body>header nav a, nav a:hover, nav a:visited {
-	color: #fff;
+body>header nav span[grow] {
+	flex-grow: 1;	/* kitölti a teljes szabad teret a gombok között */
 }
+
+/* nav a, nav a:visited, nav a:focus, nav a:hover, nav a:active {
+	color: #fff;
+} */
+/* nav a:visited { color: inherit; } */
 
 
 /*
@@ -176,10 +198,11 @@ body>footer section {
 	columns: 3 auto;
 	column-gap: 2rem;
 	*/
-	display: flex;
-	flex-flow: row;
 	max-width: 64rem;
 	margin: 1rem auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
 }
 
 body>footer section div {
@@ -188,7 +211,32 @@ body>footer section div {
 }
 
 body>footer section h3 {
-	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+body>footer h2 {
+	margin: 0;
+	color: #cac2b2;
+	color: #bfa36c;
+	color: wheat;
+	color: burlywood;
+	color: #ffdd99;
+}
+body>footer h3 {
+	margin: 0;
+	color: #cac2b2;
+	color: #bfa36c;
+	color: #ffdd99;
+	color: burlywood;
+	color: wheat;
+}
+
+body>footer {
+	color: #cac2b2;
+	color: #bfa36c;
+	color: #ffdd99;
+	color: wheat;
+	color: burlywood;
 }
 
 
@@ -203,13 +251,25 @@ body>footer section h3 {
 	clear: both;
 }
 
+article {
+	background: #20200080;
+	/* color: black; */
+	border-radius: 5em;
+	margin: 2em;
+	padding: 1em;
+	box-shadow: 0 0 0.5em 0.4em #20200080;
+}
+
+article h2 {
+	margin: 0.5em 2em 1em;
+}
+
 .tura {
 	float: left;
 	display: flex;
 	flex-flow: column;
 	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 1);
 	position: relative;
-	margin: 1rem;
 	width: 10rem;
 	transition: all 0.3s ease-in-out;
 }
