@@ -157,13 +157,13 @@
       ]
     }
   ],
-  "index": {
+  "turaIndex": {
     "siutak": {
-      "_kat": "2",
+      "_kategoriaSzam": "2",
       "forni-di-sopra": {
-        "_tura": "1",
-        "kepMini": "115",
-        "kepek": [
+        "_turaSzam": "1",
+        "kepMiniSzam": "115",
+        "kepSzamok": [
           "86",
           "87",
           "89",
@@ -176,9 +176,9 @@
         ]
       },
       "laci-bacsi-siovija": {
-        "_tura": "15",
-        "kepMini": "121",
-        "kepek": [
+        "_turaSzam": "15",
+        "kepMiniSzam": "121",
+        "kepSzamok": [
           "99",
           "100",
           "101",
@@ -192,11 +192,11 @@
       }
     },
     "vadvizi": {
-      "_kat": "3",
+      "_kategoriaSzam": "3",
       "kedvezmenyes-salza-tura": {
-        "_tura": "13",
-        "kepMini": "69",
-        "kepek": [
+        "_turaSzam": "13",
+        "kepMiniSzam": "69",
+        "kepSzamok": [
           "70",
           "72",
           "73",
@@ -207,9 +207,9 @@
         ]
       },
       "rafting-hetvege-salza": {
-        "_tura": "14",
-        "kepMini": "78",
-        "kepek": [
+        "_turaSzam": "14",
+        "kepMiniSzam": "78",
+        "kepSzamok": [
           "79",
           "80",
           "81",
@@ -220,8 +220,8 @@
         ]
       },
       "vadvizi-tabor-a-salzan": {
-        "_tura": "12",
-        "kepek": [
+        "_turaSzam": "12",
+        "kepSzamok": [
           "66",
           "67",
           "68"
@@ -229,20 +229,20 @@
       }
     },
     "kerekparturak": {
-      "_kat": "4",
+      "_kategoriaSzam": "4",
       "szloven-olasz": {
-        "_tura": "2",
-        "kepMini": "8",
-        "kepek": [
+        "_turaSzam": "2",
+        "kepMiniSzam": "8",
+        "kepSzamok": [
           "5",
           "6",
           "7"
         ]
       },
       "skot-felfold": {
-        "_tura": "3",
-        "kepMini": "211",
-        "kepek": [
+        "_turaSzam": "3",
+        "kepMiniSzam": "211",
+        "kepSzamok": [
           "212",
           "213",
           "214",
@@ -262,9 +262,9 @@
         ]
       },
       "loire-volgy": {
-        "_tura": "22",
-        "kepMini": "202",
-        "kepek": [
+        "_turaSzam": "22",
+        "kepMiniSzam": "202",
+        "kepSzamok": [
           "194",
           "195",
           "196",
@@ -276,9 +276,9 @@
         ]
       },
       "dania-hamburg": {
-        "_tura": "23",
-        "kepMini": "203",
-        "kepek": [
+        "_turaSzam": "23",
+        "kepMiniSzam": "203",
+        "kepSzamok": [
           "204",
           "205",
           "207",
@@ -288,16 +288,16 @@
         ]
       },
       "temze-volgy": {
-        "_tura": "4",
-        "kepek": [
+        "_turaSzam": "4",
+        "kepSzamok": [
           "15",
           "16",
           "17"
         ]
       },
       "duna-volgy-donaueschingen-ulm": {
-        "_tura": "5",
-        "kepek": [
+        "_turaSzam": "5",
+        "kepSzamok": [
           "21",
           "22",
           "24",
@@ -305,8 +305,8 @@
         ]
       },
       "duna-volgy-ulm-regensburg": {
-        "_tura": "6",
-        "kepek": [
+        "_turaSzam": "6",
+        "kepSzamok": [
           "27",
           "28",
           "29",
@@ -314,8 +314,8 @@
         ]
       },
       "duna-volgy-regensburg-linz": {
-        "_tura": "7",
-        "kepek": [
+        "_turaSzam": "7",
+        "kepSzamok": [
           "32",
           "33",
           "34",
@@ -323,23 +323,23 @@
         ]
       },
       "duna-volgy-passau-becs": {
-        "_tura": "8",
-        "kepek": [
+        "_turaSzam": "8",
+        "kepSzamok": [
           "41",
           "42",
           "43"
         ]
       },
       "salzkammergut": {
-        "_tura": "9",
-        "kepek": [
+        "_turaSzam": "9",
+        "kepSzamok": [
           "50",
           "51"
         ]
       },
       "schladming-melk": {
-        "_tura": "10",
-        "kepek": [
+        "_turaSzam": "10",
+        "kepSzamok": [
           "54",
           "55",
           "56",
@@ -347,8 +347,8 @@
         ]
       },
       "london-parizs": {
-        "_tura": "11",
-        "kepek": [
+        "_turaSzam": "11",
+        "kepSzamok": [
           "59",
           "60",
           "61",
@@ -358,8 +358,8 @@
         ]
       },
       "alpok-adria": {
-        "_tura": "18",
-        "kepek": [
+        "_turaSzam": "18",
+        "kepSzamok": [
           "133",
           "143",
           "144",
@@ -373,12 +373,12 @@
         ]
       },
       "karintia-raba": {
-        "_tura": "19",
-        "kepek": []
+        "_turaSzam": "19",
+        "kepSzamok": []
       },
       "neckar-volgy": {
-        "_tura": "21",
-        "kepek": [
+        "_turaSzam": "21",
+        "kepSzamok": [
           "182",
           "183",
           "184",
@@ -393,11 +393,11 @@
       }
     },
     "viziturak": {
-      "_kat": "6",
+      "_kategoriaSzam": "6",
       "karintia-raba": {
-        "_tura": "17",
-        "kepMini": "152",
-        "kepek": [
+        "_turaSzam": "17",
+        "kepMiniSzam": "152",
+        "kepSzamok": [
           "153",
           "154",
           "155",
@@ -407,9 +407,9 @@
         ]
       },
       "softrafting": {
-        "_tura": "20",
-        "kepMini": "159",
-        "kepek": [
+        "_turaSzam": "20",
+        "kepMiniSzam": "159",
+        "kepSzamok": [
           "171",
           "172",
           "173",
