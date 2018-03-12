@@ -1,3 +1,6 @@
+/*
+* Email cím dekódolás -- az email címek az email kereső robotok elől rejtve, obfuszkálva vannak
+*/
 (function patchAddresses() { 
   function revealAddress(e) { 
     var link= this, prot= ["mai","o:"].join("lt"), prev= link.getAttribute("href");
@@ -19,4 +22,21 @@
     link.addEventListener("click", revealAddress); 
   } 
 })(); 
+
+
+/// Mavo belső ciklus nem látja a külső ciklus propertyjeit. Túrák listázásakor szükséges a külső ciklusból a kategórát elérni.
+function kategoriaId() {
+  debugger;
+  return "kat";
+}
+
+/// Túra száma a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId]._turaSzam
+function turaSzam() {
+  return "0";
+}
+
+/// Túra miniatűr képe a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId].kepMiniSzam => kepIndex[kepMiniSzam]
+function turaKep() {
+  return "0.jpg"
+}
 

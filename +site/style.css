@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	--max-width: 80rem;
 }
 
 [hidden], .hidden {
@@ -94,7 +93,7 @@ body {
 	color: #ffb860;
 }
 
-section>article>h1 {
+section.main>article>h1 {
 	margin: 0.5em 3em 1em;
 	font-size: 2.25rem;
 	font-weight: bold;
@@ -107,9 +106,9 @@ section>article>h1 {
 	color: goldenrod;
 }
 
-section>article {
+section.main>article {
 	font-size: 1.2em;
-	--background: #90602080; /* barack *//* -> .container */
+	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
 	--fade-len: 4em;
@@ -177,10 +176,9 @@ body>footer {
 		font-size: 16px;
 		-webkit-text-size-adjust: none;
 	}
-	body, .container {
+	body, section.main {
 		width: 100%;
 		min-width: 0;
-		min-height: 32em;
 		margin: 0;
 	}
 	
@@ -203,6 +201,7 @@ body {
 	transition: all 0.1s ease-in;
 	background: url("/kepek/back.jpg");
 	margin: 0;
+	--max-width: 80rem;
 	--border-radius: 2em;
 }
 
@@ -218,7 +217,7 @@ body>header>* {
 
 body>footer>section {
 	max-width: 64em;
-	max-width: calc(var(--max-width) * 0.8); */
+	max-width: calc(var(--max-width) * 0.8);
 	margin: 2em auto;
 }
 
@@ -231,11 +230,13 @@ body>footer {
 	/* border-radius: var(--border-radius) var(--border-radius) 0 0; */
 }
 
-.container {
+section.main {
 	max-width: var(--max-width);
 	/* min-width: 755px; */
+	min-height: 32em;
 	width: 100%;
-	padding: 0;
+	box-sizing: border-box;
+	padding: var(--border-radius);
 	margin: 2em auto 3em;
 	--border-radius: 4em;
 	border-radius: var(--border-radius);
@@ -243,10 +244,6 @@ body>footer {
 	position: relative;
 }
 
-.main {
-	padding: 20px;
-	position: relative;
-}
 
 
 /*
@@ -255,7 +252,7 @@ body>footer {
 
 body>header {
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
-	--background: #90602080; /* barack *//* -> .container */
+	--background: #90602080; /* barack *//* -> section.main */
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
 	--background: #20200080; /* világos barna (fapác) */
@@ -273,7 +270,7 @@ body>header {
 
 body>footer {
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
-	--background: #90602080; /* barack *//* -> .container */
+	--background: #90602080; /* barack *//* -> section.main */
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
 	--background: #20200080; /* világos barna (fapác) */
@@ -288,10 +285,14 @@ body>footer {
 	overflow: hidden;
 }
 
-.container {
+body>div {
+}
+
+/*main,*/
+section.main {
 	--background: rgba(202, 131, 90, 0.72);
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
-	--background: #90602080; /* barack *//* -> .container */
+	--background: #90602080; /* barack *//* -> section.main */
 	--background: rgba(230, 147, 75, 0.37);
 	box-shadow: 0 0 10px 5px rgba(62, 31, 4, 0.66);
 	/*box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);*/
@@ -306,7 +307,7 @@ body>footer {
 body>header nav {
 	display: flex;
 	box-sizing: border-box;
-	padding: 0 2em;
+	padding: 0 var(--border-radius);
 	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000); */
 }
 
@@ -335,7 +336,7 @@ body>header nav a.active {
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
 	--background: #20200080; /* világos barna (fapác) */
-	--background: #90602080; /* barack *//* -> .container */
+	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
 	background: var(--background);
@@ -343,7 +344,7 @@ body>header nav a.active {
 
 body>header nav a:focus, body>header nav a:hover, body>header nav a:active {
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
-	--background: #90602080; /* barack *//* -> .container */
+	--background: #90602080; /* barack *//* -> section.main */
 	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
 	/* box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background); */
 	background: var(--background);
@@ -398,13 +399,20 @@ article.card {
 	flex-flow: column nowrap;
 	position: relative;
 	transition: all 0.1s ease-in;
-	box-shadow: 2px 2px 16px 4px #80400080;
-	box-shadow: 0px 2px 8px 4px #80400080;
+	--background: #90602080; /* barack *//* -> section.main */
+	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #20200080; /* világos barna (fapác) */
+	--background: #80400080; /* box-shadow-ból */
+	--fade-len: 16px;
+	--fade-len: 4px;
+	background: var(--background);
+	box-shadow: 2px 2px var(--fade-len) 4px var(--background);
+	box-shadow: 0px 2px var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
 }
 
 article.card:hover, article.card:focus-within {
-	box-shadow: 3px 6px 16px 8px #804000a0;
-	box-shadow: 0px 0px 12px 10px #80400080;
+	box-shadow: 3px 6px 16px 8px var(--background);
+	box-shadow: 0px 0px 12px 10px var(--background);
 }
 
 /* article.card a:visited {} */
@@ -430,13 +438,15 @@ article.card .ar {
 }
 
 article.card .reszletek {
-	float: right;
-	margin-right: 2em;
+	position: absolute;
+	bottom: 0;
+	right: 2em;
+	/* margin-right: 2em; */
 }
 
 article.card:hover .reszletek {
-	/* margin-left: 2em; */
-	margin-right: 1.5em;
+	right: 1.5em;
+	/* margin-right: 1.5em; */
 }
 
 
