@@ -6,28 +6,26 @@ title: Galéria - Popeye Leskó Kalandtúrák
 <section class="main" id="galeria" mv-app="galeria" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 
   <h1>Képgaléria</h1>
-  <p>A képgaléria megnyitásához válasszon a bal oldalon található túrák közül.</p>
   <div class="flexrow">
-    <ul class="gallery_list">
-      <div class="kategoria" mv-multiple property="kategoriak">
-        <!-- summary><h2 property="kategoriaNev"></h2></summary -->
+    <div class="gallery_list">
+      <ul class="kategoria" mv-multiple property="kategoriak">
         <li class="tura" mv-multiple property="turak">
-          <a mv-href="#[turaId]" mv-value="[nev]"></a>
+          <a href="#[turaId]" mv-attribute="none" property="nev"></a>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
 
     <div class="carousel  imageViewer gallery_page">
-      <ul class="content-cont cf" mv-multiple property="kategoriak">
-        <li class="cf" mv-id="car-[turaId]" mv-multiple property="turak">
-          <img src="/kepek/[kategoriaId]/[turaId]/[$index].jpg">
+      <ul class="content-cont cf">
+        <li class="cf" id="[turaId]-[$index]" mv-multiple property="index[kategoriaId][turaId].kepek">
+          <img src="/kepek/[kategoriaId]/[turaId]/[$item].jpg">
         </li>
       </ul>
       <div class="controls">
         <div class="left"><span class="control"></span></div>
         <div class="right"><span class="control"></span></div>
-        <ul mv-multiple property="kategoriak">
-          <li mv-class="car-[turaId]" mv-multiple property="turak">
+        <ul>
+          <li class="[turaId]-[$index]" mv-multiple property="index[kategoriaId][turaId].kepek">
             <span class="l"></span>
             <span class="r"></span>
           </li>
