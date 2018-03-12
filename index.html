@@ -7,11 +7,13 @@ title: Popeye Leskó Kalandtúrák
 	<div class="kategoria" mv-multiple property="kategoriak">
 		<h3 property="kategoriaNev"></h3>
 		<article class="card tura" mv-multiple property="turak">
-			<a href="/[kategoriaId]/[turaSzam()]--[turaId].html">
+			<a href="/[kategoriaId()]/[turaSzam()]--[turaId].html">
 				<img src="[turaKep()]">
 				<h4 property="nev"></h4>
-				<p class="ar" property="ar"></p>
-				<span class="reszletek"> <i>➤</i> <i hidden>⇢↠↣⇾➺➜►➤▶</i> </span>
+				<p>
+					<span class="ar" property="ar"></span>
+					<i class="nyil"> ➤ </i><i hidden>⇢↠↣⇾➺➜►➤▶</i>
+				</p>
 			</a>
 		</article>
 	</div>

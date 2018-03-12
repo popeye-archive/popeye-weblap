@@ -111,11 +111,12 @@ section.main>article {
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
+	--background: #80400080; /* halvány barna - article.card */
 	--fade-len: 4em;
 	padding: calc(5em - var(--fade-len));
 	margin: calc(var(--fade-len) + 2em);
-	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
 	border-radius: calc(var(--border-radius) + 4em);
+	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
 	background: var(--background);
 }
 
@@ -255,6 +256,7 @@ body>header {
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
+	--background: #80400080; /* halvány barna - article.card */
 	--background: #20200080; /* világos barna (fapác) */
 	--fade-len: 1em;
 	box-shadow: 0 0 20px 0 black;
@@ -273,6 +275,7 @@ body>footer {
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #2d1a06e6; /* sötétbarna */
 	--background: #202000c0; /* középbarna */
+	--background: #80400080; /* halvány barna - article.card */
 	--background: #20200080; /* világos barna (fapác) */
 	--fade-len: 1em;
 	box-shadow: 0 0 20px 0 black;
@@ -392,27 +395,32 @@ body>footer section h3 {
 }
 
 article.card {
-	width: 10em;
-  margin: 0.5em;
-  border-radius: 0.4em;
 	display: flex;
 	flex-flow: column nowrap;
 	position: relative;
 	transition: all 0.1s ease-in;
+	width: 14em;
+	font-size: 0.9em;
+	margin: 1em;
+	margin: calc(var(--fade-len) + 0.7em);
+  border-radius: 0.4em;
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
-	--background: #80400080; /* box-shadow-ból */
-	--fade-len: 16px;
+	--background: #80400080; /* halvány barna - article.card */
+	--shadow: #20200080;
+	--fade-len: 8px;
 	--fade-len: 4px;
-	background: var(--background);
+	--fade-len: 16px;
 	box-shadow: 2px 2px var(--fade-len) 4px var(--background);
-	box-shadow: 0px 2px var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
+	box-shadow: 3px 3px var(--fade-len) calc(var(--fade-len) - 6px) var(--shadow);
+	box-shadow: 0px 0px var(--fade-len) var(--fade-len) var(--background);
+	background: var(--background);
 }
 
 article.card:hover, article.card:focus-within {
-	box-shadow: 3px 6px 16px 8px var(--background);
-	box-shadow: 0px 0px 12px 10px var(--background);
+	box-shadow: 3px 6px calc(var(--fade-len) + 8px) calc(var(--fade-len) + 0px) var(--shadow);
+	box-shadow: 0px 0px calc(var(--fade-len) + 4px) calc(var(--fade-len) + 2px) var(--background);
 }
 
 /* article.card a:visited {} */
@@ -435,18 +443,23 @@ article.card h4 {
 
 article.card .ar {
 	margin: 0.5em;
+	font-size: 0.8em;
+	color: goldenrod;
+	color: gold;
+	color: #ffb860;
 }
 
-article.card .reszletek {
-	position: absolute;
+article.card .nyil {
+	/* position: absolute;
 	bottom: 0;
-	right: 2em;
+	right: 2em; */
 	/* margin-right: 2em; */
 }
 
-article.card:hover .reszletek {
-	right: 1.5em;
+article.card:hover .nyil {
+	/* right: 1.5em; */
 	/* margin-right: 1.5em; */
+	margin-left: 0.5em;
 }
 
 
