@@ -1,0 +1,11 @@
+<nav>
+  <img alt="Popeye logó" hidden>
+  <span grow></span>
+  <a href="/">Túra naptár</a>
+  <a href="/galeria">Galéria</a>
+  <a href="/kapcsolat">Kapcsolat</a>
+</nav>
+<script>
+  let loc= window.location.pathname;
+  document.querySelector('nav a[href='+loc+']').classList.add('active');
+</script>
