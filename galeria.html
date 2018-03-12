@@ -1,19 +1,19 @@
 ---
-layout: default
+layout: weblapkeret
 title: Galéria - Popeye Leskó Kalandtúrák
 css: ["carousel.css"]
 ---
 
+<section class="main" id="galeria" mv-app="galeria" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 <style>
-  #galeria ul.kategoria li {
-    display: block;
+  #galeria ul.kategoria {
+    display: flex;
+    flex-flow: column;
   }
 </style>
-<section class="main" id="galeria" mv-app="galeria" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 
 <h1>Képgaléria</h1>
 
-<div class="gallery_list">
 <ul class="kategoria" mv-multiple property="kategoriak">
 <li class="tura" mv-multiple property="turak">
   <details>
@@ -38,7 +38,18 @@ css: ["carousel.css"]
   </details>
 </li>
 </ul>
-</div>
+
+<script type="text/javascript">
+document.getElementById('galeria').addEventListener('click', function (event) {
+  debugger;
+  if (event.target.tag === 'A') {
+    let parent= event.target.closest('details');
+    if (!parent) return;
+    if (parent.hasAttribute('open'))  parent.removeAttribute('open');
+    else  parent.setAttribute('open', null);
+  }
+}, true);
+</script>
 
 </section>
 
