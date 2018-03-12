@@ -184,7 +184,7 @@ body>footer {
 		margin: 0;
 	}
 	
-	.tura {
+	article.card {
 		width: auto;
 		float: none;
 		margin-left: 0px;
@@ -390,7 +390,7 @@ body>footer section h3 {
     text-align: center;
 }
 
-.tura {
+article.card {
 	width: 10em;
   margin: 0.5em;
   border-radius: 0.4em;
@@ -402,39 +402,39 @@ body>footer section h3 {
 	box-shadow: 0px 2px 8px 4px #80400080;
 }
 
-.tura:hover, .tura:focus-within {
+article.card:hover, article.card:focus-within {
 	box-shadow: 3px 6px 16px 8px #804000a0;
 	box-shadow: 0px 0px 12px 10px #80400080;
 }
 
-/* .tura a:visited {} */
+/* article.card a:visited {} */
 
-.tura h4 {
+article.card h4 {
 }	
 
-.tura:hover h4, .tura:focus-within h4 {
+article.card:hover h4, article.card:focus-within h4 {
 }
 
-.tura img {
+article.card img {
 	width: 100%;
 	/* width: 135px; */
 }
 
-.tura h4 {
+article.card h4 {
 	/* position: absolute; */
 	margin: 0.5em;
 }
 
-.tura .ar {
+article.card .ar {
 	margin: 0.5em;
 }
 
-.tura .reszletek {
+article.card .reszletek {
 	float: right;
 	margin-right: 2em;
 }
 
-.tura:hover .reszletek {
+article.card:hover .reszletek {
 	/* margin-left: 2em; */
 	margin-right: 1.5em;
 }
