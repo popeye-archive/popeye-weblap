@@ -17,6 +17,9 @@
 
   <link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
   <link rel="stylesheet" href="/+site/style.css" />
+  {% if page.css %} {% for css in page.css %}
+  <link rel="stylesheet" href="/+site/{{ css }}" />
+  {% endfor %} {% endif %}
 </head>
 
 <body>

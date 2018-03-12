@@ -1,20 +1,19 @@
 ---
 layout: default
 title: Galéria - Popeye Leskó Kalandtúrák
+css: ["carousel.css"]
 ---
 
+<style ></style>
 <section class="main" id="galeria" mv-app="galeria" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 
-  <h1>Képgaléria</h1>
-  <div class="flexrow">
-    <div class="gallery_list">
-      <ul class="kategoria" mv-multiple property="kategoriak">
-        <li class="tura" mv-multiple property="turak">
-          <a href="#[turaId]" mv-attribute="none" property="nev"></a>
-        </li>
-      </ul>
-    </div>
+<h1>Képgaléria</h1>
 
+<div class="gallery_list">
+<ul class="kategoria" mv-multiple property="kategoriak">
+<li class="tura" mv-multiple property="turak">
+  <details>
+    <summary><a href="#[kategoriaId]/[turaId]" mv-attribute="none" property="nev"></a></summary>
     <div class="carousel  imageViewer gallery_page">
       <ul class="content-cont cf">
         <li class="cf" id="[turaId]-[$index]" mv-multiple property="index[kategoriaId][turaId].kepek">
@@ -32,7 +31,10 @@ title: Galéria - Popeye Leskó Kalandtúrák
         </ul>
       </div>
     </div>
-  </div>
+  </details>
+</li>
+</ul>
+</div>
 
 </section>
 
