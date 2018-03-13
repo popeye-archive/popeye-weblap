@@ -7,4 +7,5 @@ defaults:
       path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
     values:
       layout: weblapkeret
+      mainid: main
       title: Popeye Leskó Kalandtúrák
