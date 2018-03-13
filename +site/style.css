@@ -93,8 +93,8 @@ body {
 	color: #ffb860;
 }
 
-section.main>.description,
-section.main>article>h1 {
+/*section.main>.description>h2,*/
+section.main>article h2 {
 	margin: 0em 3em 1em;
 	font-size: 2.25rem;
 	font-weight: bold;
@@ -107,7 +107,7 @@ section.main>article>h1 {
 	color: goldenrod;
 }
 
-section.main>.description,
+/*section.main>.description,*/
 section.main>article {
 	font-size: 1.2em;
 	--background: #90602080; /* barack *//* -> section.main */
