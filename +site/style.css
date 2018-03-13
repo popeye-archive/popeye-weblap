@@ -475,6 +475,14 @@ article.card:hover, article.card:focus-within {
 
 /* article.card a:visited {} */
 
+article.card>a {
+	height: 100%;
+	display: inherit;
+	flex-flow: inherit;
+	/*justify-content: space-between;*/
+	justify-content: inherit;
+}
+
 article.card h4 {
 }	
 
@@ -488,6 +496,7 @@ article.card img {
 
 article.card h4 {
 	/* position: absolute; */
+	/* margin: 0.5em 0.5em auto 0.5em; */
 	margin: 0.5em 0.5em 0em 0.5em;
 	flex-grow: 2;
 }
