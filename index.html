@@ -4,21 +4,26 @@ title: Popeye Leskó Kalandtúrák
 ---
 
 <section class="main" id="naptar" mv-app="naptar" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
-	<style>
+<style>
 	article.card img { visibility: hidden; }
-	</style>
-	<div class="kategoria" mv-multiple property="kategoriak">
-		<h3 property="kategoriaNev"></h3>
-		<article class="card tura" mv-multiple property="turak">
-			<a href="/[kategoriaId()]/[turaIndex[kategoriaId()][turaId]._turaSzam]--[turaId]">
-				<!-- alt="[turaIndex[kategoriaId()][turaId].kepMiniSzam].jpg" -->
-				<img src="/kepek/[kategoriaId()]/[turaId]/[turaIndex[kategoriaId()][turaId].kepMiniSzam]--[kepIndex[turaIndex[kategoriaId()][turaId].kepMiniSzam]]">
-				<h4 property="nev"></h4>
-				<p>
-					<span class="ar" property="ar"></span>
-					<i class="nyil"> ➤ </i><i hidden>⇢↠↣⇾➺➜►➤▶</i>
-				</p>
-			</a>
-		</article>
-	</div>
+</style>
+<span id="turaIndex" hidden mv-value="[turaIdx(turaIndex)]"></span>
+
+<div class="kategoria" mv-multiple property="kategoriak">
+	<h3 property="kategoriaNev"></h3>
+	<span id="kategoriaId" hidden mv-value="[katId(kategoriaId)]"></span>
+	<article class="card tura" mv-multiple property="turak">
+		<!-- [turaIndex[katId()][turaId]._turaSzam]--  túl komplex -->
+		<a href="/[katId()]/[turaId]">
+			<!-- alt="[turaIndex[katId()][turaId].kepMiniSzam].jpg"  [turaIndex[katId()][turaId].kepMiniSzam]--[kepIndex[turaIndex[katId()][turaId].kepMiniSzam]]  túl komplex -->
+			<img src="/kepek/[katId()]/[turaId]/[turaKepMiniNev(turaId)]">
+			<h4 property="nev"></h4>
+			<p>
+				<span class="ar" property="ar"></span>
+				<i class="nyil"> ➤ </i><i hidden>⇢↠↣⇾➺➜►➤▶</i>
+			</p>
+		</a>
+	</article>
+</div>
+
 </section>

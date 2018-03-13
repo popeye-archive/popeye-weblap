@@ -13,23 +13,25 @@ css: ["carousel.css"]
 </style>
 
 <h1>Képgaléria</h1>
+<span id="turaIndex" hidden mv-value="[turaIdx(turaIndex)]"></span>
 
 <ul class="kategoria" mv-multiple property="kategoriak">
+<span id="kategoriaId" hidden mv-value="[katId(kategoriaId)]"></span>
 <li class="tura" mv-multiple property="turak">
   <details>
-    <summary><a href="#[katId]/[turaId]" mv-attribute="none" property="nev"></a></summary>
+    <summary><a href="#[katId()]/[turaId]" mv-attribute="none" property="nev"></a></summary>
     <div class="carousel  imageViewer gallery_page">
       <ul class="content-cont cf">
-        <li class="cf" id="[turaId]-[$index]" mv-multiple property="turaIndex[katId][turaId].kepSzamok">
+        <li class="cf" id="[turaId]-[$index]" mv-multiple property="turaIndex[katId()][turaId].kepSzamok">
           <img alt="[$item].jpg"
-           src="/kepek/[katId]/[turaId]/[$item]--[kepIndex[$item]">
+           src="/kepek/[katId()]/[turaId]/[$item]--[kepIndex[$item]">
         </li>
       </ul>
       <div class="controls">
         <div class="left"><span class="control"></span></div>
         <div class="right"><span class="control"></span></div>
         <ul>
-          <li class="[turaId]-[$index]" mv-multiple property="turaIndex[katId][turaId].kepSzamok">
+          <li class="[turaId]-[$index]" mv-multiple property="turaIndex[katId()][turaId].kepSzamok">
             <span class="l"></span>
             <span class="r"></span>
           </li>

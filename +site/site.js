@@ -24,22 +24,54 @@
 })(); 
 
 
-/// Mavo belső ciklus nem látja a külső ciklus propertyjeit. Túrák listázásakor szükséges a külső ciklusból a kategórát elérni.
-function kategoriaId() {
-  return "_kat_";
+
+/// Mavo-adat turaIndex átmeneti tárolása (hack, amíg megtalálom, hogyan lehet mavo-val elérni)
+function turaIdx(turaIndex) {
+  if (turaIndex)  turaIdx.mentett= turaIndex;
+  return turaIdx.mentett;
+}
+
+/// Mavo-adat kepIndex átmeneti tárolása (hack, amíg megtalálom, hogyan lehet mavo-val elérni)
+function kepIdx(kepIndex) {
+  if (kepIndex)  kepIdx.mentett= kepIndex;
+  return kepIdx.mentett;
+}
+
+/// Mavo-adat kategoriaId átmeneti tárolása. Mavo belső ciklus nem látja a külső ciklus propertyjeit.
+function katId(kategoriaId) {
+  if (kategoriaId)  katId.mentett= kategoriaId;
+  return katId.mentett;
+}
+
+/// Mavo-adat kategoriaId átmeneti tárolása. Mavo belső ciklus nem látja a külső ciklus propertyjeit.
+function tId(turaId) {
+  if (turaId)  tId.mentett= turaId;
+  return tId.mentett;
+}
+
+
+/// Túra miniatűr képe a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId].kepMiniSzam => kepIndex[kepMiniSzam]
+function tura(turaId) {
+  let tIdx= (turaIndex || turaIdx.mentett);
+  let kId= (kategoriaId || katId.mentett);
+  turaId= (turaId || tId.mentett);
+  let tura= tIdx && kId && turaId && tIdx[kId][turaId];
+  return tura || {};
 }
 
 /// Túra száma a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId]._turaSzam
-function turaSzam() {
-  return "0";
-}
-
-/// Túra miniatűr képe a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId].kepMiniSzam => kepIndex[kepMiniSzam]
-function turaKepMiniNev() {
-  return "0.jpg"
+function turaSzam(turaId) {
+  return tura(turaId)._turaSzam;
 }
 
 function kepNev(kepSzam) {
-  return kepIndex[kepSzam];
+  let kIdx= (kepIndex || kepIdx.mentett);
+  //return kIdx ? kIdx[kepSzam] : "_nincs_kepIndex_.jpg";
+  return kIdx ? kIdx[kepSzam] : "0.jpg";
+}
+
+function turaKepMiniNev(turaId) {
+  let kepSzam= tura(turaId).kepMiniSzam;
+  return kepSzam ? kepSzam +'--'+ kepNev(kepSzam) : "0.jpg"
 }
 
