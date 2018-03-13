@@ -26,7 +26,7 @@
 
 /// Mavo belső ciklus nem látja a külső ciklus propertyjeit. Túrák listázásakor szükséges a külső ciklusból a kategórát elérni.
 function kategoriaId() {
-  return "kat";
+  return "_kat_";
 }
 
 /// Túra száma a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId]._turaSzam
@@ -35,7 +35,11 @@ function turaSzam() {
 }
 
 /// Túra miniatűr képe a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId].kepMiniSzam => kepIndex[kepMiniSzam]
-function turaKep() {
+function turaKepMiniNev() {
   return "0.jpg"
+}
+
+function kepNev(kepSzam) {
+  return kepIndex[kepSzam];
 }
 

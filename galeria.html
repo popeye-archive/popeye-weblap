@@ -17,18 +17,19 @@ css: ["carousel.css"]
 <ul class="kategoria" mv-multiple property="kategoriak">
 <li class="tura" mv-multiple property="turak">
   <details>
-    <summary><a href="#[kategoriaId]/[turaId]" mv-attribute="none" property="nev"></a></summary>
+    <summary><a href="#[kategoriaId()]/[turaId]" mv-attribute="none" property="nev"></a></summary>
     <div class="carousel  imageViewer gallery_page">
       <ul class="content-cont cf">
-        <li class="cf" id="[turaId]-[$index]" mv-multiple property="index[kategoriaId][turaId].kepek">
-          <img src="/kepek/[kategoriaId]/[turaId]/[$item].jpg">
+        <li class="cf" id="[turaId]-[$index]" mv-multiple property="turaIndex[kategoriaId()][turaId].kepSzamok">
+          <img alt="[$item].jpg"
+           src="/kepek/[kategoriaId()]/[turaId]/[$item]--[kepIndex[$item]">
         </li>
       </ul>
       <div class="controls">
         <div class="left"><span class="control"></span></div>
         <div class="right"><span class="control"></span></div>
         <ul>
-          <li class="[turaId]-[$index]" mv-multiple property="index[kategoriaId][turaId].kepek">
+          <li class="[turaId]-[$index]" mv-multiple property="turaIndex[kategoriaId()][turaId].kepSzamok">
             <span class="l"></span>
             <span class="r"></span>
           </li>
