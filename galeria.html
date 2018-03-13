@@ -41,8 +41,7 @@ css: ["carousel.css"]
 
 <script type="text/javascript">
 document.getElementById('galeria').addEventListener('click', function (event) {
-  debugger;
-  if (event.target.tag === 'A') {
+  if (event.target.nodeName === 'A') {
     let parent= event.target.closest('details');
     if (!parent) return;
     if (parent.hasAttribute('open'))  parent.removeAttribute('open');
