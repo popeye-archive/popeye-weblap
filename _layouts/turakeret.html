@@ -2,9 +2,9 @@
 layout: weblapkeret
 ---
 <section class="main" id="main" mv-app="kapcsolat" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
-<article>
+<article mv-value="[turaData(turak)]">
 	<h1 itemprop="name" property="nev"></h1>
-	<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="offer">
+	<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="offer" hidden>
 		<div class="price">
 			<p>Ár: <span itemprop="price" property="ar"></p>
 			<p class="price_comment" mv-property="arOpciok"></p>

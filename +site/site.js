@@ -1,28 +1,18 @@
-/*
-* Email cím dekódolás -- az email címek az email kereső robotok elől rejtve, obfuszkálva vannak
-*/
-(function patchAddresses() { 
-  function revealAddress(e) { 
-    var link= this, prot= ["mai","o:"].join("lt"), prev= link.getAttribute("href");
-    if (typeof prev === "string" && prev.indexOf(prot) == 0) return; 
-    var address= link.textContent
-      .replace("(ku-at-kac)", String.fromCharCode(64))
-      .replace(/\.nospan\./g, ""); 
-    link.setAttribute("href", prot + address); 
-    link.removeEventListener("mouseover", revealAddress); 
-    link.removeEventListener("focus", revealAddress); 
-    link.removeEventListener("click", revealAddress); 
-  }
 
-  var addresses= document.getElementsByClassName("address"); 
-  for (var i=0; i<addresses.length; i++) { 
-    var link= addresses[i]; 
-    link.addEventListener("mouseover", revealAddress); 
-    link.addEventListener("focus", revealAddress); 
-    link.addEventListener("click", revealAddress); 
-  } 
-})(); 
+var popeye = window.popeye = {};
+const valamiTura= { nev: "Meglepetés kaland", ar: "Szabadon választott", arOpciok: "A túrát sikeresen teljesítőknek lesz alkalma honorálni a kalandot." };
 
+function turaData(turak) {
+	popeye.turak= turak;
+	let path= window.location.pathname.match('/([^\./]*)/([^\./]*)[\./]?(.*)');
+
+	let kategoriaId= path && path[1], turaId= path && path[2];
+	popeye.kategoria= kategoriaId && turak.find(kat => kat.kategoriaId == kategoriaId);
+	popeye.tura= popeye.kategoria && popeye.kategoria.find(tura => tura.turaId == turaId);
+
+	if (! popeye.tura) then  return popeye.tura= valamiTura;  // Adat hiba, mégis jelenjen meg valami.
+	return popeye.tura;
+}
 
 
 /// Mavo-adat turaIndex átmeneti tárolása (hack, amíg megtalálom, hogyan lehet mavo-val elérni)
@@ -74,4 +64,33 @@ function turaKepMiniNev(turaId) {
   let kepSzam= tura(turaId).kepMiniSzam;
   return kepSzam ? kepSzam +'--'+ kepNev(kepSzam) : "0.jpg"
 }
+
+
+
+
+/*
+* Email cím dekódolás -- az email címek az email kereső robotok elől rejtve, obfuszkálva vannak
+*/
+(function patchAddresses() { 
+  function revealAddress(e) { 
+    var link= this, prot= ["mai","o:"].join("lt"), prev= link.getAttribute("href");
+    if (typeof prev === "string" && prev.indexOf(prot) == 0) return; 
+    var address= link.textContent
+      .replace("(ku-at-kac)", String.fromCharCode(64))
+      .replace(/\.nospan\./g, ""); 
+    link.setAttribute("href", prot + address); 
+    link.removeEventListener("mouseover", revealAddress); 
+    link.removeEventListener("focus", revealAddress); 
+    link.removeEventListener("click", revealAddress); 
+  }
+
+  var addresses= document.getElementsByClassName("address"); 
+  for (var i=0; i<addresses.length; i++) { 
+    var link= addresses[i]; 
+    link.addEventListener("mouseover", revealAddress); 
+    link.addEventListener("focus", revealAddress); 
+    link.addEventListener("click", revealAddress); 
+  } 
+})(); 
+
 

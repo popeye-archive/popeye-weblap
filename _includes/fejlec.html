@@ -6,6 +6,6 @@
   <a href="/kapcsolat">Kapcsolat</a>
 </nav>
 <script>
-  let loc= window.location.pathname;
-  document.querySelector('nav a[href="'+loc+'"]').classList.add('active');
+  let loc= window.location.pathname, activeNav= document.querySelector('nav a[href="'+loc+'"]');
+  if (activeNav) activeNav.classList.add('active');
 </script>
