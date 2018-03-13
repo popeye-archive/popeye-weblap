@@ -442,7 +442,7 @@ article.card:hover, article.card:focus-within {
 	box-shadow: 3px 3px calc(var(--fade-len) + 8px) var(--fade-len) var(--shadow);
 }
 
-.sharp article.card:hover, article.card:focus-within {
+.sharp article.card:hover, .sharp article.card:focus-within {
 	--fade-len-h: calc(var(--fade-len) + 8px);
 	--fade-len-h: calc(var(--fade-len) + 4px);
 	--fade-len-h: calc(var(--fade-len) + 2px);

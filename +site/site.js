@@ -26,7 +26,6 @@
 
 /// Mavo belső ciklus nem látja a külső ciklus propertyjeit. Túrák listázásakor szükséges a külső ciklusból a kategórát elérni.
 function kategoriaId() {
-  debugger;
   return "kat";
 }
 
