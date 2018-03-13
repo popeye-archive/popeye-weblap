@@ -2,12 +2,12 @@
 var popeye = window.popeye = {};
 const valamiTura= { nev: "Meglepetés kaland", ar: "Szabadon választott", arOpciok: "A túrát sikeresen teljesítőknek lesz alkalma honorálni a kalandot." };
 
-function turaData(turak) {
-	popeye.turak= turak;
+function turaData(kategoriak) {
+	popeye.kategoriak= kategoriak;
 	let path= window.location.pathname.match('/([^\./]*)/([^\./]*)[\./]?(.*)');
 
 	let kategoriaId= path && path[1], turaId= path && path[2];
-	popeye.kategoria= kategoriaId && turak.find(kat => kat.kategoriaId == kategoriaId);
+	popeye.kategoria= kategoriaId && kategoriak.find(kat => kat.kategoriaId == kategoriaId);
 	popeye.tura= popeye.kategoria && popeye.kategoria.find(tura => tura.turaId == turaId);
 
 	if (! popeye.tura)  popeye.tura= valamiTura;  // Adat hiba, mégis jelenjen meg valami.
