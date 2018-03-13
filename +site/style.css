@@ -401,6 +401,7 @@ body>footer section h3 {
 article.card {
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: space-between;
 	position: relative;
 	transition: all 0.1s ease-in;
 	width: 14em;
@@ -487,7 +488,8 @@ article.card img {
 
 article.card h4 {
 	/* position: absolute; */
-	margin: 0.5em;
+	margin: 0.5em 0.5em 0em 0.5em;
+	flex-grow: 2;
 }
 
 article.card .ar {

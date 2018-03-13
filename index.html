@@ -6,15 +6,15 @@ title: Popeye Leskó Kalandtúrák
 <section class="main" id="naptar" mv-app="naptar" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 	<div class="kategoria" mv-multiple property="kategoriak">
 		<h3 property="kategoriaNev"></h3>
-		<article class="card tura" mv-multiple property="turak">
-			<a href="/[kategoriaId()]/[turaSzam()]--[turaId].html">
+		<a mv-multiple property="turak" href="/[kategoriaId()]/[turaSzam()]--[turaId].html">
+			<article class="card tura">
 				<img src="[turaKep()]">
 				<h4 property="nev"></h4>
 				<p>
 					<span class="ar" property="ar"></span>
 					<i class="nyil"> ➤ </i><i hidden>⇢↠↣⇾➺➜►➤▶</i>
 				</p>
-			</a>
-		</article>
+			</article>
+		</a>
 	</div>
 </section>
