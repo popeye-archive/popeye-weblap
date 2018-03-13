@@ -9,8 +9,14 @@ mainid: galeria
     display: flex;
     flex-flow: column;
   }
+  #{{page.mainid}} summary {
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
   #{{page.mainid}} summary img {
     display: inline;
+    min-width: 2em;
+    min-height: 2em;
     max-width: 4em;
     max-height: 4em;
   }
@@ -23,16 +29,17 @@ mainid: galeria
 <span id="kategoriaId" hidden mv-value="[katId(kategoriaId)]"></span>
 <li class="tura" mv-multiple property="turak">
   <details>
-    <summary>
+    <summary style="{background:/kepek/[miniKep.ut]}">
       <a href="#[katId()]/[turaId]" mv-attribute="none">
-        <img src="/kepek/[miniKep.ut]">
+        <img src="/kepek/[miniKep.ut]" hidden>
         [nev]
       </a>
     </summary>
     <div class="carousel  imageViewer gallery_page">
       <ul class="content-cont cf">
         <li class="cf" id="[turaId]-[$index]" mv-multiple property="kepek">
-          <img src="/kepek/[$item.ut]">
+          <div class="img" style="{background:/kepek/[$item.ut]}"></div>
+          <img src="/kepek/[$item.ut] hidden">
           <img src="/kepek/[katId()]/[turaId]/[$item.nev]" hidden>
         </li>
       </ul>

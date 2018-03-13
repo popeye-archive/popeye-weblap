@@ -2,17 +2,13 @@
 layout: weblapkeret
 mainid: naptar
 ---
-<style>
-	article.card img { visibility: hidden; }
-</style>
-
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 <div class="kategoria" mv-multiple property="kategoriak">
-	<h3 property="kategoriaNev"></h3>
 	<span id="kategoriaId" hidden mv-value="[katId(kategoriaId)]"></span>
+	<h3 property="kategoriaNev"></h3>
 	<article class="card tura" mv-multiple property="turak">
 		<a href="/[katId()]/[turaId]">
-			<img src="/kepek/[miniKep.ut]">
+			<div class="img" style="{background:/kepek/[miniKep.ut]}"></div>
 			<img src="/kepek/[katId()]/[turaId]/[miniKep.nev]" hidden>
 			<h4 property="nev"></h4>
 			<p>
