@@ -1,1 +1,10 @@
 name: Popeye Leskó Kalandtúrák
+timezone: Europe/Budapest
+
+defaults:
+  -
+    scope:
+      path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
+    values:
+      layout: weblapkeret
+      title: Popeye Leskó Kalandtúrák

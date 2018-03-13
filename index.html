@@ -1,22 +1,18 @@
 ---
-layout: weblapkeret
-title: Popeye Leskó Kalandtúrák
 ---
 
 <section class="main" id="naptar" mv-app="naptar" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 <style>
 	article.card img { visibility: hidden; }
 </style>
-<span id="turaIndex" hidden mv-value="[turaIdx(turaIndex)]"></span>
 
 <div class="kategoria" mv-multiple property="kategoriak">
 	<h3 property="kategoriaNev"></h3>
 	<span id="kategoriaId" hidden mv-value="[katId(kategoriaId)]"></span>
 	<article class="card tura" mv-multiple property="turak">
-		<!-- [turaIndex[katId()][turaId]._turaSzam]--  túl komplex -->
 		<a href="/[katId()]/[turaId]">
-			<!-- alt="[turaIndex[katId()][turaId].kepMiniSzam].jpg"  [turaIndex[katId()][turaId].kepMiniSzam]--[kepIndex[turaIndex[katId()][turaId].kepMiniSzam]]  túl komplex -->
-			<img src="/kepek/[katId()]/[turaId]/[turaKepMiniNev(turaId)]">
+			<img src="/kepek/[miniKep.ut]">
+			<img src="/kepek/[katId()]/[turaId]/[miniKep.nev]" hidden>
 			<h4 property="nev"></h4>
 			<p>
 				<span class="ar" property="ar"></span>
