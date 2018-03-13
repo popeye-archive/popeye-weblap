@@ -10,7 +10,7 @@ function turaData(turak) {
 	popeye.kategoria= kategoriaId && turak.find(kat => kat.kategoriaId == kategoriaId);
 	popeye.tura= popeye.kategoria && popeye.kategoria.find(tura => tura.turaId == turaId);
 
-	if (! popeye.tura) then  popeye.tura= valamiTura;  // Adat hiba, mégis jelenjen meg valami.
+	if (! popeye.tura)  popeye.tura= valamiTura;  // Adat hiba, mégis jelenjen meg valami.
 	return popeye.tura;
 }
 
