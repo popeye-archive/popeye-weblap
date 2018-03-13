@@ -401,27 +401,58 @@ article.card {
 	transition: all 0.1s ease-in;
 	width: 14em;
 	font-size: 0.9em;
-	margin: 1em;
-	margin: calc(var(--fade-len) + 0.7em);
-  border-radius: 0.4em;
+  border-radius: 0.8em;
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
 	--background: #80400080; /* halvány barna - article.card */
 	--shadow: #20200080;
-	--fade-len: 8px;
-	--fade-len: 4px;
-	--fade-len: 16px;
-	box-shadow: 2px 2px var(--fade-len) 4px var(--background);
-	box-shadow: 3px 3px var(--fade-len) calc(var(--fade-len) - 6px) var(--shadow);
-	box-shadow: 0px 0px var(--fade-len) var(--fade-len) var(--background);
 	background: var(--background);
 }
 
-article.card:hover, article.card:focus-within {
-	box-shadow: 3px 6px calc(var(--fade-len) + 8px) calc(var(--fade-len) + 0px) var(--shadow);
-	box-shadow: 0px 0px calc(var(--fade-len) + 4px) calc(var(--fade-len) + 2px) var(--background);
+
+article.card {
+	margin: calc(var(--fade-len) + 12px);
+	margin: calc(var(--fade-len) + 16px);
+	margin: calc(var(--fade-len) + 20px);
+	--fade-len: 4px;
+	--fade-len: 8px;
+	--fade-len: 12px;
+	box-shadow: 0px 0px calc(var(--fade-len) + 0px) var(--fade-len) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len) + 4px) var(--fade-len) var(--background);
 }
+
+article.card:hover, article.card:focus-within {
+	--fade-len-h: calc(var(--fade-len) + 4px);
+	--fade-len-h: calc(var(--fade-len) + 8px);
+	box-shadow: 0px 0px calc(var(--fade-len-h) + 0px) var(--fade-len-h) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len-h) + 4px) var(--fade-len-h) var(--background);
+}
+
+
+.sharp article.card {
+	margin: 1em;
+	--fade-len: 8px;
+	--fade-len: 4px;
+	--fade-len: 2px;
+	box-shadow: 3px 3px calc(var(--fade-len) + 0px) var(--fade-len) var(--shadow);
+	box-shadow: 3px 3px calc(var(--fade-len) + 2px) var(--fade-len) var(--shadow);
+	box-shadow: 3px 3px calc(var(--fade-len) + 4px) var(--fade-len) var(--shadow);
+	box-shadow: 3px 3px calc(var(--fade-len) + 6px) var(--fade-len) var(--shadow);
+	box-shadow: 3px 3px calc(var(--fade-len) + 8px) var(--fade-len) var(--shadow);
+}
+
+.sharp article.card:hover, article.card:focus-within {
+	--fade-len-h: calc(var(--fade-len) + 8px);
+	--fade-len-h: calc(var(--fade-len) + 4px);
+	--fade-len-h: calc(var(--fade-len) + 2px);
+	box-shadow: 3px 6px calc(var(--fade-len-h) + 0px) var(--fade-len-h) var(--shadow);
+	box-shadow: 3px 6px calc(var(--fade-len-h) + 2px) var(--fade-len-h) var(--shadow);
+	box-shadow: 3px 6px calc(var(--fade-len-h) + 4px) var(--fade-len-h) var(--shadow);
+	box-shadow: 3px 6px calc(var(--fade-len-h) + 6px) var(--fade-len-h) var(--shadow);
+	box-shadow: 3px 6px calc(var(--fade-len-h) + 8px) var(--fade-len-h) var(--shadow);
+}
+
 
 /* article.card a:visited {} */
 
