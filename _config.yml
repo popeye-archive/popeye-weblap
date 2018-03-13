@@ -6,6 +6,6 @@ defaults:
     scope:
       path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
     values:
-      layout: weblapkeret
+      layout: turakeret
       mainid: main
       title: Popeye Leskó Kalandtúrák

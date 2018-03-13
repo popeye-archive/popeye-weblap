@@ -1,20 +1,22 @@
 ---
 title: Galéria – Popeye Leskó Kalandtúrák
+layout: weblapkeret
 css: ["carousel.css"]
 mainid: galeria
 ---
 <style>
-  #galeria ul.kategoria {
+  #{{page.mainid}} ul.kategoria {
     display: flex;
     flex-flow: column;
   }
-  #galeria summary img {
+  #{{page.mainid}} summary img {
     display: inline;
     max-width: 4em;
     max-height: 4em;
   }
 </style>
 
+<section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
 <h1>Képgaléria</h1>
 
 <ul class="kategoria" mv-multiple property="kategoriak">
@@ -48,6 +50,7 @@ mainid: galeria
   </details>
 </li>
 </ul>
+</section>
 
 <script type="text/javascript">
 document.getElementById('galeria').addEventListener('click', function (event) {
