@@ -7,8 +7,8 @@ function turaData(kategoriak) {
 	let path= window.location.pathname.match('/([^\./]*)/([^\./]*)[\./]?(.*)');
 
 	let kategoriaId= path && path[1], turaId= path && path[2];
-	popeye.kategoria= kategoriaId && kategoriak.find(kat => kat.kategoriaId == kategoriaId);
-	popeye.tura= popeye.kategoria && popeye.kategoria.find(tura => tura.turaId == turaId);
+	popeye.kategoria= kategoriaId && kategoriak.find && kategoriak.find(kat => kat.kategoriaId == kategoriaId);
+	popeye.tura= popeye.kategoria && popeye.kategoria.find && popeye.kategoria.find(tura => tura.turaId == turaId);
 
 	if (! popeye.tura)  popeye.tura= valamiTura;  // Adat hiba, mégis jelenjen meg valami.
 	return popeye.tura;
