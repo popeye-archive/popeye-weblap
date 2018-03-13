@@ -343,6 +343,8 @@ body>header nav a.active {
 	--background: #20200080; /* világos barna (fapác) */
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
+	--background: #803030b0; /* piros */
+	--background: #804020c0; /* világos narancs */
 	box-shadow: 0em 0em var(--fade-len) var(--fade-len) var(--background);
 	background: var(--background);
 }
@@ -426,45 +428,47 @@ article.card {
 	--fade-len: 4px;
 	--fade-len: 8px;
 	--fade-len: 12px;
-	--fade-len: 16px;
 	--fade-len: 20px;
+	--fade-len: 16px;
 	box-shadow: 0px 0px 0px var(--fade-len) var(--background);
 	box-shadow: 0px 0px 4px var(--fade-len) var(--background);
 	box-shadow: 0px 0px 8px var(--fade-len) var(--background);
-	box-shadow: 0px 0px calc(var(--fade-len) + 4px) var(--fade-len) var(--background);
 	box-shadow: 0px 0px calc(var(--fade-len) + 0px) var(--fade-len) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len) + 8px) var(--fade-len) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len) + 4px) var(--fade-len) var(--background);
 }
 
 article.card:hover, article.card:focus-within {
 	--fade-len-h: calc(var(--fade-len) + 6px);
 	--fade-len-h: calc(var(--fade-len) + 8px);
-	box-shadow: 0px 0px calc(var(--fade-len-h) + 0px) var(--fade-len-h) var(--background);
-	box-shadow: 0px 0px 4px var(--fade-len-h) var(--background);
-	box-shadow: 0px 0px 8px var(--fade-len-h) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len-h) - 0px) var(--fade-len-h) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len-h) - 4px) var(--fade-len-h) var(--background);
+	box-shadow: 0px 0px calc(var(--fade-len-h) - 8px) var(--fade-len-h) var(--background);
 }
 
 
 .sharp article.card {
 	margin: 1em;
-	--fade-len: 0px;
 	--fade-len: 1px;
+	--fade-len: 4px;
 	--fade-len: 2px;
-	box-shadow: 3px 3px 4px var(--fade-len) var(--shadow);
-	box-shadow: 3px 3px 5px var(--fade-len) var(--shadow);
-	box-shadow: 3px 3px 6px var(--fade-len) var(--shadow);
-	box-shadow: 3px 3px 7px var(--fade-len) var(--shadow);
-	box-shadow: 3px 3px 8px var(--fade-len) var(--shadow);
+	--fade-len: 3px;
+	box-shadow: 1px 3px 9px var(--fade-len) var(--shadow);
+	box-shadow: 1px 3px 5px var(--fade-len) var(--shadow);
+	box-shadow: 1px 3px 8px var(--fade-len) var(--shadow);
+	box-shadow: 1px 3px 6px var(--fade-len) var(--shadow);
+	box-shadow: 1px 3px 7px var(--fade-len) var(--shadow);
 }
 
 .sharp article.card:hover, .sharp article.card:focus-within {
 	--fade-len-h: calc(var(--fade-len) + 8px);
 	--fade-len-h: calc(var(--fade-len) + 4px);
 	--fade-len-h: calc(var(--fade-len) + 2px);
-	box-shadow: 3px 6px calc(var(--fade-len) + 4px) var(--fade-len-h) var(--shadow);
-	box-shadow: 3px 6px calc(var(--fade-len) + 12px) var(--fade-len-h) var(--shadow);
-	box-shadow: 3px 6px calc(var(--fade-len) + 6px) var(--fade-len-h) var(--shadow);
-	box-shadow: 3px 6px calc(var(--fade-len) + 10px) var(--fade-len-h) var(--shadow);
-	box-shadow: 3px 6px calc(var(--fade-len) + 8px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 4px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 6px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 12px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 8px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 10px) var(--fade-len-h) var(--shadow);
 }
 
 
@@ -501,8 +505,8 @@ article.card .nyil {
 }
 
 article.card:hover .nyil {
-	left: 0.4em;
 	left: 1em;
+	left: 0.4em;
 }
 
 
