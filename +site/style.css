@@ -94,7 +94,7 @@ body {
 }
 
 section.main>article>h1 {
-	margin: 0.5em 3em 1em;
+	margin: 0em 3em 1em;
 	font-size: 2.25rem;
 	font-weight: bold;
 	color: burlywood;
@@ -113,8 +113,10 @@ section.main>article {
 	--background: #20200080; /* világos barna (fapác) */
 	--background: #80400080; /* halvány barna - article.card */
 	--fade-len: 4em;
-	padding: calc(5em - var(--fade-len));
+	padding: calc(4em - var(--fade-len)) calc(5em - var(--fade-len));
+	padding: 0em 1em;
 	margin: calc(var(--fade-len) + 2em);
+	margin: 4em;
 	border-radius: calc(var(--border-radius) + 4em);
 	box-shadow: 0em 0em var(--fade-len) calc(var(--fade-len) - 4px) var(--background);
 	background: var(--background);
