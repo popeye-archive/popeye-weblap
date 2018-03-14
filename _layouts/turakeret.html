@@ -1,8 +1,11 @@
 ---
 layout: weblapkeret
 ---
+{% assign path = page.url | split: "/" %}
+<p>n:{{path[0]}},k:{{path[1]}},t:{{path[2]}}</p>
 <section class="main" id="main" mv-app="kapcsolat" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
-<article>
+<div mv-multiple="kategoriak" mv-if="kategoriaId={{path[1]}}">
+<article mv-multiple="turak" mv-if="turaId={{path[2]}}">
 	<h1 itemprop="name" property="nev"></h1>
 	<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="offer" hidden>
 		<div class="price">
@@ -10,9 +13,10 @@ layout: weblapkeret
 			<p class="price_comment" mv-property="arOpciok"></p>
 		</div>
 		<div itemprop="seller" itemscope="" itemtype="http://schema.org/Organization" hidden>
-			<span itemprop="name">Popeye Bt.</span>
+			<span itemprop="name">Popeye Leskó</span>
 		</div>
 	</div>
 {{ content
 }}</article>
+</div>
 </section>
