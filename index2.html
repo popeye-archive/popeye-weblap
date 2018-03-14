@@ -5,7 +5,7 @@ mainid: naptar
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
 {% for kat in site.data.turak.kategoriak %}
 <div class="kategoria">
-	<span id="kategoriaId" hidden>{{kategoriaId}}</span>
+	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
 	<h3>{{kat.kategoriaNev}}</h3>
 	{% for tura in kat.turak %}
 	<article class="card tura">
