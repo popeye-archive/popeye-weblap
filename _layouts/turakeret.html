@@ -6,7 +6,7 @@ layout: weblapkeret
 {% assign turaFile = path[2] | split: "." %}
 {% assign turaId = turaFile[0] %}
 k:{{kategoriaId}},t:{{turaId}},kategoriaId='{{kategoriaId}}'
-<section class="main" id="main" mv-app="kapcsolat" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/turak.json">
+<section class="main" id="main" mv-app="kapcsolat" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/_data/turak.json">
 <div mv-multiple="kategoriak" mv-if="kategoriaId='{{kategoriaId}}'">
 <article class="main" mv-multiple="turak" mv-if="turaId='{{turaId}}'">
 	<h1 itemprop="name" property="nev"></h1>
