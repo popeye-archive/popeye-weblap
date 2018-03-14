@@ -8,7 +8,7 @@ mainid: naptar
 	<span id="kategoriaId" hidden>{{kategoriaId}}</span>
 	<h3>{{kat.kategoriaNev}}</h3>
 	{% for tura in kat.turak %}
-  <article class="card tura">
+	<article class="card tura">
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
 			<div class="img" style="background-image:url(/kepek/{{tura.miniKep.ut}})"></div>
 			<img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{tura.miniKep.nev}}" hidden>
@@ -19,5 +19,7 @@ mainid: naptar
 			</p>
 		</a>
 	</article>
+	{% endfor %}
 </div>
+{% endfor %}
 </section>
