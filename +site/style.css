@@ -94,7 +94,7 @@ body {
 }
 
 /*section.main>.description>h2,*/
-section.main>article h1 {
+article.main h1 {
 	margin: 0em 3em 1em;
 	font-size: 2.25rem;
 	font-weight: bold;
@@ -107,7 +107,7 @@ section.main>article h1 {
 	color: goldenrod;
 }
 
-section.main>article h2 {
+article.main h2 {
 	margin: 0.5em -1em;
 	font-size: 2.25rem;
 	font-weight: bold;
@@ -121,7 +121,7 @@ section.main>article h2 {
 }
 
 /*section.main>.description,*/
-section.main>article {
+article.main {
 	font-size: 1.2em;
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
