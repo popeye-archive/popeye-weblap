@@ -30,24 +30,7 @@
 		"turaId": "kis-balaton",
 		"nev": "Kis Balaton környéki kerékpártúra",
 		"ar": "24.400 - 34.400 Ft",
-		"arOpciok": "Az ár az utazás függvényében változhat.",
-		"miniKep": {
-			"nev": "m--03.jpg",
-			"ut": "kerekparturak/szloven-olasz/m--03.jpg"
-		},
-		"kepek": [
-		{
-			"nev": "01.jpg",
-			"ut": "kerekparturak/szloven-olasz/01.jpg"
-		},
-		{
-			"nev": "02.jpg",
-			"ut": "kerekparturak/szloven-olasz/02.jpg"
-		},
-		{
-			"nev": "03.jpg",
-			"ut": "kerekparturak/szloven-olasz/03.jpg"
-		}]
+		"arOpciok": "Az ár az utazás függvényében változhat."
 	},
 	{
 		"turaId": "szloven-olasz",
