@@ -95,7 +95,8 @@ body {
 
 /*section.main>.description>h2,*/
 article.main h1 {
-	margin: 0em 3em 1em;
+	/*margin: 0em 3em 1em;*/
+	text-align: center;
 	font-size: 2.25rem;
 	font-weight: bold;
 	color: burlywood;
@@ -178,10 +179,6 @@ body>footer {
 */
 
 @media only screen and (max-width: 1023px) {
-	body {
-		font-size: 0.8em;
-		line-height: 1.5em;
-	}
 }
 
 
@@ -189,12 +186,8 @@ body>footer {
 * Mobil méretű kijelzők
 */
 
-@media handheld, only screen and (max-width: 767px) {
-	body {
-		font-size: 16px;
-		-webkit-text-size-adjust: none;
-	}
-	body, section.main {
+@media handheld, (max-width: 767px) {
+	section.main {
 		width: 100%;
 		min-width: 0;
 		margin: 0;
@@ -207,6 +200,13 @@ body>footer {
 		margin-right: 0px;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	body>header nav span[grow] {
+		display: none;
+	}
+	body>header nav a {
+		margin: 0.5em 0em;
 	}
 }
 
@@ -226,6 +226,7 @@ body {
 body>header, body>footer {
 	width: 100%;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 body>header>* {
@@ -326,13 +327,11 @@ section.main {
 
 body>header nav {
 	display: flex;
+	flex-flow: wrap;
 	box-sizing: border-box;
 	max-width: 50em;
 	/* padding: 0 calc(var(--border-radius) * 2); */
 	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000); */
-}
-
-body>header nav {
 	font-size: 1.25em;
 	font-weight: bold;
 	/* font-family: Helvetica, Arial, sans-serif; */
