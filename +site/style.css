@@ -328,6 +328,7 @@ section.main {
 body>header nav {
 	display: flex;
 	flex-flow: wrap;
+	justify-content: flex-end;
 	box-sizing: border-box;
 	max-width: 50em;
 	/* padding: 0 calc(var(--border-radius) * 2); */
