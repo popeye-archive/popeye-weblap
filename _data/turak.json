@@ -4,7 +4,7 @@
 	"kategoriaNev": "Kerékpártúrák",
 	"turak": [
 	{
-		"turaId": "szloven-olasz-husvet"
+		"turaId": "szloven-olasz-husvet",
 		"nev": "Szlovén – Olasz húsvéti túra",
 		"ar": "39.900 - 64.900 Ft",
 		"arOpciok": "Az ár a vállalt szolgáltatások függvényében változhat.",
@@ -27,7 +27,7 @@
 		}]
 	},
 	{
-		"turaId": "kis-balaton"
+		"turaId": "kis-balaton",
 		"nev": "Kis Balaton környéki kerékpártúra",
 		"ar": "24.400 - 34.400 Ft",
 		"arOpciok": "Az ár az utazás függvényében változhat.",
