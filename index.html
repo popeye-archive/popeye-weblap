@@ -12,11 +12,9 @@ mainid: naptar
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
 			<div class="img" style="background-image:url(/kepek/{{tura.miniKep.ut}})"></div>
 			<img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{tura.miniKep.nev}}" hidden>
-			<h4 property="nev"></h4>
-			<p>
-				<span class="ar" property="ar"></span>
-				<i class="nyil" hidden> ➤ </i><i hidden>⇢↠↣⇾➺➜►➤▶</i>
-			</p>
+			<h4>{{tura.nev}}</h4>
+			<p> <span class="ar">{{tura.ar}}</span> <i class="nyil" hidden> ➤ </i> <i hidden>⇢↠↣⇾➺➜►➤▶</i> </p>
+			<button>Részletek➺</button>
 		</a>
 	</article>
 	{% endfor %}
