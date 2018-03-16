@@ -556,6 +556,10 @@ article.card .button:hover {
 */
 
 @media only screen and (max-width: 1023px) {
+	section.main,
+	article.main {
+		margin: 0;
+	}
 }
 
 
@@ -567,7 +571,6 @@ article.card .button:hover {
 	section.main {
 		width: 100%;
 		min-width: 0;
-		margin: 0;
 		padding: 0;
 	}
 	
