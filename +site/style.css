@@ -323,7 +323,7 @@ body>header nav a:focus, body>header nav a:hover, body>header nav a:active {
 
 
 /*
-* Lábléc — elérhetőségek
+* Lábléc
 */
 
 body>footer section {
@@ -333,7 +333,7 @@ body>footer section {
 	*/
 	display: flex;
 	flex-flow: row;
-	justify-content: center;
+	place-content: center;
 }
 
 body>footer section div {
@@ -342,25 +342,35 @@ body>footer section div {
 }
 
 body>footer {
-	color: #cac2b2;
-	color: #bfa36c;
-	color: #ffdd99;
-	color: wheat;
-	color: burlywood;
+	/*color: #cac2b2;  */
+	/*color: #bfa36c;  */
+	/*color: #ffdd99;  */
+	/*color: wheat;    */
+	/*color: burlywood;*/
 }
 
-body>footer h2, body>footer h3 {
+body>footer h1 {
+	color: antiquewhite;
+	margin: auto 2em;
+}
+body>footer h2 {
 	margin: 0;
 	/* color: goldenrod; */
 }
-
-body>footer section h3 {
+body>footer h3 {
+	margin: 0;
 	margin-bottom: 0.5em;
 }
 
-body>footer dl { display: grid; grid-template-columns: max-content max-content; justify-content: center; }
-body>footer dt { grid-column: 1; font-weight: bold; color: #ffb860; }
-body>footer dd { grid-column: 2; margin-left: 8em; color: burlywood; }
+.elerhetosegeink dl {
+	display: grid;
+	grid-auto-columns: max-content;
+	grid-auto-rows: max-content;
+	place-content: center;
+	text-align: start;
+}
+.elerhetosegeink dt { grid-column: 1; font-weight: bold; color: #ffb860; }
+.elerhetosegeink dd { grid-column: 2; margin-left: 2em; color: burlywood; }
 
 
 /*
