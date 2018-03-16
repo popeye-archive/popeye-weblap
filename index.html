@@ -10,8 +10,10 @@ mainid: naptar
 	{% for tura in kat.turak %}
 	<article class="card tura">
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
+			{% if tura.miniKep %}
 			<div class="img" style="background-image:url(/kepek/{{tura.miniKep.ut}})"></div>
 			<img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{tura.miniKep.nev}}" hidden>
+			{% endif %}
 			<h4>{{tura.nev}}</h4>
 			<p> <span class="ar">{{tura.ar}}</span> <i class="nyil" hidden> ➤ </i> <i hidden>⇢↠↣⇾➺➜►➤▶</i> </p>
 			<p class="button">Részletek➺</p>
