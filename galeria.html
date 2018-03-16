@@ -25,29 +25,33 @@ mainid: galeria
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/_data/turak.json">
 <h1>Képgaléria</h1>
 
-<ul class="kategoria" mv-multiple property="kategoriak">
-<span id="kategoriaId" hidden mv-value="[katId(kategoriaId)]"></span>
-<li class="tura" mv-multiple property="turak">
+{% for kat in site.data.turak.kategoriak %}
+<ul class="kategoria">
+<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
+{% for tura in kat.turak %}
+<li class="tura">
   <details>
-    <summary class="img" style="background-image:url(/kepek/[miniKep.ut])">
-      <a href="#[katId()]/[turaId]" mv-attribute="none">
-        <img src="/kepek/[miniKep.ut]">
+    <summary class="img" <!-- {% if tura.miniKep %} style="background-image:url(/kepek/[miniKep.ut])" {% endif %} --> >
+      <a href="#{{kat.kategoriaId}}/{{tura.turaId}}">
+        {% if tura.miniKep %} <img src="/kepek/[miniKep.ut]"> {% endif %}
         [nev]
       </a>
     </summary>
     <div class="carousel  imageViewer gallery_page">
       <ul class="content-cont cf">
-        <li class="cf" id="[turaId]-[$index]" mv-multiple property="kepek">
-          <div class="img" style="{background:/kepek/[$item.ut]}"></div>
-          <img src="/kepek/[$item.ut] hidden">
-          <img src="/kepek/[katId()]/[turaId]/[$item.nev]" hidden>
+        {% for kep in tura.kepek %}
+        <li class="cf" id="{{tura.turaId}}-{{kep.nev}}" mv-multiple property="kepek">
+          <div class="img" style="{background:/kepek/{{kep.ut}}}"></div>
+          <img src="/kepek/{{kep.ut}} hidden">
+          <img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{kep.nev}}" hidden>
         </li>
+        {% endfor %}
       </ul>
       <div class="controls">
         <div class="left"><span class="control"></span></div>
         <div class="right"><span class="control"></span></div>
         <ul>
-          <li class="[turaId]-[$index]" mv-multiple property="kepek">
+          <li class="{{tura.turaId}}-{{kep.nev}}" mv-multiple property="kepek">
             <span class="l"></span>
             <span class="r"></span>
           </li>
@@ -56,7 +60,9 @@ mainid: galeria
     </div>
   </details>
 </li>
+{% endfor %}
 </ul>
+{% endfor %}
 </section>
 
 <script type="text/javascript">
