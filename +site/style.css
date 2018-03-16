@@ -560,6 +560,9 @@ article.card .button:hover {
 	article.main {
 		margin: 0;
 	}
+	article.main h2 {
+		margin: 0.5em 0em;
+	}
 }
 
 
@@ -584,5 +587,4 @@ article.card .button:hover {
 		margin: 0.5em 0em;
 	}
 }
-
 
