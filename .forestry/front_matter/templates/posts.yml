@@ -1,0 +1,13 @@
+---
+hide_body: false
+fields:
+- name: layout
+  default: post
+  label: Layout
+  type: text
+  hidden: false
+- name: permalink
+  default: "/posts/:title/"
+  label: Permalink
+  type: text
+  hidden: false
