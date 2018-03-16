@@ -4,11 +4,11 @@ layout: weblapkeret
 mainid: kapcsolat
 ---
 <style>
-	#elerhetosegeink dl { display: grid; grid-template-columns: max-content; }
+	#elerhetosegeink dl { display: grid; grid-template-columns: max-content max-content; justify-content: center; }
 	#elerhetosegeink dt { grid-column: 1; font-weight: bold; }
-	#elerhetosegeink dd { grid-column: 2; margin-left: 3em; }
+	#elerhetosegeink dd { grid-column: 2; margin-left: 8em; }
 	#kapcsolat>header.flexrow { justify-content: center; align-items: center; }
-	#kapcsolat>header>img { margin: 0 1em; }
+	#kapcsolat>header>img { margin: 0 1em; max-width: 60vw; }
 	#kapcsolat>header>img[src$="/fabry.jpg"] { border-radius: 16px; box-shadow: 1px 3px 14px 2px #202020b0; }
 </style>
 
@@ -46,7 +46,7 @@ mainid: kapcsolat
 </style>
 <p class="flexrow">
   <style>
-    #rolunk>p.flexrow { justify-content: center; }
+    #rolunk>p.flexrow { justify-content: center; flex-flow: wrap; }
     #rolunk>p.flexrow>span { margin: 1em 1.5em; height: 138px; }
   </style>
   <span class="fade"> <img src="/kepek/lesko/laci.jpg" alt="Leskó László"> </span>
