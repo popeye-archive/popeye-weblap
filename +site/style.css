@@ -565,7 +565,7 @@ article.card .button:hover {
 		padding: 0;
 	}
 	article.main {
-		padding: 0.5em;
+		padding: 0em 0.5em 1em;
 	}
 	article.main h2 {
 		margin: 0.5em 0em;
