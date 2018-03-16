@@ -4,6 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+	background-repeat: no-repeat;
+	box-sizing: border-box; 
+	vertical-align: middle;
+	transition: all 0.2s ease;
+	transition: all 0.1s ease-in;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -27,6 +35,20 @@ ul, ol {
 	/*justify-content: space-around;*/
 }
 
+.video-sizer {
+	position: relative;
+	width: 100%;
+	/* padding-top: 25px; */
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: attr(height)-rel;
+}
+.video-sizer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
 
 /*
 * Link színezés
@@ -35,7 +57,6 @@ ul, ol {
 a {
 	text-decoration: none;
 	font-weight: bolder;
-	transition: all 0.1s ease-in;
 	color: #cac2b2;
 	color: #bfa36c;
 	color: #ffdd99;
@@ -216,7 +237,6 @@ body>footer {
 */
 
 body {
-	transition: all 0.1s ease-in;
 	background: url("/kepek/back.jpg");
 	margin: 0;
 	--max-width: 80rem;
@@ -419,16 +439,10 @@ article.card {
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	position: relative;
-	transition: all 0.1s ease-in;
 	width: 14em;
 	text-align: center;
-	font-size: 0.9em;
+	/* font-size: 0.9em; */
 	border-radius: 0.5em;
-	border-radius: 0.75em;
-	border-radius: 1.25em;
-	border-radius: 1.5em;
-	border-radius: 2em;
-	border-radius: 1em;
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
@@ -470,14 +484,10 @@ article.card {
 	--fade-len: 4px;
 	--fade-len: 2px;
 	--fade-len: 3px;
-	box-shadow: 1px 3px 9px var(--fade-len) var(--shadow);
-	box-shadow: 1px 3px 5px var(--fade-len) var(--shadow);
-	box-shadow: 1px 3px 8px var(--fade-len) var(--shadow);
-	box-shadow: 1px 3px 6px var(--fade-len) var(--shadow);
 	box-shadow: 1px 3px 7px var(--fade-len) var(--shadow);
 }
 
-article.card:hover, .sharp article.card:focus-within {
+article.card:hover, article.card:focus-within {
 	--fade-len-h: calc(var(--fade-len) + 2px);
 	--fade-len-h: calc(var(--fade-len) + 6px);
 	--fade-len-h: calc(var(--fade-len) + 4px);
@@ -529,7 +539,7 @@ article.card .img {
 	margin: 1em 0em;
 	/* padding: 1em; */
 	box-sizing: border-box;
-	border-radius: 1em;
+	border-radius: 0.2em;
 	opacity: 0.7;
 	box-shadow: inset 0 0 1.5em 0.5em #804000d0;
 }
@@ -560,4 +570,18 @@ article.card:hover .nyil {
 	left: 0.4em;
 }
 
+article.card:hover .button {
+	font-size: 0.9em;
+	padding: 0.3em;
+	border-radius: 0.4em;
+	background: --background;
+	/* border: #804000 solid 2px; */
+	box-shadow: 0 0 4px 3px #804000ff;
+}
+
+article.card:hover .button {
+	background: #882222aa;
+	background: coral;
+	box-shadow: 0 0 4px 3px #ff775080;
+}
 
