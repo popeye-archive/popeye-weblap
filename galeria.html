@@ -31,7 +31,8 @@ mainid: galeria
 {% for tura in kat.turak %}
 <li class="tura">
   <details>
-    <summary class="img" <!-- {% if tura.miniKep %} style="background-image:url(/kepek/{{tura.miniKep.ut}})" {% endif %} --> >
+    <summary class="img">
+      <!-- {% if tura.miniKep %} style="background-image:url(/kepek/{{tura.miniKep.ut}})" {% endif %} -->
       <a href="#{{kat.kategoriaId}}/{{tura.turaId}}">
         {% if tura.miniKep %} <img src="/kepek/{{tura.miniKep.ut}}"> {% endif %}
         {{tura.nev}}
