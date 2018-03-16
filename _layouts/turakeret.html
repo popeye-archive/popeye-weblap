@@ -5,8 +5,8 @@ layout: weblapkeret
 {% assign kategoriaId = path[1] %}
 {% assign turaFile = path[2] | split: "." %}
 {% assign turaId = turaFile[0] %}
-{% assign kategoria= site.data.turak.kategoriak | where: kategoriaId, kategoriaId | first %}
-{% assign tura= kategoria.turak | where: turaId, turaId | first %}
+{% assign kategoria= (site.data.turak.kategoriak | where: kategoriaId, kategoriaId) | first %}
+{% assign tura= (kategoria.turak | where: turaId, turaId) | first %}
 
 <section class="main" id="main">
 <article class="main">
