@@ -196,43 +196,6 @@ body>footer {
 
 
 /*
-* Tablet méretű kijelzők
-*/
-
-@media only screen and (max-width: 1023px) {
-}
-
-
-/*
-* Mobil méretű kijelzők
-*/
-
-@media handheld, (max-width: 767px) {
-	section.main {
-		width: 100%;
-		min-width: 0;
-		margin: 0;
-	}
-	
-	article.card {
-		width: auto;
-		float: none;
-		margin-left: 0px;
-		margin-right: 0px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	body>header nav span[grow] {
-		display: none;
-	}
-	body>header nav a {
-		margin: 0.5em 0em;
-	}
-}
-
-
-/*
 * Keret méretezés
 */
 
@@ -510,6 +473,10 @@ article.card>a {
 	align-items: center;
 }
 
+article.card:hover>a {
+	color: inherit;
+}
+
 article.card h4 {
 }	
 
@@ -570,7 +537,7 @@ article.card:hover .nyil {
 	left: 0.4em;
 }
 
-article.card:hover .button {
+article.card .button {
 	font-size: 0.9em;
 	padding: 0.3em;
 	border-radius: 0.4em;
@@ -579,9 +546,42 @@ article.card:hover .button {
 	box-shadow: 0 0 4px 3px #804000ff;
 }
 
-article.card:hover .button {
+article.card .button:hover {
 	background: #882222aa;
 	background: coral;
 	box-shadow: 0 0 4px 3px #ff775080;
 }
+
+
+/*
+* Tablet méretű kijelzők
+*/
+
+@media only screen and (max-width: 1023px) {
+}
+
+
+/*
+* Mobil méretű kijelzők
+*/
+
+@media handheld, (max-width: 767px) {
+	section.main {
+		width: 100%;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	article.card {
+	}
+
+	body>header nav span[grow] {
+		display: none;
+	}
+	body>header nav a {
+		margin: 0.5em 0em;
+	}
+}
+
 
