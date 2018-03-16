@@ -4,21 +4,21 @@ layout: weblapkeret
 mainid: kapcsolat
 ---
 <style>
-	#elerhetosegeink dl { display: grid; grid-template-columns: max-content max-content; justify-content: center; }
-	#elerhetosegeink dt { grid-column: 1; font-weight: bold; }
-	#elerhetosegeink dd { grid-column: 2; margin-left: 8em; }
+	#kapcsolat .elerhetosegeink dd { margin-left: 8em; }
 	#kapcsolat>header.flexrow { justify-content: center; align-items: center; }
 	#kapcsolat>header>img { margin: 0 1em; max-width: 60vw; }
 	#kapcsolat>header>img[src$="/fabry.jpg"] { border-radius: 16px; box-shadow: 1px 3px 14px 2px #202020b0; }
 </style>
 
+
 <section class="main" id="kapcsolat">
+
 <header class="flexrow">
   <img src="/kepek/montazs.png" alt="PopeyeLesko. Síutak, kerékpártúrák, vízitúrák, vadvízi evezés.">
   <img src="/kepek/fabry.jpg" alt="PopeyeLesko. Fábry Sándor ajánlásával.">
 </header>
 
-<article id="elerhetosegeink" class="main">
+<article class="main elerhetosegeink">
 {% include elerhetosegeink.html %}
 </article>
 <article id="rolunk" class="main">
@@ -55,4 +55,5 @@ mainid: kapcsolat
   <span class="fade"> <img src="/kepek/lesko/lacko.jpg" alt="Lackó"> </span>
 </p>
 </article>
+
 </section>
