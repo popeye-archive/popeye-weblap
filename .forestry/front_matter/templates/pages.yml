@@ -1,10 +1,10 @@
 ---
 pages:
-- csapatunk.html
-- galeria.html
-- kapcsolat.html
-- index-mavo.html
 - index.html
+- index-mavo.html
+- kapcsolat.html
+- galeria.html
+- csapatunk.html
 hide_body: false
 fields:
 - name: title
