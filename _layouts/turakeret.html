@@ -5,15 +5,16 @@ layout: weblapkeret
 {% assign kategoriaId = path[1] %}
 {% assign turaFile = path[2] | split: "." %}
 {% assign turaId = turaFile[0] %}
-k:{{kategoriaId}},t:{{turaId}},kategoriaId='{{kategoriaId}}'
-<section class="main" id="main" mv-app="kapcsolat" mv-storage="https://github.com/popeyelesko/popeyelesko.github.io/_data/turak.json">
-<div mv-multiple="kategoriak" mv-if="kategoriaId='{{kategoriaId}}'">
-<article class="main" mv-multiple="turak" mv-if="turaId='{{turaId}}'">
-	<h1 itemprop="name" property="nev"></h1>
+{% assign kategoria= site.data.turak.kategoriak | where: kategoriaId, kategoriaId | first %}
+{% assign tura= kategoria.turak | where: turaId, turaId | first %}
+
+<section class="main" id="main">
+<article class="main">
+	<h1 itemprop="name">{{ tura.nev }}</h1>
 	<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="offer" hidden>
 		<div class="price">
-			<p>Ár: <span itemprop="price" property="ar"></p>
-			<p class="price_comment" mv-property="arOpciok"></p>
+			<p>Ár: <span itemprop="price">{{ tura.ar }}</p>
+			<p class="price_comment">{{ tura.arOpciok }}</p>
 		</div>
 		<div itemprop="seller" itemscope="" itemtype="http://schema.org/Organization" hidden>
 			<span itemprop="name">Popeye Leskó</span>
@@ -21,5 +22,4 @@ k:{{kategoriaId}},t:{{turaId}},kategoriaId='{{kategoriaId}}'
 	</div>
 {{ content
 }}</article>
-</div>
 </section>
