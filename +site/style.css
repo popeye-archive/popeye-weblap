@@ -388,6 +388,7 @@ body>footer section h3 {
 .kategoria {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .kategoria h3 {
@@ -560,6 +561,12 @@ article.card .button:hover {
 	article.main {
 		margin: 0;
 	}
+	section.main {
+		padding: 0;
+	}
+	article.main {
+		padding: 0.5em;
+	}
 	article.main h2 {
 		margin: 0.5em 0em;
 	}
@@ -574,7 +581,6 @@ article.card .button:hover {
 	section.main {
 		width: 100%;
 		min-width: 0;
-		padding: 0;
 	}
 	
 	article.card {
