@@ -7,7 +7,7 @@ mainid: naptar
 <div class="kategoria">
 	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
 	<h3>{{kat.kategoriaNev}}</h3>
-	{% for tura in kat.turak %}
+	{% for tura in kat.turak %} {% unless tura.regi %}
 	<article class="card tura">
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
 			{% if tura.miniKep %}
@@ -19,7 +19,7 @@ mainid: naptar
 			<p class="button">Részletek➺</p>
 		</a>
 	</article>
-	{% endfor %}
+	{% endif %} {% endfor %}
 </div>
 {% endfor %}
 </section>
