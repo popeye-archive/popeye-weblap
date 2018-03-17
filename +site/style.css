@@ -401,6 +401,7 @@ article.card {
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
 	--background: #80400080; /* halvány barna - article.card */
+	--background: #88440022; /* harmat barna */
 	--shadow: #20200080;
 	background: var(--background);
 }
@@ -540,7 +541,8 @@ article.card .button {
 article.card .button:hover {
 	background: #882222aa;
 	background: coral;
-	box-shadow: 0 0 4px 3px #ff775080;
+	/* box-shadow: 0 0 4px 3px #ff775080; */
+	background: #804000ff;
 }
 
 
