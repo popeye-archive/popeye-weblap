@@ -30,7 +30,7 @@
 		"turaId": "kis-balaton",
 		"nev": "Kis Balaton környéki kerékpártúra",
 		"ar": "24.400 - 34.400 Ft",
-		"arOpciok": "Egyéni utazással: 24.400 Ft \n Általunk szervezett kisbuszos utazással: 34.400 Ft",
+		"arOpciok": "Egyéni utazással : 24.400 Ft <br/> Általunk szervezett kisbuszos utazással : 34.400 Ft",
 		"miniKep": {
 			"nev": "Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg",
 			"ut": "kerekparturak/kis-balaton/Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg"
@@ -78,7 +78,7 @@
 		"nev": "Túra a Skót Felföldön",
 		"regi": true,
 		"ar": "219.000 - 269.000 Ft",
-		"arOpciok": "Kisbuszos kiutazással : 269.000 Ft. \n Repülővel érkezőknek : 219.000 Ft (a repülőjegy árát nem tartalmazza). \n Kerékpárbérlés ha valakinek nincs: 8.000 Ft+ÁFA a túra teljes időtartamára.",
+		"arOpciok": "Kisbuszos kiutazással : 269.000 Ft. <br/> Repülővel érkezőknek : 219.000 Ft (a repülőjegy árát nem tartalmazza). <br/> Kerékpárbérlés ha valakinek nincs: 8.000 Ft+ÁFA a túra teljes időtartamára.",
 		"miniKep": {
 			"nev": "m--nehéz-terep-4.jpg",
 			"ut": "kerekparturak/skot-felfold/m--nehéz-terep-4.jpg"
@@ -154,7 +154,7 @@
 		"nev": "Loire völgyi kerékpártúra",
 		"regi": true,
 		"ar": "144.900 Ft - 199.000 Ft ",
-		"arOpciok": "Alapár campingekben saját sátorral kisbuszos utazással : 144.900 Ft \n Párizsig egyéni utazással, szállodás elhelyezéssel : 184.900 Ft \n Kisbuszos utazással, tranzitszállásokkal, szállodás elhelyezéssel : 199.000 Ft \n (egyágyas felárral : napi 12 EUR).",
+		"arOpciok": "Alapár campingekben saját sátorral kisbuszos utazással : 144.900 Ft <br/> Párizsig egyéni utazással, szállodás elhelyezéssel : 184.900 Ft <br/> Kisbuszos utazással, tranzitszállásokkal, szállodás elhelyezéssel : 199.000 Ft <br/> (egyágyas felárral : napi 12 EUR).",
 		"miniKep": {
 			"nev": "m--101-1485.jpg",
 			"ut": "kerekparturak/loire-volgy/m--101-1485.jpg"
@@ -198,7 +198,7 @@
 		"nev": "Dánia - Hamburg bringatúra",
 		"regi": true,
 		"ar": "124.000 - 199.000 Ft",
-		"arOpciok": "Utazással, campingekben saját sátorral : 124.000 Ft \n Utazással panziókban, szállodákban : 199.000 Ft \n Repülőgépes utazással panziókban szállodákban : 179.000 Ft + repjegyvásárlás egyénileg. \n (repülőgépes utasainknak ki-, és visszaszállítjuk kerékpárjukat és max 15 kg-os poggyászukat, így az utazásuk csak kézipoggyásszal történik).",
+		"arOpciok": "Utazással, campingekben saját sátorral : 124.000 Ft <br/> Utazással panziókban, szállodákban : 199.000 Ft <br/> Repülőgépes utazással panziókban szállodákban : 179.000 Ft + repjegyvásárlás egyénileg. <br/> (repülőgépes utasainknak ki-, és visszaszállítjuk kerékpárjukat és max 15 kg-os poggyászukat, így az utazásuk csak kézipoggyásszal történik).",
 		"miniKep": {
 			"nev": "m--dán-1.jpg",
 			"ut": "kerekparturak/dania-hamburg/m--dán-1.jpg"
@@ -386,7 +386,7 @@
 		"nev": "Kerékpártúra öt folyó völgyén át",
 		"regi": true,
 		"ar": "80.400 / 99.400 Ft",
-		"arOpciok": "Bécsig történő hosszabbítással az ár 99.400 Ft. \n Két személyes sátor 5.000 Ft/turnus értékben bérelhető, főtt vacsora sörrel vagy üdítővel 10 EUR értékben befizethető a helyszínen.",
+		"arOpciok": "Bécsig történő hosszabbítással az ár 99.400 Ft. <br/> Két személyes sátor 5.000 Ft/turnus értékben bérelhető, főtt vacsora sörrel vagy üdítővel 10 EUR értékben befizethető a helyszínen.",
 		"miniKep": {
 			"nev": "m--102-0809.jpg",
 			"ut": "kerekparturak/schladming-melk/m--102-0809.jpg"
@@ -514,7 +514,7 @@
 		"nev": "Neckar völgyi kerékpártúra",
 		"regi": true,
 		"ar": "84.900 / 159.000 Ft",
-		"arOpciok": "Sátorozással  84.900 Ft. \n Panziókban, fizető vendégszobákban  159.000 Ft.",
+		"arOpciok": "Sátorozással  84.900 Ft. <br/> Panziókban, fizető vendégszobákban  159.000 Ft.",
 		"miniKep": {
 			"nev": "m--0-Heidelberg.jpg",
 			"ut": "kerekparturak/neckar-volgy/m--0-Heidelberg.jpg"
@@ -570,7 +570,7 @@
 		"nev": "Karintia és Rába kenuval",
 		"regi": true,
 		"ar": "69.000 / 99.000 Ft",
-		"arOpciok": "Sátras ( 1 éjszaka vendégházban ) : 69.000 Ft. \n Apartmanban, panzióban ( 1 éjszaka vendégházban ) : 99.000 Ft.",
+		"arOpciok": "Sátras ( 1 éjszaka vendégházban ) : 69.000 Ft. <br/> Apartmanban, panzióban ( 1 éjszaka vendégházban ) : 99.000 Ft.",
 		"miniKep": {
 			"nev": "m--gail-2.jpg",
 			"ut": "viziturak/karintia-raba/m--gail-2.jpg"
