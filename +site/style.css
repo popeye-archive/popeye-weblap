@@ -487,6 +487,7 @@ article.card img {
 	height: 100%;
 	box-sizing: border-box;
 	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
