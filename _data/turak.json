@@ -30,7 +30,24 @@
 		"turaId": "kis-balaton",
 		"nev": "Kis Balaton környéki kerékpártúra",
 		"ar": "24.400 - 34.400 Ft",
-		"arOpciok": "Az ár az utazás függvényében változhat."
+		"arOpciok": "Az ár az utazás függvényében változhat.",
+		"miniKep": {
+			"nev": "Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg",
+			"ut": "kerekparturak/kis-balaton/Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg"
+		},
+		"kepek": [
+		{
+			"nev": "Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg",
+			"ut": "kerekparturak/kis-balaton/Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg"
+		},
+		{
+			"nev": "Kis-Balaton-Hidvegi-madarles1-balatontipp.jpg",
+			"ut": "kerekparturak/kis-balaton/Kis-Balaton-Hidvegi-madarles1-balatontipp.jpg"
+		},
+		{
+			"nev": "Kis-Balaton-Zala-Nagyradai-torony-balatontipp.jpg",
+			"ut": "kerekparturak/kis-balaton/Kis-Balaton-Zala-Nagyradai-torony-balatontipp.jpg"
+		}]
 	},
 	{
 		"turaId": "szloven-olasz",
