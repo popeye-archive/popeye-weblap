@@ -1,13 +1,14 @@
 ---
 layout: weblapkeret
 mainid: naptar
+published: true
 ---
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
 {% for kat in site.data.turak.kategoriak %}
 <div class="kategoria">
 	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
 	<h3>{{kat.kategoriaNev}}</h3>
-	{% for tura in kat.turak %}
+	{% for tura in kat.turak %} {% unless tura.regi %}
 	<article class="card tura">
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
 			{% if tura.miniKep %}
@@ -15,11 +16,12 @@ mainid: naptar
 			<img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{tura.miniKep.nev}}" hidden>
 			{% endif %}
 			<h4>{{tura.nev}}</h4>
-			<p> <span class="ar">{{tura.ar}}</span> <i class="nyil" hidden> ➤ </i> <i hidden>⇢↠↣⇾➺➜►➤▶</i> </p>
-			<p class="button">Részletek➺</p>
+			<p> <span class="ar">{{tura.ar}}</span> </p>
+			<p class="button">Részletek ➺</p>
+			<i class="nyil" hidden> ➤ </i> <i hidden>⇢↠↣⇾➺➜►➤▶</i>
 		</a>
 	</article>
-	{% endfor %}
+	{% endunless %} {% endfor %}
 </div>
 {% endfor %}
 </section>
