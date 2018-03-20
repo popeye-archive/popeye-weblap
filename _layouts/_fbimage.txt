@@ -1,3 +1,4 @@
+path: page.url | split: "/"
 kategoriaId: path[1]
 turaFile: path[2] | split: "."
 turaId: turaFile[0]
