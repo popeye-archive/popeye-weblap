@@ -393,7 +393,7 @@ article.card {
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	position: relative;
-	width: 14em;
+	width: 30em;
 	text-align: center;
 	/* font-size: 0.9em; */
 	border-radius: 0.5em;
@@ -507,12 +507,12 @@ article.card .img {
 article.card h4 {
 	/* position: absolute; */
 	/* margin: 0.5em 0.5em auto 0.5em; */
-	margin: 0.5em 0.5em 0em 0.5em;
-	flex-grow: 2;
+	/* margin: 0.5em 0.5em 0em 0.5em; */
+	/* flex-grow: 2; */
 }
 
 article.card .ar {
-	margin: 0.5em;
+	/* margin: 0.5em; */
 	font-size: 0.8em;
 	color: goldenrod;
 	color: gold;
