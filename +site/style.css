@@ -393,10 +393,14 @@ article.card {
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	position: relative;
-	width: 30em;
+	overflow: hidden;
+	margin: 1em;
+	min-width: 30em;
+	min-height: 30em;
 	text-align: center;
 	/* font-size: 0.9em; */
-	border-radius: 0.5em;
+	--border-radius: 0.5em;
+	border-radius: --border-radius;
 	--background: #90602080; /* barack *//* -> section.main */
 	--background: #842121a8; /* piros *//* rgba(132, 33, 33, 0.66); */
 	--background: #20200080; /* világos barna (fapác) */
@@ -404,6 +408,22 @@ article.card {
 	--background: #88440022; /* harmat barna */
 	--shadow: #20200080;
 	background: var(--background);
+	--fade-len: 1px;
+	--fade-len: 4px;
+	--fade-len: 2px;
+	--fade-len: 3px;
+	box-shadow: 1px 3px 7px var(--fade-len) var(--shadow);
+}
+
+article.card:hover, article.card:focus-within {
+	--fade-len-h: calc(var(--fade-len) + 2px);
+	--fade-len-h: calc(var(--fade-len) + 6px);
+	--fade-len-h: calc(var(--fade-len) + 4px);
+	box-shadow: 2px 3px calc(var(--fade-len) + 4px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 6px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 12px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 8px) var(--fade-len-h) var(--shadow);
+	box-shadow: 2px 3px calc(var(--fade-len) + 10px) var(--fade-len-h) var(--shadow);
 }
 
 
@@ -433,30 +453,10 @@ article.card {
 }
 
 
-article.card {
-	margin: 1em;
-	--fade-len: 1px;
-	--fade-len: 4px;
-	--fade-len: 2px;
-	--fade-len: 3px;
-	box-shadow: 1px 3px 7px var(--fade-len) var(--shadow);
-}
-
-article.card:hover, article.card:focus-within {
-	--fade-len-h: calc(var(--fade-len) + 2px);
-	--fade-len-h: calc(var(--fade-len) + 6px);
-	--fade-len-h: calc(var(--fade-len) + 4px);
-	box-shadow: 2px 3px calc(var(--fade-len) + 4px) var(--fade-len-h) var(--shadow);
-	box-shadow: 2px 3px calc(var(--fade-len) + 6px) var(--fade-len-h) var(--shadow);
-	box-shadow: 2px 3px calc(var(--fade-len) + 12px) var(--fade-len-h) var(--shadow);
-	box-shadow: 2px 3px calc(var(--fade-len) + 8px) var(--fade-len-h) var(--shadow);
-	box-shadow: 2px 3px calc(var(--fade-len) + 10px) var(--fade-len-h) var(--shadow);
-}
-
-
 /* article.card a:visited {} */
 
 article.card>a {
+	width: 100%;
 	height: 100%;
 	display: inherit;
 	flex-flow: inherit;
@@ -469,19 +469,6 @@ article.card:hover>a {
 	color: inherit;
 }
 
-article.card h4 {
-}	
-
-article.card:hover h4, article.card:focus-within h4 {
-}
-
-article.card img {
-	width: 80%;
-	/* width: 135px; */
-	margin-top: 1em;
-	border-radius: 1em;
-}
-
 .img {
 	width: 100%;
 	height: 100%;
@@ -491,24 +478,16 @@ article.card img {
 	background-repeat: no-repeat;
 }
 
+article.card img,
 article.card .img {
-	width: 95%;
+	width: 100%;
 	height: 100%;
-	min-height: 8em;
-	flex-grow: 2;
-	margin: 1em 0em;
-	/* padding: 1em; */
-	box-sizing: border-box;
-	border-radius: 0.3em;
-	opacity: 0.7;
+	border-radius: --border-radius;
+	/* opacity: 0.7; */
 	box-shadow: inset 0 0 1.5em 0.5em #804000d0;
 }
 
 article.card h4 {
-	/* position: absolute; */
-	/* margin: 0.5em 0.5em auto 0.5em; */
-	/* margin: 0.5em 0.5em 0em 0.5em; */
-	/* flex-grow: 2; */
 }
 
 article.card .ar {
@@ -519,31 +498,18 @@ article.card .ar {
 	color: #ffb860;
 }
 
-article.card .nyil {
-	position: relative;
-	left: 0;
-	transition: all 0.15s ease-in;
-}
-
-article.card:hover .nyil {
-	left: 1em;
-	left: 0.4em;
-}
-
 article.card .button {
 	font-size: 0.9em;
-	padding: 0.3em;
-	border-radius: 0.4em;
-	background: --background;
-	/* border: #804000 solid 2px; */
-	box-shadow: 0 0 4px 3px #804000ff;
+	padding: 1px 0.5em 2px;
+	margin-left: 1em;
+	border-radius: 4px;
+	background: #22445577;
+	border: #224455cc solid 3px
+	/* box-shadow: 0 0 4px 3px #804000ff; */
 }
 
 article.card .button:hover {
-	background: #882222aa;
-	background: coral;
-	/* box-shadow: 0 0 4px 3px #ff775080; */
-	background: #804000ff;
+	background: #224455cc;
 }
 
 
@@ -587,10 +553,10 @@ article.card .button:hover {
 }
 
 .overlay>* {
-	padding: 0.5em 1em;
+	padding: 0.4em 1em;
 	margin: auto;
 	/* opacity: 0.8; */
-	background-color: #77114488;
+	background-color: #22445599;
 }
 
 /*
