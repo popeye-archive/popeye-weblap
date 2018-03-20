@@ -1,70 +1,44 @@
+/*
+* Slideshow
+*/
 
-var popeye = window.popeye = {};
-const valamiTura= { nev: "Meglepetés kaland", ar: "Szabadon választott", arOpciok: "A túrát sikeresen teljesítőknek lesz alkalma honorálni a kalandot." };
+function slideshow(selector) {
+	var slideshows= document.querySelectorAll(selector);
+	if (! slideshows.length)  return false;
+	
+	for (var i= 0; i < slideshows.length; i++) {
+		var firstSlide= slideshows[i].querySelector('.slide');
+		if (firstSlide && ! firstSlide.src)  firstSlide.src= firstSlide.getAttribute("src-lazy");
+	}
+	
+	var currSlideshowIdx= 0;
+	var slideInterval= setInterval(nextSlide, 2000);
 
-function turaData(kategoriak) {
-	popeye.kategoriak= kategoriak;
-	let path= window.location.pathname.match('/([^\./]*)/([^\./]*)[\./]?(.*)');
+	function nextSlide() {
+		var currSlideshow= slideshows[currSlideshowIdx];
+		var slides= nextSlideshow.querySelectorAll('.slide');
+		var current= nextSlideshow.querySelector('.showing');
+		var currIdx= slides.indexof(current);
 
-	let kategoriaId= path && path[1], turaId= path && path[2];
-	popeye.kategoria= kategoriaId && kategoriak.find && kategoriak.find(kat => kat.kategoriaId == kategoriaId);
-	popeye.tura= popeye.kategoria && popeye.kategoria.find && popeye.kategoria.find(tura => tura.turaId == turaId);
+    if (0 <= currIdx)  slides[currIdx].classList.remove('showing');
+		if (slides.length) {
+			currIdx= (currIdx + 1) % slides.length;
+			slides[currIdx].classList.add('showing');
+		}
 
-	if (! popeye.tura)  popeye.tura= valamiTura;  // Adat hiba, mégis jelenjen meg valami.
-	return popeye.tura;
+    currSlideshowIdx= (currSlideshowIdx + 1) % slideshows.length;
+
+		// pre-load next slide in next slideshow
+		currSlideshow= slideshows[currSlideshowIdx];
+		slides= nextSlideshow.querySelectorAll('.slide');
+		current= nextSlideshow.querySelector('.showing');
+		currIdx= slides.indexof(current);
+		if (slides.length) {
+			currIdx= (currIdx + 1) % slides.length;
+			if (! slides[currIdx].src)  slides[currIdx].src= slides[currIdx].getAttribute("src-lazy");
+		}
+	}
 }
-
-
-/// Mavo-adat turaIndex átmeneti tárolása (hack, amíg megtalálom, hogyan lehet mavo-val elérni)
-function turaIdx(turaIndex) {
-  if (turaIndex)  turaIdx.mentett= turaIndex;
-  return turaIdx.mentett;
-}
-
-/// Mavo-adat kepIndex átmeneti tárolása (hack, amíg megtalálom, hogyan lehet mavo-val elérni)
-function kepIdx(kepIndex) {
-  if (kepIndex)  kepIdx.mentett= kepIndex;
-  return kepIdx.mentett;
-}
-
-/// Mavo-adat kategoriaId átmeneti tárolása. Mavo belső ciklus nem látja a külső ciklus propertyjeit.
-function katId(kategoriaId) {
-  if (kategoriaId)  katId.mentett= kategoriaId;
-  return katId.mentett;
-}
-
-/// Mavo-adat kategoriaId átmeneti tárolása. Mavo belső ciklus nem látja a külső ciklus propertyjeit.
-function tId(turaId) {
-  if (turaId)  tId.mentett= turaId;
-  return tId.mentett;
-}
-
-
-/// Túra miniatűr képe a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId].kepMiniSzam => kepIndex[kepMiniSzam]
-function tura(turaId) {
-  let tIdx= (turaIndex || turaIdx.mentett);
-  let kId= (kategoriaId || katId.mentett);
-  turaId= (turaId || tId.mentett);
-  let tura= tIdx && kId && turaId && tIdx[kId][turaId];
-  return tura || {};
-}
-
-/// Túra száma a turaIndex-ből:  turak.json/kategoriak[*]{kategoriaId}.turak[*]{turaId} => turaIndex[kategoriaId][turaId]._turaSzam
-function turaSzam(turaId) {
-  return tura(turaId)._turaSzam;
-}
-
-function kepNev(kepSzam) {
-  let kIdx= (kepIndex || kepIdx.mentett);
-  //return kIdx ? kIdx[kepSzam] : "_nincs_kepIndex_.jpg";
-  return kIdx ? kIdx[kepSzam] : "0.jpg";
-}
-
-function turaKepMiniNev(turaId) {
-  let kepSzam= tura(turaId).kepMiniSzam;
-  return kepSzam ? kepSzam +'--'+ kepNev(kepSzam) : "0.jpg"
-}
-
 
 
 

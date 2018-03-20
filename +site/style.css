@@ -548,6 +548,49 @@ article.card .button:hover {
 
 
 /*
+* Slideshow
+*/
+
+
+.slideshow {
+	position: relative;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	/* z-index: 1; */
+	transition: opacity 1s;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+.overlay {
+	position: absolute;
+	left: 0em;
+	bottom: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.overlay>* {
+	padding: 0.5em 1em;
+	margin: 1em;
+	/* opacity: 0.8; */
+	background-color: #ffeedd80;
+}
+
+/*
 * Tablet méretű kijelzők
 */
 

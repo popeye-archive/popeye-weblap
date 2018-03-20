@@ -11,14 +11,18 @@ published: true
 	{% for tura in kat.turak %} {% unless tura.regi %}
 	<article class="card tura">
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
-			{% if tura.miniKep %}
-			<div class="img" style="background-image:url(/kepek/{{tura.miniKep.ut}})"></div>
-			<img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{tura.miniKep.nev}}" hidden>
-			{% endif %}
+			<div class="slideshow">
+			{% if tura.kepek %} {% for kep in tura.kepek %}
+			<div hidden class="img" style="background-image:url(/kepek/{{kep.ut}})"></div>
+			<img src-lazy="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{kep.nev}}">
+			{% endfor %} {% endif %}
+			<div class="overlay">
 			<h4>{{tura.nev}}</h4>
 			<p> <span class="ar">{{tura.ar}}</span> </p>
 			<p class="button">Részletek ➺</p>
 			<i class="nyil" hidden> ➤ </i> <i hidden>⇢↠↣⇾➺➜►➤▶</i>
+			</div>
+			</div>
 		</a>
 	</article>
 	{% endunless %} {% endfor %}
