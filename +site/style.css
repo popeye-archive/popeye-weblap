@@ -204,7 +204,7 @@ section.main {
 	padding: var(--border-radius);
 	margin: 2em auto 3em;
 	--border-radius: 4em;
-	border-radius: var(--border-radius);
+	/* border-radius: var(--border-radius); */
 	overflow: hidden;
 	position: relative;
 }
