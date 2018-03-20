@@ -4,9 +4,6 @@ path: page.url | split: "/"
 kategoriaId: path[1]
 turaFile: path[2] | split: "."
 turaId: turaFile[0]
-kategoria: site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first
-tura: kategoria.turak | where: "turaId", turaId | first
-kep0: tura.kepek | first
 ---
 {% assign path = page.url | split: "/" %}
 {% assign kategoriaId = path[1] %}
@@ -17,6 +14,8 @@ kep0: tura.kepek | first
 {% assign kep0 = tura.kepek | first %}
 {% capture page.metaimage %}/kepek/{{kep0.ut}}{% endcapture %}
 
+<p hidden>{{ page.path }}</p>
+<p hidden>{{ page.turaId }}</p>
 <section class="main" id="main">
 <article class="main">
 	<div class="slideshow">
