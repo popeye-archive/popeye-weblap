@@ -1,0 +1,6 @@
+kategoriaId: path[1]
+turaFile: path[2] | split: "."
+turaId: turaFile[0]
+kategoria: site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first
+tura: kategoria.turak | where: "turaId", turaId | first
+kep0: tura.kepek | first

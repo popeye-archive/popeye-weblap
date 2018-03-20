@@ -1,9 +1,6 @@
 ---
 layout: weblapkeret
 path: page.url | split: "/"
-kategoriaId: path[1]
-turaFile: path[2] | split: "."
-turaId: turaFile[0]
 ---
 {% assign path = page.url | split: "/" %}
 {% assign kategoriaId = path[1] %}
