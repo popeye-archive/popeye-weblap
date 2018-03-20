@@ -686,6 +686,7 @@
 	{
 		"turaId": "kedvezmenyes-salza-tura",
 		"nev": "Kedvezményes Salza túra csoportoknak",
+		"regi": true,
 		"ar": "13.000 - 19.000 Ft",
 		"arOpciok": "",
 		"miniKep": {
