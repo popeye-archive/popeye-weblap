@@ -42,6 +42,8 @@ function slideshow(selector) {
 	}
 }
 
+slideshow('.slideshow');
+
 
 
 /*
