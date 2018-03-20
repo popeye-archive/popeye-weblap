@@ -395,8 +395,8 @@ article.card {
 	position: relative;
 	overflow: hidden;
 	margin: 1em;
-	min-width: 30em;
-	min-height: 30em;
+	width: 30em;
+	height: 24em;
 	text-align: center;
 	/* font-size: 0.9em; */
 	--border-radius: 0.5em;
@@ -500,16 +500,17 @@ article.card .ar {
 
 article.card .button {
 	font-size: 0.9em;
-	padding: 1px 0.5em 2px;
+	padding: 2px 0.6em 2px;
 	margin-left: 1em;
 	border-radius: 4px;
-	background: #22445577;
-	border: #224455cc solid 3px
+	background: #4477aa99;
+	/* border: #4477aa99 solid 3px */
 	/* box-shadow: 0 0 4px 3px #804000ff; */
 }
 
 article.card .button:hover {
-	background: #224455cc;
+	background: #449966;
+	border-color: #449966;
 }
 
 
