@@ -556,6 +556,10 @@ article.card .button:hover {
 	position: relative;
 }
 
+.slide:first-child {
+	position: relative;
+}
+
 .slide {
 	position: absolute;
 	left: 0px;

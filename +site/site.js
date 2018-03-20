@@ -5,12 +5,14 @@
 function slideshow(selector) {
 	var slideshows= document.querySelectorAll(selector);
 	if (! slideshows.length)  return false;
-	
+
 	for (var i= 0; i < slideshows.length; i++) {
 		var firstSlide= slideshows[i].querySelector('.slide');
+		var showingSlide= slideshows[i].querySelector('.showing');
 		if (firstSlide && ! firstSlide.src)  firstSlide.src= firstSlide.getAttribute("src-lazy");
+		if (firstSlide && ! showingSlide)  firstSlide.classList.add('showing');
 	}
-	
+
 	var currSlideshowIdx= 0;
 	var slideInterval= setInterval(nextSlide, 2000);
 
