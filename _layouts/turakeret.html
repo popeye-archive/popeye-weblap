@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#2d89ef">
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
-{% if kep0 %}<meta property="og:image" content="/kepek/{{ kep0.ut }}"/>{% endif %}
+{% if kep0 %}<meta property="og:image" content="{{ site.url }}/kepek/{{ kep0.ut }}"/>{% endif %}
 <!-- -->
 <link rel="stylesheet" href="/+site/style.css" />
 {% if page.css %}{% for css in page.css
