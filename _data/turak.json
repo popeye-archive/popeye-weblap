@@ -525,18 +525,6 @@
 		}]
 	},
 	{
-		"turaId": "karintia-raba",
-		"nev": "Karintia és Rába kenuval",
-		"regi": true,
-		"ar": "69.000 Ft",
-		"arOpciok": "Sátras ( 1 éjszaka vendégházban ).",
-		"miniKep": {
-			"nev": "m--gail-2.jpg",
-			"ut": "viziturak/karintia-raba/m--gail-2.jpg"
-		},
-		"kepek": []
-	},
-	{
 		"turaId": "neckar-volgy",
 		"nev": "Neckar völgyi kerékpártúra",
 		"regi": true,
