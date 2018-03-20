@@ -7,6 +7,8 @@ layout: weblapkeret
 {% assign turaId = turaFile[0] %}
 {% assign kategoria= site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first %}
 {% assign tura= kategoria.turak | where: "turaId", turaId | first %}
+{% assign kep0= tura.kepek | first %}
+{% capture page.metaimage %}/kepek/{{kep0.ut}}{% endcapture %}
 
 <section class="main" id="main">
 <article class="main">

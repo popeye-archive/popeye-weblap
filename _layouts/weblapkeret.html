@@ -14,8 +14,8 @@
 <meta name="theme-color" content="#2d89ef">
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
+{% if page.metaimage %}<meta property="og:image" content="{{ page.metaimage }}"/>{% endif %}
 <!-- -->
-<link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
 <link rel="stylesheet" href="/+site/style.css" />
 {% if page.css %}{% for css in page.css
 %}<link rel="stylesheet" href="/+site/{{ css }}" />{%
