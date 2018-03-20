@@ -13,7 +13,7 @@ published: true
 		<a href="/{{kat.kategoriaId}}/{{tura.turaId}}">
 			<div class="slideshow">
 			{% if tura.kepek %} {% for kep in tura.kepek %}
-			<img class="slide" src-lazy="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{kep.nev}}">
+			<img class="slide" src-lazy="/kepek/{{kep.ut}}">
 			{% endfor %} {% endif %}
 			<div class="overlay">
 			<h4>{{tura.nev}}</h4>
