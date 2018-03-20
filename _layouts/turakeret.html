@@ -1,13 +1,20 @@
 ---
 layout: weblapkeret
+path: page.url | split: "/"
+kategoriaId: path[1]
+turaFile: path[2] | split: "."
+turaId: turaFile[0]
+kategoria: site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first
+tura: kategoria.turak | where: "turaId", turaId | first
+kep0: tura.kepek | first
 ---
 {% assign path = page.url | split: "/" %}
 {% assign kategoriaId = path[1] %}
 {% assign turaFile = path[2] | split: "." %}
 {% assign turaId = turaFile[0] %}
-{% assign kategoria= site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first %}
-{% assign tura= kategoria.turak | where: "turaId", turaId | first %}
-{% assign kep0= tura.kepek | first %}
+{% assign kategoria = site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first %}
+{% assign tura = kategoria.turak | where: "turaId", turaId | first %}
+{% assign kep0 = tura.kepek | first %}
 {% capture page.metaimage %}/kepek/{{kep0.ut}}{% endcapture %}
 
 <section class="main" id="main">
