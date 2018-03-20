@@ -50,6 +50,33 @@
 		}]
 	},
 	{
+		"turaId": "normandia-bretagne",
+		"nev": "Normandia – Bretagne",
+		"ar": "159.000 / 219.000 Ft",
+		"arOpciok": "Sátorozással : 159.000 Ft <br/> Panziókban, fizető vendégszobákban : 219.000 Ft",
+		"miniKep": {
+			"nev": "PICT0137.jpg",
+			"ut": "kerekparturak/normandia-bretagne/PICT0137.jpg"
+		},
+		"kepek": [
+		{
+			"nev": "PICT0137.jpg",
+			"ut": "kerekparturak/normandia-bretagne/PICT0137.jpg"
+		},
+		{
+			"nev": "PICT0141.jpg",
+			"ut": "kerekparturak/normandia-bretagne/PICT0141.jpg"
+		},
+		{
+			"nev": "PICT0159.jpg",
+			"ut": "kerekparturak/normandia-bretagne/PICT0159.jpg"
+		},
+		{
+			"nev": "PICT0173.jpg",
+			"ut": "kerekparturak/normandia-bretagne/PICT0173.jpg"
+		}]
+	},
+	{
 		"turaId": "szloven-olasz",
 		"nev": "Szlovén – Olasz hosszú hétvégi kerékpártúra",
 		"regi": true,
