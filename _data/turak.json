@@ -4,6 +4,29 @@
 	"kategoriaNev": "Kerékpártúrák",
 	"turak": [
 	{
+		"turaId": "szloven-olasz-osztrak",
+		"nev": "A Milleniumi vasút nyomvonalán",
+		"ar": "39.900 - 64.900 Ft",
+		"arOpciok": "Az ár a vállalt szolgáltatások függvényében változhat.",
+		"miniKep": {
+			"nev": "m--03.jpg",
+			"ut": "kerekparturak/szloven-olasz/m--03.jpg"
+		},
+		"kepek": [
+		{
+			"nev": "01.jpg",
+			"ut": "kerekparturak/szloven-olasz/01.jpg"
+		},
+		{
+			"nev": "02.jpg",
+			"ut": "kerekparturak/szloven-olasz/02.jpg"
+		},
+		{
+			"nev": "03.jpg",
+			"ut": "kerekparturak/szloven-olasz/03.jpg"
+		}]
+	},
+	{
 		"turaId": "szloven-olasz-husvet",
 		"nev": "Szlovén – Olasz húsvéti túra",
 		"ar": "39.900 - 64.900 Ft",
