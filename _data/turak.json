@@ -29,6 +29,7 @@
 	{
 		"turaId": "szloven-olasz-husvet",
 		"nev": "Szlovén – Olasz húsvéti túra",
+		"regi": true,
 		"ar": "39.900 - 64.900 Ft",
 		"arOpciok": "Az ár a vállalt szolgáltatások függvényében változhat.",
 		"miniKep": {
