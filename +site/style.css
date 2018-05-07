@@ -285,7 +285,7 @@ body>header nav {
 	max-width: 50em;
 	/* padding: 0 calc(var(--border-radius) * 2); */
 	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#35000000, endColorstr=#35000000); */
-	font-size: 1.25em;
+	font-size: 1.1em;
 	font-weight: bold;
 	/* font-family: Helvetica, Arial, sans-serif; */
 }
