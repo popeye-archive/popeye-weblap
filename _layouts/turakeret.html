@@ -4,7 +4,7 @@
 {% assign turaId = turaFile[0] %}
 {% assign kategoria = site.data.turak.kategoriak | where: "kategoriaId", kategoriaId | first %}
 {% assign tura = kategoria.turak | where: "turaId", turaId | first %}
-{% include head.html title=tura.nev kepek=tura.kepek %}
+{% include html-head.html title=tura.nev kepek=tura.kepek %}
 
 <body>
 <header id="fejlec">

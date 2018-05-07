@@ -11,8 +11,7 @@
 <link rel="stylesheet" href="{{ '/+site/style.css?v=' | append: site.github.build_revision | relative_url }}" />
 {% if page.css %}{% for css in page.css
 %}<link rel="stylesheet" href="/+site/{{ css }}" />{%
-endfor %}{% endif %}
-<!-- -->
+endfor %}{% endif %}<!-- -->
 <link rel="apple-touch-icon" sizes="152x152" href="/+site/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/+site/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/+site/icons/favicon-16x16.png">
@@ -20,7 +19,8 @@ endfor %}{% endif %}
 <meta name="theme-color" content="{{ page.themecolor }}">
 <meta name="msapplication-TileColor" content="{{ page.themecolor }}">
 <meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
-{% if include.kepek %} {% for kep in include.kepek
+<!-- -->
+{% if include.kepek %}{% for kep in include.kepek
 %}<meta property="og:image" content="{{ site.url }}/kepek/{{ kep.ut }}"/>
-{% endfor %} {% endif %}
+{% endfor %}{% endif %}<!-- -->
 </head>
