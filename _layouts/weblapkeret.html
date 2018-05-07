@@ -1,26 +1,4 @@
-<!doctype html>
-<html lang="hu">
-<head>
-<meta charset="utf-8">
-<title>{{ page.title }}</title>
-<meta name="description" content="{{ page.title }}">
-<meta name="author" content="Popeye Leskó">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- -->
-<link rel="apple-touch-icon" sizes="152x152" href="/+site/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/+site/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/+site/icons/favicon-16x16.png">
-<link rel="manifest" href="/+site/icons/webmanifest.json">
-<meta name="theme-color" content="#2d89ef">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
-{% if page.kep0 %}<meta property="og:image" content="/kepek/{{ page.kep0.ut }}"/>{% endif %}
-<!-- -->
-<link rel="stylesheet" href="/+site/style.css" />
-{% if page.css %}{% for css in page.css
-%}<link rel="stylesheet" href="/+site/{{ css }}" />{%
-endfor %}{% endif %}
-</head>
+{% include head.html title=page.title %}
 
 
 <body>
@@ -36,5 +14,6 @@ endfor %}{% endif %}
 </footer>
 
 <script src="/+site/site.js"></script>
+{% include analytics.html %}
 </body>
 </html>
