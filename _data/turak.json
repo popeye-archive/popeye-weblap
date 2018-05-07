@@ -769,6 +769,45 @@
 	"kategoriaNev": "Vadvízi kalandok",
 	"turak": [
 	{
+		"turaId": "rafting-hetvege-salza",
+		"nev": "Rafting hétvége a Salzán",
+		"ar": "22.900 Ft",
+		"arOpciok": "A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén ruhák és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és a szakszerű túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért tudjuk ezt  biztosítani.",
+		"miniKep": {
+			"nev": "m--thumb-2.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/m--thumb-2.jpg"
+		},
+		"kepek": [
+		{
+			"nev": "pict-0091.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/pict-0091.jpg"
+		},
+		{
+			"nev": "pict-0086.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/pict-0086.jpg"
+		},
+		{
+			"nev": "pict-0041.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/pict-0041.jpg"
+		},
+		{
+			"nev": "indulási-hely-10.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/indulási-hely-10.jpg"
+		},
+		{
+			"nev": "100-0049b.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/100-0049b.jpg"
+		},
+		{
+			"nev": "000-0013.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/000-0013.jpg"
+		},
+		{
+			"nev": "vacsora-01.jpg",
+			"ut": "vadvizi/rafting-hetvege-salza/vacsora-01.jpg"
+		}]
+	},
+	{
 		"turaId": "kedvezmenyes-salza-tura",
 		"nev": "Kedvezményes Salza túra csoportoknak",
 		"regi": true,
@@ -806,45 +845,6 @@
 		{
 			"nev": "vacsora-01.jpg",
 			"ut": "vadvizi/kedvezmenyes-salza-tura/vacsora-01.jpg"
-		}]
-	},
-	{
-		"turaId": "rafting-hetvege-salza",
-		"nev": "Rafting hétvége a Salzán",
-		"ar": "22.900 Ft",
-		"arOpciok": "A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén ruhák és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és a szakszerű túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért tudjuk ezt  biztosítani.",
-		"miniKep": {
-			"nev": "m--thumb-2.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/m--thumb-2.jpg"
-		},
-		"kepek": [
-		{
-			"nev": "pict-0091.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/pict-0091.jpg"
-		},
-		{
-			"nev": "pict-0086.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/pict-0086.jpg"
-		},
-		{
-			"nev": "pict-0041.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/pict-0041.jpg"
-		},
-		{
-			"nev": "indulási-hely-10.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/indulási-hely-10.jpg"
-		},
-		{
-			"nev": "100-0049b.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/100-0049b.jpg"
-		},
-		{
-			"nev": "000-0013.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/000-0013.jpg"
-		},
-		{
-			"nev": "vacsora-01.jpg",
-			"ut": "vadvizi/rafting-hetvege-salza/vacsora-01.jpg"
 		}]
 	},
 	{
