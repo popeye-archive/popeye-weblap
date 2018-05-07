@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
 <meta charset="utf-8">
-<title>{{ title }}</title>
+<title>{{ include.title }}</title>
 <meta name="description" content="Popeye Leskó Kalandtúrák">
 <meta name="author" content="Popeye Leskó">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@ endfor %}{% endif %}
 <meta name="theme-color" content="{{ page.themecolor }}">
 <meta name="msapplication-TileColor" content="{{ page.themecolor }}">
 <meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
-{% if kepek %} {% for kep in kepek
+{% if include.kepek %} {% for kep in include.kepek
 %}<meta property="og:image" content="{{ site.url }}/kepek/{{ kep.ut }}"/>
 {% endfor %} {% endif %}
 </head>

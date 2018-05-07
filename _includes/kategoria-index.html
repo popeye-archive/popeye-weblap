@@ -1,5 +1,5 @@
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
-{% for kat in site.data.turak.kategoriak %} {% if kat.kategoriaId == kategoriaId %}
+{% for kat in site.data.turak.kategoriak %} {% if kat.kategoriaId == include.kategoriaId %}
 <div class="kategoria">
 	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
 	{% for tura in kat.turak %} {% unless tura.regi %}
