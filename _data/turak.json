@@ -74,6 +74,22 @@
 		}]
 	},
 	{
+		"turaId": "gail-volgy-2018",
+		"nev": "Kerékpáros kalandozás a Gail völgyben",
+		"ar": "35.000 - 72.500 Ft",
+		"arOpciok": "",
+		"idopont": "2018. május 18. péntek - május 21. hétfő",
+		"miniKep": {
+			"nev": "Gail1.jpg",
+			"ut": "kerekparturak/gail-volgy/Gail1.jpg"
+		},
+		"kepek": [
+		{
+			"nev": "Gail1.jpg",
+			"ut": "kerekparturak/gail-volgy/Gail1.jpg"
+		}]
+	},
+	{
 		"turaId": "normandia-bretagne",
 		"nev": "Normandia – Bretagne",
 		"ar": "159.000 / 219.000 Ft",
@@ -98,6 +114,62 @@
 		{
 			"nev": "pict0173.jpg",
 			"ut": "kerekparturak/normandia-bretagne/pict0173.jpg"
+		}]
+	},
+	{
+		"turaId": "alpok-adria-2018",
+		"nev": "Alpok – Adria kerékpártúra",
+		"ar": "135.000 Ft",
+		"arOpciok": "",
+		"idopont": "2018. július 25 - augusztus 2.",
+		"miniKep": {
+			"nev": "Alpok-Adria-1.jpg.jpg",
+			"ut": "kerekparturak/alpok-adria/Alpok-Adria-1.jpg.jpg"
+		},
+		"kepek": [
+		{
+			"nev": "0-DSC-0001-1-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/0-DSC-0001-1-495x400.jpg"
+		},
+		{
+			"nev": "1-DSC-0038-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/1-DSC-0038-495x400.jpg"
+		},
+		{
+			"nev": "2-DSC-0019-1-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/2-DSC-0019-1-495x400.jpg"
+		},
+		{
+			"nev": "3-DSC-0010-1-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/3-DSC-0010-1-495x400.jpg"
+		},
+		{
+			"nev": "4-DSC-0003-2-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/4-DSC-0003-2-495x400.jpg"
+		},
+		{
+			"nev": "5-DSC-0014-1-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/5-DSC-0014-1-495x400.jpg"
+		},
+		{
+			"nev": "6-DSC-0005-5-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/6-DSC-0005-5-495x400.jpg"
+		},
+		{
+			"nev": "7-DSC-0016-1-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/7-DSC-0016-1-495x400.jpg"
+		},
+		{
+			"nev": "8-DSC-0007-3-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/8-DSC-0007-3-495x400.jpg"
+		},
+		{
+			"nev": "9-DSC-0002-1-495x400.jpg",
+			"ut": "kerekparturak/alpok-adria/9-DSC-0002-1-495x400.jpg"
+		},
+		{
+			"nev": "Alpok-Adria-1.jpg",
+			"ut": "kerekparturak/alpok-adria/Alpok-Adria-1.jpg"
 		}]
 	},
 	{
