@@ -805,7 +805,6 @@
 	{
 		"turaId": "forni-di-sopra",
 		"nev": "Forni di Sopra",
-		"regi": true,
 		"ar": "80 - 155 EUR",
 		"arOpciok": "A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza.",
 		"miniKep": {
@@ -853,7 +852,6 @@
 	{
 		"turaId": "laci-bacsi-siovija",
 		"nev": "Laci Bácsi síovija",
-		"regi": true,
 		"ar": "100 - 135 EUR",
 		"arOpciok": "A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza.",
 		"miniKep": {
