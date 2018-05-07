@@ -1,11 +1,27 @@
 name: Popeye Leskó Kalandtúrák
 timezone: Europe/Budapest
+plugins:
+- jekyll-redirect-from
 
 defaults:
-  -
-    scope:
-      path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
-    values:
-      layout: turakeret
-      mainid: main
-      title: Popeye Leskó Kalandtúrák
+- scope:
+    path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
+  values:
+    layout: turakeret
+    mainid: main
+    title: Popeye Leskó Kalandtúrák
+    #themecolor: #eebb88
+    themecolor: #aa8844
+
+
+#markdown: kramdown
+#theme: minima
+theme: jekyll-theme-midnight
+
+# http://shopify.github.io/liquid/filters/date/
+minima:
+  date_format: "%b %-d, %Y"
+
+show_excerpts: true
+facebook_username: http://popeyelesko.hu
+google_analytics: UA-28587585-1
