@@ -10,12 +10,14 @@
 	transition: all 0.1s ease-in;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
 	/* background-color: #885522; */
 	background-color: #aa8844;
 	background: url("/kepek/back.jpg") repeat;
 	font-family:
-	Roboto, "Segoe UI", /* Android, Windows */
+	"Roboto", "Segoe UI", /* Android, Windows */
 	-apple-system, BlinkMacSystemFont, /* Safari Mac/iOS, Chrome */
 	Ubuntu, Oxygen, Cantarell, "Fira Sans", /* Ubuntu, KDE, Gnome, Firefox OS */
 	"Droid Sans", "Helvetica Neue", sans-serif; /* old Android */
@@ -626,7 +628,4 @@ article.card .button:hover {
 		margin: 0.5em 0em;
 	}
 }
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
