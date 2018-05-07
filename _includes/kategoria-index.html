@@ -1,0 +1,26 @@
+<section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
+{% for kat in site.data.turak.kategoriak %} {% if kat.kategoriaId == kategoriaId %}
+<div class="kategoria">
+	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
+	{% for tura in kat.turak %} {% unless tura.regi %}
+	<article class="card tura">
+		<a class="slideshow" href="/{{kat.kategoriaId}}/{{tura.turaId}}">
+			{% assign first = true %}
+			{% if tura.kepek %} {% for kep in tura.kepek %}
+			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep.ut}}">
+			{% assign first = false %}
+			{% endfor %} {% endif %}
+			<div class="overlay">
+				<h4>{{tura.nev}}</h4>
+				<p>
+					<span class="ar" alt="{{tura.arOpciok}}">{{tura.ar}}</span>
+					<span class="button">Részletek ➺</span>
+				</p>
+			</div>
+			<div hidden class="img" style="background-image:url(/kepek/{{tura.miniKep.ut}})"></div>
+		</a>
+	</article>
+	{% endunless %} {% endfor %}
+</div>
+{% endif %} {% endfor %}
+</section>
