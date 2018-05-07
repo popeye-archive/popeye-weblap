@@ -12,9 +12,9 @@ Rengeteg látnivalóval, pazar kerékpárutakkal vár titeket a Gail völgy. A B
 
 **május 21. hétfő:** Két különböző variációban érhetjük el mai úticélunkat az Ossiacher Seet. Az egyszerű és rövidebb a Gail melletti kerékpárút ( kb 45 km ) , de a vállalkozó kedvűeket felviszi a lift az 1530 méter magasan levő Nassfeldpasshoz. Innen egy 750 méter szintkülönbségű gurulás következik Pontebbáig, ahol elérik az Alpok-Adria kerékpárutat. Ezután egy igen enyhe 1,2 %-os kaptató következik Tarvisióig és innen gurulnak Villachon keresztül a célig.
 
-Részvételi díj :  oda-vissza utazással , luxus színvonalú apartmanokban, térképekkel, transzferekkel, 2. napi vacsorával, kerékpárszállítással, ügyeletes szerelővel 72.500 Ft. Ugyanez többágyas de igen színvonalas turistaszálláson 64.500 Ft. ( Három éjszaka szállás  !) Egyéni utazással  luxus színvonalú apartmanokban, térképekkel, transzferekkel, 2. napi vacsorával kerékpárszállítással 49.500 Ft, szállítás nélkül 44.500 Ft. Egyéni utazással de turistaszálláson , kerékpárszállítással 39.500 Ft, anélkül 35.000 Ft
-Kerékpárbérlés a 3 napra : 7.500 Ft
+Részvételi díj :  oda-vissza utazással , luxus színvonalú apartmanokban, térképekkel, transzferekkel, 2. napi vacsorával, kerékpárszállítással, ügyeletes szerelővel 72.500 Ft. Ugyanez többágyas de igen színvonalas turistaszálláson 64.500 Ft. ( Három éjszaka szállás  !) Egyéni utazással  luxus színvonalú apartmanokban, térképekkel, transzferekkel, 2. napi vacsorával kerékpárszállítással 49.500 Ft, szállítás nélkül 44.500 Ft. Egyéni utazással de turistaszálláson , kerékpárszállítással 39.500 Ft, anélkül 35.000 Ft.
+Kerékpárbérlés a 3 napra : 7.500 Ft.
 
-A szálláson reggeli és vacsora rendelhető , de főzési lehetőség is van
+A szálláson reggeli és vacsora rendelhető , de főzési lehetőség is van.
 
 
