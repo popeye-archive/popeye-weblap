@@ -19,7 +19,7 @@ published: true
 		<a class="slideshow" href="/{{tura.kategoriaId}}/{{tura.turaId}}">
 			{% assign kategoria = site.data.turak.kategoriak | where: "kategoriaId",tura.kategoriaId | first %}
 			<p> {{ kategoria.kategoriaId }} </p>
-			{% assign leiras = kategoria.turak | where: "turaId",tura.turaId | first %}
+			{% assign leiras = kategoria.turak | where: "turaId",tura.turaId %}
 			<p> {{ leiras.turaId }} </p>
 			{% assign kepek = site.data.kepek[tura.kategoriaId][tura.turaId] %}
 			{% assign first = true %}
