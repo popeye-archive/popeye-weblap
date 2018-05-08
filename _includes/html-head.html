@@ -16,8 +16,9 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/+site/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/+site/icons/favicon-16x16.png">
 <link rel="manifest" href="/+site/icons/webmanifest.json">
-<meta name="theme-color" content="{{ page.themecolor }}">
-<meta name="msapplication-TileColor" content="{{ page.themecolor }}">
+{% assign themecolor = "#853" %}
+<meta name="theme-color" content="{{ themecolor }}">
+<meta name="msapplication-TileColor" content="{{ themecolor }}">
 <meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
 <!-- -->
 {% if include.kepek %}{% for kep in include.kepek
