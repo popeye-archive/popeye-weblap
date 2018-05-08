@@ -517,8 +517,13 @@ article.card .img {
 article.card h4 {
 }
 
+article.card .idopont {
+	font-size: 0.8em;
+	color: goldenrod;
+	color: gold;
+}
+
 article.card .ar {
-	/* margin: 0.5em; */
 	font-size: 0.8em;
 	color: goldenrod;
 	color: gold;

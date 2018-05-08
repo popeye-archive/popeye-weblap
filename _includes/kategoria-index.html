@@ -14,6 +14,9 @@
 				<h4>{{tura.nev}}</h4>
 				<p>
 					<span class="ar" alt="{{tura.arOpciok}}">{{tura.ar}}</span>
+{% for naptariTura in site.data.naptar | where 'turaId','tura.turaId' %}
+					<span class="idopont">{{naptariTura.idopont}}</span>
+{% endfor %}
 					<span class="button">Részletek ➺</span>
 				</p>
 			</div>
