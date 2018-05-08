@@ -442,6 +442,11 @@ article.card {
 	box-shadow: 1px 3px 7px var(--fade-len) var(--shadow);
 }
 
+#naptar article.card {
+	width: 10em;
+	height: 8em;
+}
+
 article.card:hover, article.card:focus-within {
 	--fade-len-h: calc(var(--fade-len) + 2px);
 	--fade-len-h: calc(var(--fade-len) + 6px);
