@@ -12,7 +12,7 @@
 			{% endfor %} {% endif %}
 			<div class="overlay">
 				<h4>{{tura.nev}}</h4>
-{% for naptariTura in site.data.naptar | where "turaId",tura.turaId %}
+{% for naptariTura in site.data.naptar | where: "turaId",tura.turaId %}
 				<p class="idopont">{{naptariTura.idopont}}</p>
 {% endfor %}
 				<p>
