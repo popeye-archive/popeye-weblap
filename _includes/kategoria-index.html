@@ -1,12 +1,12 @@
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
 {% assign kategoria = site.data.kategoriak | where: "kategoriaId",include.kategoriaId | first %}
 <div class="kategoria">
-	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
-	{% for leiras in kat.turak %} {% unless leiras.regi %}
+	<span id="kategoriaId" hidden>{{kategoria.kategoriaId}}</span>
+	{% for leiras in kategoria.turak %} {% unless leiras.regi %}
 	<article class="card leiras">
-		<a class="slideshow" href="/{{kat.kategoriaId}}/{{leiras.turaId}}">
+		<a class="slideshow" href="/{{kategoria.kategoriaId}}/{{leiras.turaId}}">
 			{% assign first = true %}
-			{% assign kepek = site.data.kepek[kat.kategoriaId][leiras.turaId] %}
+			{% assign kepek = site.data.kepek[kategoria.kategoriaId][leiras.turaId] %}
 			{% if kepek %} {% for kep in kepek %}
 			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep}}">
 			{% assign first = false %}
