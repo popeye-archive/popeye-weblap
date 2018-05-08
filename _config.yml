@@ -4,7 +4,8 @@ plugins:
 - jekyll-redirect-from
 
 defaults:
-  - scope:
+  - 
+    scope:
       path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
     values:
       layout: turakeret
