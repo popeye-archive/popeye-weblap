@@ -443,8 +443,8 @@ article.card {
 }
 
 #naptar article.card {
-	width: 10em;
-	height: 8em;
+	width: 20em;
+	height: 16m;
 }
 
 article.card:hover, article.card:focus-within {
@@ -526,6 +526,16 @@ article.card .idopont {
 	font-size: 0.8em;
 	color: goldenrod;
 	color: gold;
+}
+
+article.card .idopont .fontos {
+	font-size: 1.1em;
+	font-weight: bolder;
+	color: yellow;
+	background: #f759;
+	border-radius: 0.25em;
+	padding: 0.25em;
+	margin: 0.5em;
 }
 
 article.card .ar {
