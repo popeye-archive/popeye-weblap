@@ -21,10 +21,10 @@ published: true
 			<p> {{ kategoria.kategoriaId }} </p>
 			{% assign leiras = kategoria.turak | where: "turaId",tura.turaId | first %}
 			<p> {{ leiras.turaId }} </p>
-			{% assign kepek = leiras.kepek %}
+			{% assign kepek = site.data.kepek[tura.kategoriaId][tura.turaId] %}
 			{% assign first = true %}
 			{% if kepek %} {% for kep in kepek %}
-			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep.ut}}">
+			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep}}">
 			{% assign first = false %}
 			{% endfor %} {% endif %}
 			<div class="overlay">
