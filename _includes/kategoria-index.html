@@ -15,11 +15,6 @@
 				<h4>{{leiras.nev}}</h4>
 
 				{% assign turak = site.data.naptar | where "turaId",leiras.turaId %}
-				{% for tura in turak %}
-				{% if tura.idopont %}
-				<p class="idopont">{{tura.idopont}}</p>
-				{% endif %}
-				{% endfor %}
 
 				<p>
 					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
