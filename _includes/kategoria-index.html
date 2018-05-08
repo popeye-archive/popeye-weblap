@@ -12,11 +12,11 @@
 			{% endfor %} {% endif %}
 			<div class="overlay">
 				<h4>{{tura.nev}}</h4>
+{% for naptariTura in site.data.naptar | where "turaId",tura.turaId %}
+				<p class="idopont">{{naptariTura.idopont}}</p>
+{% endfor %}
 				<p>
 					<span class="ar" alt="{{tura.arOpciok}}">{{tura.ar}}</span>
-{% for naptariTura in site.data.naptar | where 'turaId','tura.turaId' %}
-					<span class="idopont">{{naptariTura.idopont}}</span>
-{% endfor %}
 					<span class="button">Részletek ➺</span>
 				</p>
 			</div>
