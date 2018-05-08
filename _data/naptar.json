@@ -22,12 +22,10 @@
 	{
 		"turaId": "szloven-olasz-osztrak",
 		"kategoriaId": "kerekparturak",
-		"idopont": "2018. augusztus 18 - 21."
-	},
-	{
-		"turaId": "szloven-olasz-osztrak",
-		"kategoriaId": "kerekparturak",
-		"idopont": "2018. október 20 - 22."
+		"idopontok": [
+			"2018. augusztus 18 - 21.",
+			"2018. október 20 - 22."
+		]
 	},
 	{
 		"turaId": "softrafting",
