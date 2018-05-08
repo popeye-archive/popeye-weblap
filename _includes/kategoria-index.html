@@ -1,5 +1,5 @@
 <section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
-{% assign kategoria = site.data.turak.kategoriak | where: "kategoriaId",tura.kategoriaId | first %}
+{% assign kategoria = site.data.kategoriak | where: "kategoriaId",tura.kategoriaId | first %}
 <div class="kategoria">
 	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
 	{% for leiras in kat.turak %} {% unless leiras.regi %}
