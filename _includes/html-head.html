@@ -8,10 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="{{ '/+site/style.css?v=' | append: site.github.build_revision | relative_url }}" />
+<link rel="stylesheet" href="{{ '/+site/style.css?v=' | append: site.github.build_revision }}" />
 {% if page.css %}{% for css in page.css
-%}<link rel="stylesheet" href="/+site/{{ css }}" />{%
-endfor %}{% endif %}<!-- -->
+%}<link rel="stylesheet" href="/+site/{{ css }}" />
+{% endfor %}{% endif %}<!-- -->
 <link rel="apple-touch-icon" sizes="152x152" href="/+site/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/+site/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/+site/icons/favicon-16x16.png">
@@ -21,6 +21,6 @@ endfor %}{% endif %}<!-- -->
 <meta name="msapplication-square150x150logo" content="/+site/icons/mstile-150x150.png" />
 <!-- -->
 {% if include.kepek %}{% for kep in include.kepek
-%}<meta property="og:image" content="{{ site.url }}/kepek/{{ kep.ut }}"/>
+%}<meta property="og:image" content="{{ site.url }}/kepek/{{ kep }}"/>
 {% endfor %}{% endif %}<!-- -->
 </head>

@@ -2,9 +2,10 @@
 {% assign kategoriaId = path[1] %}
 {% assign turaFile = path[2] | split: "." %}
 {% assign turaId = turaFile[0] %}
-{% assign kategoria = site.data.kategoriak | where: "kategoriaId", kategoriaId | first %}
-{% assign tura = kategoria.turak | where: "turaId", turaId | first %}
-{% include html-head.html title=tura.nev kepek=tura.kepek %}
+{% assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
+{% assign tura = kategoria.turak | where: "turaId",turaId | first %}
+{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
+{% include html-head.html title=tura.nev kepek=kepek %}
 
 <body>
 <header id="fejlec">
@@ -15,7 +16,6 @@
 <section class="main" id="main">
 <article class="main">
 	<div class="slideshow">
-		{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
 		{% if kepek %} {% for kep in kepek %}
 		<img class="slide" src-lazy="/kepek/{{kep}}">
 		{% endfor %} {% endif %}
