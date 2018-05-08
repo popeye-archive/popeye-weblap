@@ -1,0 +1,38 @@
+---
+layout: weblapkeret
+mainid: naptar
+title: Naptár - Popeye Leskó Kalandtúrák
+published: true
+---
+<section class="main" id="{{page.mainid}}">
+{% for tura in site.data.naptar %}
+	<article class="card tura">
+
+		{% if tura.idopont %}
+		<p class="idopont">{{tura.idopont}}</p>
+		{% endif %}
+		{% if tura.idopontok %} {% for idopont in tura.idopontok %}
+		<p class="idopont">{{idopont}}</p>
+		{% endfor %} {% endif %}
+
+		<a class="slideshow" href="/{{tura.kategoriaId}}/{{tura.turaId}}">
+			{% assign kategoria = site.data.turak | where: "kategoriaId",tura.kategoriaId %}
+			{% assign leiras = kategoria | where: "turaId",tura.turaId %}
+			{% assign kepek = leiras.kepek %}
+			{% assign first = true %}
+			{% if kepek %} {% for kep in kepek %}
+			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep.ut}}">
+			{% assign first = false %}
+			{% endfor %} {% endif %}
+			<div class="overlay">
+				<h4>{{leiras.nev}}</h4>
+				<p>
+					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
+					<span class="button">Részletek ➺</span>
+				</p>
+			</div>
+		</a>
+	</article>
+</div>
+{% endfor %}
+</section>
