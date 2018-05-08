@@ -4,15 +4,15 @@ plugins:
 - jekyll-redirect-from
 
 defaults:
-- scope:
-    path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
-  values:
-    layout: turakeret
-    mainid: main
-    title: Popeye Leskó Kalandtúrák
-    themecolor: #853
-    #themecolor: #a84
-    #themecolor: #eb8
+  - scope:
+      path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
+    values:
+      layout: turakeret
+      mainid: main
+      title: Popeye Leskó Kalandtúrák
+      themecolor: #853
+      #themecolor: #a84
+      #themecolor: #eb8
 
 
 #markdown: kramdown
