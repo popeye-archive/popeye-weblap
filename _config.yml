@@ -10,8 +10,9 @@ defaults:
     layout: turakeret
     mainid: main
     title: Popeye Leskó Kalandtúrák
-    #themecolor: #eebb88
-    themecolor: #aa8844
+    themecolor: #853
+    #themecolor: #a84
+    #themecolor: #eb8
 
 
 #markdown: kramdown
