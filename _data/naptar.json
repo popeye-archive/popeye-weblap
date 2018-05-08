@@ -1,40 +1,32 @@
-﻿[
-	{
-		"turaId": "gail-volgy-2018",
-		"kategoriaId": "kerekparturak",
-		"idopont": "2018. május 18. péntek - május 21. hétfő"
-	},
-	{
-		"turaId": "normandia-bretagne",
-		"kategoriaId": "kerekparturak",
-		"idopont": "2018. június 28 – július 09."
-	},
-	{
-		"turaId": "alpok-adria-2018",
-		"kategoriaId": "kerekparturak",
-		"idopont": "2018. július 25 - augusztus 2."
-	},
-	{
-		"turaId": "kis-balaton",
-		"kategoriaId": "kerekparturak",
-		"idopont": "2018. augusztus 10 - augusztus 12."
-	},
-	{
-		"turaId": "szloven-olasz-osztrak",
-		"kategoriaId": "kerekparturak",
-		"idopontok": [
-			"2018. augusztus 18 - 21.",
-			"2018. október 20 - 22."
-		]
-	},
-	{
-		"turaId": "softrafting",
-		"kategoriaId": "viziturak",
-		"idopont": "megbeszélés alapján"
-	},
-	{
-		"turaId": "rafting-hetvege-salza",
-		"kategoriaId": "vadvizi",
-		"idopont": "minden hétvégén"
-	}
-]
+﻿[{
+	"turaId": "gail-volgy-2018",
+	"kategoriaId": "kerekparturak",
+	"idopont": "2018. május 18. péntek - május 21. hétfő"
+},{
+	"turaId": "normandia-bretagne",
+	"kategoriaId": "kerekparturak",
+	"idopont": "2018. június 28 – július 09."
+},{
+	"turaId": "alpok-adria-2018",
+	"kategoriaId": "kerekparturak",
+	"idopont": "2018. július 25 - augusztus 2."
+},{
+	"turaId": "kis-balaton",
+	"kategoriaId": "kerekparturak",
+	"idopont": "2018. augusztus 10 - augusztus 12."
+},{
+	"turaId": "szloven-olasz-osztrak",
+	"kategoriaId": "kerekparturak",
+	"idopontok": [
+		"2018. augusztus 18 - 21.",
+		"2018. október 20 - 22."
+	]
+},{
+	"turaId": "softrafting",
+	"kategoriaId": "viziturak",
+	"idopont": "megbeszélés alapján"
+},{
+	"turaId": "rafting-hetvege-salza",
+	"kategoriaId": "vadvizi",
+	"idopont": "minden hétvégén"
+}]
