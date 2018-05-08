@@ -14,7 +14,15 @@
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
 
-				{% assign turak = site.data.naptar | where "turaId",leiras.turaId %}
+				{% assign turak = site.data.naptar | where: "turaId",leiras.turaId %}
+				{% for tura in turak %}
+				{% if tura.idopont %}
+				<p class="idopont">{{tura.idopont}}</p>
+				{% endif %}
+				{% if tura.idopontok %} {% for idopont in tura.idopontok %}
+				<p class="idopont">{{idopont}}</p>
+				{% endfor %} {% endif %}
+				{% endfor %}
 
 				<p>
 					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
