@@ -6,6 +6,8 @@ published: true
 ---
 <section class="main" id="{{page.mainid}}">
 {% for tura in site.data.naptar %}
+	{% assign kategoriaId = tura.kategoriaId %}
+	{% assign turaId = tura.turaId %}
 
 	{% if tura.idopont %}
 	<h4 class="idopont">{{tura.idopont}}</h4>
@@ -16,10 +18,10 @@ published: true
 
 	<article class="card tura">
 
-		<a class="slideshow" href="/{{tura.kategoriaId}}/{{tura.turaId}}">
-			{% assign kategoria = site.data.kategoriak | where: "kategoriaId",tura.kategoriaId | first %}
-			{% assign leiras = kategoria.turak | where: "turaId",tura.turaId | first %}
-			{% assign kepek = site.data.kepek[tura.kategoriaId][tura.turaId] %}
+		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}">
+			{% assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
+			{% assign leiras = kategoria.turak | where: "turaId",turaId | first %}
+			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
 			{% assign first = true %}
 			{% if kepek %} {% for kep in kepek %}
 			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep}}">
