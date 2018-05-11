@@ -1,223 +1,191 @@
-{
-  "kerekparturak": {
-    "gail-volgy-2018": [
-      "kerekparturak/gail-volgy/Gail1.jpg"
-    ],
-    "normandia-bretagne": [
-      "kerekparturak/normandia-bretagne/pict0137.jpg",
-      "kerekparturak/normandia-bretagne/pict0141.jpg",
-      "kerekparturak/normandia-bretagne/pict0159.jpg",
-      "kerekparturak/normandia-bretagne/pict0173.jpg"
-    ],
-    "alpok-adria-2018": [
-      "kerekparturak/alpok-adria/Alpok-Adria-1.jpg",
-      "kerekparturak/alpok-adria/0-DSC-0001-1-495x400.jpg",
-      "kerekparturak/alpok-adria/1-DSC-0038-495x400.jpg",
-      "kerekparturak/alpok-adria/2-DSC-0019-1-495x400.jpg",
-      "kerekparturak/alpok-adria/3-DSC-0010-1-495x400.jpg",
-      "kerekparturak/alpok-adria/4-DSC-0003-2-495x400.jpg",
-      "kerekparturak/alpok-adria/5-DSC-0014-1-495x400.jpg",
-      "kerekparturak/alpok-adria/6-DSC-0005-5-495x400.jpg",
-      "kerekparturak/alpok-adria/7-DSC-0016-1-495x400.jpg",
-      "kerekparturak/alpok-adria/8-DSC-0007-3-495x400.jpg",
-      "kerekparturak/alpok-adria/9-DSC-0002-1-495x400.jpg"
-    ],
-    "kis-balaton": [
-      "kerekparturak/kis-balaton/Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg",
-      "kerekparturak/kis-balaton/Kis-Balaton-Hidvegi-madarles1-balatontipp.jpg",
-      "kerekparturak/kis-balaton/Kis-Balaton-Zala-Nagyradai-torony-balatontipp.jpg"
-    ],
-    "szloven-olasz-osztrak": [
-      "kerekparturak/szloven-olasz/03.jpg",
-      "kerekparturak/szloven-olasz/01.jpg",
-      "kerekparturak/szloven-olasz/02.jpg"
-    ],
-    "szloven-olasz-husvet": [
-      "kerekparturak/szloven-olasz/03.jpg",
-      "kerekparturak/szloven-olasz/01.jpg",
-      "kerekparturak/szloven-olasz/02.jpg"
-    ],
-    "szloven-olasz": [
-      "kerekparturak/szloven-olasz/03.jpg",
-      "kerekparturak/szloven-olasz/01.jpg",
-      "kerekparturak/szloven-olasz/02.jpg"
-    ],
-    "skot-felfold": [
-      "kerekparturak/skot-felfold/nehéz-terep-4.jpg",
-      "kerekparturak/skot-felfold/pict-0207.jpg",
-      "kerekparturak/skot-felfold/prosiba-való.jpg",
-      "kerekparturak/skot-felfold/tipikus-skót-táj.jpg",
-      "kerekparturak/skot-felfold/skótbringa.jpg",
-      "kerekparturak/skot-felfold/pict-0204.jpg",
-      "kerekparturak/skot-felfold/kastélyrom-a-parton.jpg",
-      "kerekparturak/skot-felfold/kerékpárút-skóciában-9.jpg",
-      "kerekparturak/skot-felfold/kerékpárút-skóciában-5.jpg",
-      "kerekparturak/skot-felfold/kocsmához-értünk-2.jpg",
-      "kerekparturak/skot-felfold/pict-0184.jpg",
-      "kerekparturak/skot-felfold/P1200205.jpg",
-      "kerekparturak/skot-felfold/P1200224.jpg",
-      "kerekparturak/skot-felfold/P1200324.jpg",
-      "kerekparturak/skot-felfold/P1200025.jpg",
-      "kerekparturak/skot-felfold/P1200330.jpg"
-    ],
-    "loire-volgy": [
-      "kerekparturak/loire-volgy/101-1485.jpg",
-      "kerekparturak/loire-volgy/101-1484.jpg",
-      "kerekparturak/loire-volgy/loire-à-vélo-chemin-de-hallage.jpg",
-      "kerekparturak/loire-volgy/cycle-loire-a-velo-randonnee.jpg",
-      "kerekparturak/loire-volgy/balade-en-velo-a-chaumont-ezoe-grid-1.jpg",
-      "kerekparturak/loire-volgy/loire-velo-3.jpg",
-      "kerekparturak/loire-volgy/mines-ardoisieres-de-trelaze.jpg",
-      "kerekparturak/loire-volgy/pause-velo-entre-tours-et-villandry.jpg"
-    ],
-    "dania-hamburg": [
-      "kerekparturak/dania-hamburg/dán-1.jpg",
-      "kerekparturak/dania-hamburg/dán-2.jpg",
-      "kerekparturak/dania-hamburg/dán-3.jpg",
-      "kerekparturak/dania-hamburg/dán-4.jpg",
-      "kerekparturak/dania-hamburg/dán-5.jpg",
-      "kerekparturak/dania-hamburg/dán-6.jpg"
-    ],
-    "temze-volgy": [
-      "kerekparturak/temze-volgy/Temze-2.jpg",
-      "kerekparturak/temze-volgy/pict-0107.jpg",
-      "kerekparturak/temze-volgy/couple-cycling-towpath.jpg"
-    ],
-    "duna-volgy-donaueschingen-ulm": [
-      "kerekparturak/duna-volgy-donaueschingen-ulm/judo-049.jpg",
-      "kerekparturak/duna-volgy-donaueschingen-ulm/judo-021.jpg",
-      "kerekparturak/duna-volgy-donaueschingen-ulm/P9230034.jpg",
-      "kerekparturak/duna-volgy-donaueschingen-ulm/mg-9606.jpg"
-    ],
-    "duna-volgy-ulm-regensburg": [
-      "kerekparturak/duna-volgy-ulm-regensburg/P9230037.jpg",
-      "kerekparturak/duna-volgy-ulm-regensburg/P9230038.jpg",
-      "kerekparturak/duna-volgy-ulm-regensburg/P9230044.jpg",
-      "kerekparturak/duna-volgy-ulm-regensburg/P9230057.jpg"
-    ],
-    "duna-volgy-regensburg-linz": [
-      "kerekparturak/duna-volgy-regensburg-linz/P9230058.jpg",
-      "kerekparturak/duna-volgy-regensburg-linz/P9230060.jpg",
-      "kerekparturak/duna-volgy-regensburg-linz/P9230064.jpg",
-      "kerekparturak/duna-volgy-regensburg-linz/P9230068.jpg"
-    ],
-    "duna-volgy-passau-becs": [
-      "kerekparturak/duna-volgy-passau-becs/S5020862.jpg",
-      "kerekparturak/duna-volgy-passau-becs/P9230094.jpg",
-      "kerekparturak/duna-volgy-passau-becs/P9230088.jpg"
-    ],
-    "salzkammergut": [
-      "kerekparturak/salzkammergut/100-0486.jpg",
-      "kerekparturak/salzkammergut/krems-2011.jpg"
-    ],
-    "schladming-melk": [
-      "kerekparturak/schladming-melk/102-0809.jpg",
-      "kerekparturak/schladming-melk/pict-0004.jpg",
-      "kerekparturak/schladming-melk/102-0802.jpg",
-      "kerekparturak/schladming-melk/100-0497.jpg"
-    ],
-    "london-parizs": [
-      "kerekparturak/london-parizs/pict-0063.jpg",
-      "kerekparturak/london-parizs/pict-0060.jpg",
-      "kerekparturak/london-parizs/pict-0032.jpg",
-      "kerekparturak/london-parizs/pict-0013.jpg",
-      "kerekparturak/london-parizs/pict-0010.jpg",
-      "kerekparturak/london-parizs/bajaiak-147.jpg"
-    ],
-    "alpok-adria": [
-      "kerekparturak/alpok-adria/9-DSC-0002-1-495x400.jpg",	
-      "kerekparturak/alpok-adria/0-DSC-0001-1-495x400.jpg",
-      "kerekparturak/alpok-adria/1-DSC-0038-495x400.jpg",
-      "kerekparturak/alpok-adria/2-DSC-0019-1-495x400.jpg",
-      "kerekparturak/alpok-adria/3-DSC-0010-1-495x400.jpg",
-      "kerekparturak/alpok-adria/4-DSC-0003-2-495x400.jpg",
-      "kerekparturak/alpok-adria/5-DSC-0014-1-495x400.jpg",
-      "kerekparturak/alpok-adria/6-DSC-0005-5-495x400.jpg",
-      "kerekparturak/alpok-adria/7-DSC-0016-1-495x400.jpg",
-      "kerekparturak/alpok-adria/8-DSC-0007-3-495x400.jpg"
-    ],
-    "neckar-volgy": [
-      "kerekparturak/neckar-volgy/1-Heidelberg.jpg",
-      "kerekparturak/neckar-volgy/2-Schloss-Heidelberg.jpg",
-      "kerekparturak/neckar-volgy/3-Alte-Bruecke.jpg",
-      "kerekparturak/neckar-volgy/4-Heidelberg.jpg",
-      "kerekparturak/neckar-volgy/5-img-0363.jpg",
-      "kerekparturak/neckar-volgy/6-img-0351.jpg",
-      "kerekparturak/neckar-volgy/7-Neckar-1.jpg",
-      "kerekparturak/neckar-volgy/8-Neckar.jpg",
-      "kerekparturak/neckar-volgy/9-dorf.jpg",
-      "kerekparturak/neckar-volgy/9-img-0219.jpg"
-    ]
-  },
-  "viziturak": {
-    "karintia-raba": [
-      "viziturak/karintia-raba/gail-2.jpg",
-      "viziturak/karintia-raba/gail-4.jpg",
-      "viziturak/karintia-raba/weissensee-3.jpg",
-      "viziturak/karintia-raba/weissensee-1.jpg",
-      "viziturak/karintia-raba/weissensee-4.jpg",
-      "viziturak/karintia-raba/weissensee-2.jpg"
-    ],
-    "softrafting": [
-      "viziturak/softrafting/a-101-1412.jpg",
-      "viziturak/softrafting/1-20120413-55.jpg",
-      "viziturak/softrafting/2-20120413-14.jpg",
-      "viziturak/softrafting/3-20120413-22.jpg",
-      "viziturak/softrafting/4-20120413-21.jpg",
-      "viziturak/softrafting/5-20120413-65.jpg",
-      "viziturak/softrafting/6-20120413-60.jpg",
-      "viziturak/softrafting/7-20120413-40.jpg",
-      "viziturak/softrafting/b-101-1393.jpg",
-      "viziturak/softrafting/c-101-1448.jpg"
-    ]
-  },
-  "vadviz": {
-    "rafting-hetvege-salza": [
-      "vadviz/rafting-hetvege-salza/100-0049b.jpg",
-      "vadviz/rafting-hetvege-salza/pict-0091.jpg",
-      "vadviz/rafting-hetvege-salza/pict-0086.jpg",
-      "vadviz/rafting-hetvege-salza/pict-0041.jpg",
-      "vadviz/rafting-hetvege-salza/indulási-hely-10.jpg",
-      "vadviz/rafting-hetvege-salza/000-0013.jpg",
-      "vadviz/rafting-hetvege-salza/vacsora-01.jpg"
-    ],
-    "kedvezmenyes-salza-tura": [
-      "vadviz/kedvezmenyes-salza-tura/pict-0041.jpg",
-      "vadviz/kedvezmenyes-salza-tura/pict-0086.jpg",
-      "vadviz/kedvezmenyes-salza-tura/pict-0091.jpg",
-      "vadviz/kedvezmenyes-salza-tura/indulási-hely-10.jpg",
-      "vadviz/kedvezmenyes-salza-tura/100-0049b.jpg",
-      "vadviz/kedvezmenyes-salza-tura/000-0013.jpg",
-      "vadviz/kedvezmenyes-salza-tura/vacsora-01.jpg"
-    ],
-    "vadviz-tabor-a-salzan": [
-      "vadviz/vadvizi-tabor-a-salzan/pict-0044.jpg",
-      "vadviz/vadvizi-tabor-a-salzan/pict-0014.jpg",
-      "vadviz/vadvizi-tabor-a-salzan/pict-0118.jpg"
-    ]
-  },
-  "siutak": {
-    "forni-di-sopra": [
-      "siutak/forni-di-sopra/Villa-Verde-kivulrol.jpg",
-      "siutak/forni-di-sopra/Villa-Verde-bar.jpg",
-      "siutak/forni-di-sopra/2009-020.jpg",
-      "siutak/forni-di-sopra/2009-039.jpg",
-      "siutak/forni-di-sopra/2009-157.jpg",
-      "siutak/forni-di-sopra/2009-175.jpg",
-      "siutak/forni-di-sopra/kép-151.jpg",
-      "siutak/forni-di-sopra/varmost-panoramica.jpg",
-      "siutak/forni-di-sopra/forni-pályatérkép.jpg"
-    ],
-    "laci-bacsi-siovija": [
-      "siutak/laci-bacsi-siovija/síovi-31.jpg",
-      "siutak/laci-bacsi-siovija/ovisí3.jpg",
-      "siutak/laci-bacsi-siovija/síovi-11.jpg",
-      "siutak/laci-bacsi-siovija/síovi-32.jpg",
-      "siutak/laci-bacsi-siovija/síovi-2.jpg",
-      "siutak/laci-bacsi-siovija/síovi-33.jpg",
-      "siutak/laci-bacsi-siovija/síovi-1.jpg",
-      "siutak/laci-bacsi-siovija/síovi-7.jpg",
-      "siutak/laci-bacsi-siovija/síovi-35.jpg"
-    ]
-  }
-}
+---
+kerekparturak:
+  gail-volgy-2018:
+  - kerekparturak/gail-volgy/Gail1.jpg
+  normandia-bretagne:
+  - kerekparturak/normandia-bretagne/pict0137.jpg
+  - kerekparturak/normandia-bretagne/pict0141.jpg
+  - kerekparturak/normandia-bretagne/pict0159.jpg
+  - kerekparturak/normandia-bretagne/pict0173.jpg
+  alpok-adria-2018:
+  - kerekparturak/alpok-adria/Alpok-Adria-1.jpg
+  - kerekparturak/alpok-adria/0-DSC-0001-1-495x400.jpg
+  - kerekparturak/alpok-adria/1-DSC-0038-495x400.jpg
+  - kerekparturak/alpok-adria/2-DSC-0019-1-495x400.jpg
+  - kerekparturak/alpok-adria/3-DSC-0010-1-495x400.jpg
+  - kerekparturak/alpok-adria/4-DSC-0003-2-495x400.jpg
+  - kerekparturak/alpok-adria/5-DSC-0014-1-495x400.jpg
+  - kerekparturak/alpok-adria/6-DSC-0005-5-495x400.jpg
+  - kerekparturak/alpok-adria/7-DSC-0016-1-495x400.jpg
+  - kerekparturak/alpok-adria/8-DSC-0007-3-495x400.jpg
+  - kerekparturak/alpok-adria/9-DSC-0002-1-495x400.jpg
+  kis-balaton:
+  - kerekparturak/kis-balaton/Kis-Balaton-Kanyavari-sziget-ut-kifele-balatontipp.jpg
+  - kerekparturak/kis-balaton/Kis-Balaton-Hidvegi-madarles1-balatontipp.jpg
+  - kerekparturak/kis-balaton/Kis-Balaton-Zala-Nagyradai-torony-balatontipp.jpg
+  szloven-olasz-osztrak:
+  - kerekparturak/szloven-olasz/03.jpg
+  - kerekparturak/szloven-olasz/01.jpg
+  - kerekparturak/szloven-olasz/02.jpg
+  szloven-olasz-husvet:
+  - kerekparturak/szloven-olasz/03.jpg
+  - kerekparturak/szloven-olasz/01.jpg
+  - kerekparturak/szloven-olasz/02.jpg
+  szloven-olasz:
+  - kerekparturak/szloven-olasz/03.jpg
+  - kerekparturak/szloven-olasz/01.jpg
+  - kerekparturak/szloven-olasz/02.jpg
+  skot-felfold:
+  - kerekparturak/skot-felfold/nehéz-terep-4.jpg
+  - kerekparturak/skot-felfold/pict-0207.jpg
+  - kerekparturak/skot-felfold/prosiba-való.jpg
+  - kerekparturak/skot-felfold/tipikus-skót-táj.jpg
+  - kerekparturak/skot-felfold/skótbringa.jpg
+  - kerekparturak/skot-felfold/pict-0204.jpg
+  - kerekparturak/skot-felfold/kastélyrom-a-parton.jpg
+  - kerekparturak/skot-felfold/kerékpárút-skóciában-9.jpg
+  - kerekparturak/skot-felfold/kerékpárút-skóciában-5.jpg
+  - kerekparturak/skot-felfold/kocsmához-értünk-2.jpg
+  - kerekparturak/skot-felfold/pict-0184.jpg
+  - kerekparturak/skot-felfold/P1200205.jpg
+  - kerekparturak/skot-felfold/P1200224.jpg
+  - kerekparturak/skot-felfold/P1200324.jpg
+  - kerekparturak/skot-felfold/P1200025.jpg
+  - kerekparturak/skot-felfold/P1200330.jpg
+  loire-volgy:
+  - kerekparturak/loire-volgy/101-1485.jpg
+  - kerekparturak/loire-volgy/101-1484.jpg
+  - kerekparturak/loire-volgy/loire-à-vélo-chemin-de-hallage.jpg
+  - kerekparturak/loire-volgy/cycle-loire-a-velo-randonnee.jpg
+  - kerekparturak/loire-volgy/balade-en-velo-a-chaumont-ezoe-grid-1.jpg
+  - kerekparturak/loire-volgy/loire-velo-3.jpg
+  - kerekparturak/loire-volgy/mines-ardoisieres-de-trelaze.jpg
+  - kerekparturak/loire-volgy/pause-velo-entre-tours-et-villandry.jpg
+  dania-hamburg:
+  - kerekparturak/dania-hamburg/dán-1.jpg
+  - kerekparturak/dania-hamburg/dán-2.jpg
+  - kerekparturak/dania-hamburg/dán-3.jpg
+  - kerekparturak/dania-hamburg/dán-4.jpg
+  - kerekparturak/dania-hamburg/dán-5.jpg
+  - kerekparturak/dania-hamburg/dán-6.jpg
+  temze-volgy:
+  - kerekparturak/temze-volgy/Temze-2.jpg
+  - kerekparturak/temze-volgy/pict-0107.jpg
+  - kerekparturak/temze-volgy/couple-cycling-towpath.jpg
+  duna-volgy-donaueschingen-ulm:
+  - kerekparturak/duna-volgy-donaueschingen-ulm/judo-049.jpg
+  - kerekparturak/duna-volgy-donaueschingen-ulm/judo-021.jpg
+  - kerekparturak/duna-volgy-donaueschingen-ulm/P9230034.jpg
+  - kerekparturak/duna-volgy-donaueschingen-ulm/mg-9606.jpg
+  duna-volgy-ulm-regensburg:
+  - kerekparturak/duna-volgy-ulm-regensburg/P9230037.jpg
+  - kerekparturak/duna-volgy-ulm-regensburg/P9230038.jpg
+  - kerekparturak/duna-volgy-ulm-regensburg/P9230044.jpg
+  - kerekparturak/duna-volgy-ulm-regensburg/P9230057.jpg
+  duna-volgy-regensburg-linz:
+  - kerekparturak/duna-volgy-regensburg-linz/P9230058.jpg
+  - kerekparturak/duna-volgy-regensburg-linz/P9230060.jpg
+  - kerekparturak/duna-volgy-regensburg-linz/P9230064.jpg
+  - kerekparturak/duna-volgy-regensburg-linz/P9230068.jpg
+  duna-volgy-passau-becs:
+  - kerekparturak/duna-volgy-passau-becs/S5020862.jpg
+  - kerekparturak/duna-volgy-passau-becs/P9230094.jpg
+  - kerekparturak/duna-volgy-passau-becs/P9230088.jpg
+  salzkammergut:
+  - kerekparturak/salzkammergut/100-0486.jpg
+  - kerekparturak/salzkammergut/krems-2011.jpg
+  schladming-melk:
+  - kerekparturak/schladming-melk/102-0809.jpg
+  - kerekparturak/schladming-melk/pict-0004.jpg
+  - kerekparturak/schladming-melk/102-0802.jpg
+  - kerekparturak/schladming-melk/100-0497.jpg
+  london-parizs:
+  - kerekparturak/london-parizs/pict-0063.jpg
+  - kerekparturak/london-parizs/pict-0060.jpg
+  - kerekparturak/london-parizs/pict-0032.jpg
+  - kerekparturak/london-parizs/pict-0013.jpg
+  - kerekparturak/london-parizs/pict-0010.jpg
+  - kerekparturak/london-parizs/bajaiak-147.jpg
+  alpok-adria:
+  - kerekparturak/alpok-adria/9-DSC-0002-1-495x400.jpg
+  - kerekparturak/alpok-adria/0-DSC-0001-1-495x400.jpg
+  - kerekparturak/alpok-adria/1-DSC-0038-495x400.jpg
+  - kerekparturak/alpok-adria/2-DSC-0019-1-495x400.jpg
+  - kerekparturak/alpok-adria/3-DSC-0010-1-495x400.jpg
+  - kerekparturak/alpok-adria/4-DSC-0003-2-495x400.jpg
+  - kerekparturak/alpok-adria/5-DSC-0014-1-495x400.jpg
+  - kerekparturak/alpok-adria/6-DSC-0005-5-495x400.jpg
+  - kerekparturak/alpok-adria/7-DSC-0016-1-495x400.jpg
+  - kerekparturak/alpok-adria/8-DSC-0007-3-495x400.jpg
+  neckar-volgy:
+  - kerekparturak/neckar-volgy/1-Heidelberg.jpg
+  - kerekparturak/neckar-volgy/2-Schloss-Heidelberg.jpg
+  - kerekparturak/neckar-volgy/3-Alte-Bruecke.jpg
+  - kerekparturak/neckar-volgy/4-Heidelberg.jpg
+  - kerekparturak/neckar-volgy/5-img-0363.jpg
+  - kerekparturak/neckar-volgy/6-img-0351.jpg
+  - kerekparturak/neckar-volgy/7-Neckar-1.jpg
+  - kerekparturak/neckar-volgy/8-Neckar.jpg
+  - kerekparturak/neckar-volgy/9-dorf.jpg
+  - kerekparturak/neckar-volgy/9-img-0219.jpg
+viziturak:
+  karintia-raba:
+  - viziturak/karintia-raba/gail-2.jpg
+  - viziturak/karintia-raba/gail-4.jpg
+  - viziturak/karintia-raba/weissensee-3.jpg
+  - viziturak/karintia-raba/weissensee-1.jpg
+  - viziturak/karintia-raba/weissensee-4.jpg
+  - viziturak/karintia-raba/weissensee-2.jpg
+  softrafting:
+  - viziturak/softrafting/a-101-1412.jpg
+  - viziturak/softrafting/1-20120413-55.jpg
+  - viziturak/softrafting/2-20120413-14.jpg
+  - viziturak/softrafting/3-20120413-22.jpg
+  - viziturak/softrafting/4-20120413-21.jpg
+  - viziturak/softrafting/5-20120413-65.jpg
+  - viziturak/softrafting/6-20120413-60.jpg
+  - viziturak/softrafting/7-20120413-40.jpg
+  - viziturak/softrafting/b-101-1393.jpg
+  - viziturak/softrafting/c-101-1448.jpg
+vadviz:
+  rafting-hetvege-salza:
+  - vadviz/rafting-hetvege-salza/100-0049b.jpg
+  - vadviz/rafting-hetvege-salza/pict-0091.jpg
+  - vadviz/rafting-hetvege-salza/pict-0086.jpg
+  - vadviz/rafting-hetvege-salza/pict-0041.jpg
+  - vadviz/rafting-hetvege-salza/indulási-hely-10.jpg
+  - vadviz/rafting-hetvege-salza/000-0013.jpg
+  - vadviz/rafting-hetvege-salza/vacsora-01.jpg
+  kedvezmenyes-salza-tura:
+  - vadviz/kedvezmenyes-salza-tura/pict-0041.jpg
+  - vadviz/kedvezmenyes-salza-tura/pict-0086.jpg
+  - vadviz/kedvezmenyes-salza-tura/pict-0091.jpg
+  - vadviz/kedvezmenyes-salza-tura/indulási-hely-10.jpg
+  - vadviz/kedvezmenyes-salza-tura/100-0049b.jpg
+  - vadviz/kedvezmenyes-salza-tura/000-0013.jpg
+  - vadviz/kedvezmenyes-salza-tura/vacsora-01.jpg
+  vadviz-tabor-a-salzan:
+  - vadviz/vadvizi-tabor-a-salzan/pict-0044.jpg
+  - vadviz/vadvizi-tabor-a-salzan/pict-0014.jpg
+  - vadviz/vadvizi-tabor-a-salzan/pict-0118.jpg
+siutak:
+  forni-di-sopra:
+  - siutak/forni-di-sopra/Villa-Verde-kivulrol.jpg
+  - siutak/forni-di-sopra/Villa-Verde-bar.jpg
+  - siutak/forni-di-sopra/2009-020.jpg
+  - siutak/forni-di-sopra/2009-039.jpg
+  - siutak/forni-di-sopra/2009-157.jpg
+  - siutak/forni-di-sopra/2009-175.jpg
+  - siutak/forni-di-sopra/kép-151.jpg
+  - siutak/forni-di-sopra/varmost-panoramica.jpg
+  - siutak/forni-di-sopra/forni-pályatérkép.jpg
+  laci-bacsi-siovija:
+  - siutak/laci-bacsi-siovija/síovi-31.jpg
+  - siutak/laci-bacsi-siovija/ovisí3.jpg
+  - siutak/laci-bacsi-siovija/síovi-11.jpg
+  - siutak/laci-bacsi-siovija/síovi-32.jpg
+  - siutak/laci-bacsi-siovija/síovi-2.jpg
+  - siutak/laci-bacsi-siovija/síovi-33.jpg
+  - siutak/laci-bacsi-siovija/síovi-1.jpg
+  - siutak/laci-bacsi-siovija/síovi-7.jpg
+  - siutak/laci-bacsi-siovija/síovi-35.jpg

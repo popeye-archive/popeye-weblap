@@ -1,174 +1,167 @@
-[{
-	"kategoriaId": "kerekparturak",
-	"kategoriaNev": "Kerékpártúrák",
-	"turak": [{
-		"turaId": "gail-volgy-2018",
-		"nev": "Kerékpáros kalandozás a Gail völgyben",
-		"ar": "35.000 - 72.500 Ft",
-		"arOpciok": ""
-	},{
-		"turaId": "normandia-bretagne",
-		"nev": "Normandia – Bretagne",
-		"ar": "159.000 / 219.000 Ft",
-		"arOpciok": "Sátorozással : 159.000 Ft <br/> Panziókban, fizető vendégszobákban : 219.000 Ft"
-	},{
-		"turaId": "alpok-adria-2018",
-		"nev": "Alpok – Adria kerékpártúra",
-		"ar": "135.000 Ft",
-		"arOpciok": ""
-	},{
-		"turaId": "kis-balaton",
-		"nev": "Kis Balaton környéki kerékpártúra",
-		"ar": "27.400 Ft",
-		"arOpciok": "Egyéni utazással : 24.400 Ft <br/> Általunk szervezett kisbuszos utazással : 34.400 Ft"
-	},{
-		"turaId": "szloven-olasz-osztrak",
-		"nev": "A Milleniumi vasút nyomvonalán",
-		"ar": "39.900 - 64.900 Ft",
-		"arOpciok": "Az ár a vállalt szolgáltatások függvényében változhat."
-	},{
-		"turaId": "szloven-olasz-husvet",
-		"nev": "Szlovén – Olasz húsvéti túra",
-		"regi": true,
-		"ar": "39.900 - 64.900 Ft",
-		"arOpciok": "Az ár a vállalt szolgáltatások függvényében változhat."
-	},{
-		"turaId": "szloven-olasz",
-		"nev": "Szlovén – Olasz hosszú hétvégi kerékpártúra",
-		"regi": true,
-		"ar": "38.900 - 64.900 Ft",
-		"arOpciok": "Az ár a vállalt szolgáltatások függvényében változhat."
-	},{
-		"turaId": "skot-felfold",
-		"nev": "Túra a Skót Felföldön",
-		"regi": true,
-		"ar": "219.000 - 269.000 Ft",
-		"arOpciok": "Kisbuszos kiutazással : 269.000 Ft. <br/> Repülővel érkezőknek : 219.000 Ft (a repülőjegy árát nem tartalmazza). <br/> Kerékpárbérlés ha valakinek nincs: 8.000 Ft+ÁFA a túra teljes időtartamára."
-	},{
-		"turaId": "loire-volgy",
-		"nev": "Loire völgyi kerékpártúra",
-		"regi": true,
-		"ar": "144.900 Ft - 199.000 Ft ",
-		"arOpciok": "Alapár campingekben saját sátorral kisbuszos utazással : 144.900 Ft <br/> Párizsig egyéni utazással, szállodás elhelyezéssel : 184.900 Ft <br/> Kisbuszos utazással, tranzitszállásokkal, szállodás elhelyezéssel : 199.000 Ft <br/> (egyágyas felárral : napi 12 EUR)."
-	},{
-		"turaId": "dania-hamburg",
-		"nev": "Dánia - Hamburg bringatúra",
-		"regi": true,
-		"ar": "124.000 - 199.000 Ft",
-		"arOpciok": "Utazással, campingekben saját sátorral : 124.000 Ft <br/> Utazással panziókban, szállodákban : 199.000 Ft <br/> Repülőgépes utazással panziókban szállodákban : 179.000 Ft + repjegyvásárlás egyénileg. <br/> (repülőgépes utasainknak ki-, és visszaszállítjuk kerékpárjukat és max 15 kg-os poggyászukat, így az utazásuk csak kézipoggyásszal történik)."
-	},{
-		"turaId": "temze-volgy",
-		"nev": "Temze Völgyi Kerékpártúra",
-		"regi": true,
-		"ar": "99.000 Ft",
-		"arOpciok": "Az ár nem tartalmazza az oda-vissza út árát.  Javasolt fapados repülőjáratok igénybevétele, a legkedvezőbb menetjegyek vásárlásában az OTP Travel irodái minden segítséget megadnak."
-	},{
-		"turaId": "duna-volgy-donaueschingen-ulm",
-		"nev": "Kérékpártúra a Duna völgyben - Donaueschingen-Ulm",
-		"regi": true,
-		"ar": "89.900 Ft",
-		"arOpciok": ""
-	},{
-		"turaId": "duna-volgy-ulm-regensburg",
-		"nev": "Kérékpártúra a Duna völgyben - Ulm-Regensburg",
-		"regi": true,
-		"ar": "85.900 Ft",
-		"arOpciok": "Két személyes sátor 5.000 Ft/turnus értékben bérelhető. Főtt vacsora sörrel vagy üdítővel 10 EUR értékben befizethető a helyszínen."
-	},{
-		"turaId": "duna-volgy-regensburg-linz",
-		"nev": "Kérékpártúra a Duna völgyben - Regensburg-Linz",
-		"regi": true,
-		"ar": "80.400 / 99.400 Ft",
-		"arOpciok": "Az augusztus 20-i hosszú hétvége meghosszabbításával : 99.400 Ft."
-	},{
-		"turaId": "duna-volgy-passau-becs",
-		"nev": "Kérékpártúra a Duna völgyben - Passau-Bécs",
-		"regi": true,
-		"ar": "80.400 Ft",
-		"arOpciok": "A részvételi díj 9 éjszaka campinget foglal magában saját sátorral. Azoknak  akik panzióban szeretnének  megszállni ,éjszakánként további napi 20 EUR helyszíni fizetésével  van erre lehetőségük, ezt azonban a szerződés kötésekor  közölni kell. Egyágyas felár : 4  EUR."
-	},{
-		"turaId": "salzkammergut",
-		"nev": "Kerékpártúra Salzkammergutnál",
-		"regi": true,
-		"ar": "89.000 Ft",
-		"arOpciok": "A részvételi díj magában foglalja az oda-vissza autóbuszos utazást, kerékpárbérlést vagy szállítást, 8 éjszaka szállást campingekben, csomagszállítást, térképeket, túravezetőt, ügyeletes szerelőt."
-	},{
-		"turaId": "schladming-melk",
-		"nev": "Kerékpártúra öt folyó völgyén át",
-		"regi": true,
-		"ar": "80.400 / 99.400 Ft",
-		"arOpciok": "Bécsig történő hosszabbítással az ár 99.400 Ft. <br/> Két személyes sátor 5.000 Ft/turnus értékben bérelhető, főtt vacsora sörrel vagy üdítővel 10 EUR értékben befizethető a helyszínen."
-	},{
-		"turaId": "london-parizs",
-		"nev": "London - Párizs kerékpártúra",
-		"regi": true,
-		"ar": "105.000 Ft",
-		"arOpciok": "Az ár nem tartalmazza a menetjegyek árát. Mindkét fővárossal repülőjáratok és autóbusz összeköttetések vannak."
-	},{
-		"turaId": "alpok-adria",
-		"nev": "Alpok – Adria kerékpártúra",
-		"regi": true,
-		"ar": "134.500 Ft",
-		"arOpciok": ""
-	},{
-		"turaId": "neckar-volgy",
-		"nev": "Neckar völgyi kerékpártúra",
-		"regi": true,
-		"ar": "84.900 / 159.000 Ft",
-		"arOpciok": "Sátorozással  84.900 Ft. <br/> Panziókban, fizető vendégszobákban  159.000 Ft."
-	}]
-},
-{
-	"kategoriaId": "viziturak",
-	"kategoriaNev": "Vízitúrák",
-	"turak": [
-	{
-		"turaId": "karintia-raba",
-		"nev": "Karintia és Rába kenuval",
-		"regi": true,
-		"ar": "69.000 / 99.000 Ft",
-		"arOpciok": "Sátras ( 1 éjszaka vendégházban ) : 69.000 Ft. <br/> Apartmanban, panzióban ( 1 éjszaka vendégházban ) : 99.000 Ft."
-	},{
-		"turaId": "softrafting",
-		"nev": "Softrafting-Átevezés Budapesten",
-		"ar": "5.900 Ft / 14 év alatt 4.300 Ft",
-		"arOpciok": "(Családoknak, baráti társaságoknak további kedvezmény)."
-	}]
-},
-{
-	"kategoriaId": "vadviz",
-	"kategoriaNev": "Vadvízi kalandok",
-	"turak": [{
-		"turaId": "rafting-hetvege-salza",
-		"nev": "Rafting hétvége a Salzán",
-		"ar": "22.900 Ft",
-		"arOpciok": "A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén ruhák és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és a szakszerű túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért tudjuk ezt  biztosítani."
-	},{
-		"turaId": "kedvezmenyes-salza-tura",
-		"nev": "Kedvezményes Salza túra csoportoknak",
-		"regi": true,
-		"ar": "13.000 - 19.000 Ft",
-		"arOpciok": ""
-	},{
-		"turaId": "vadvizi-tabor-a-salzan",
-		"nev": "Vadvízi tábor a Salzán",
-		"regi": true,
-		"ar": "89.000 Ft",
-		"arOpciok": "Az ár magába foglalja az oda-vissza utazást, a vízreszállásokat szakképzett túravezetőkkel, a vízhez transzfereket 6 éjszaka szállást campingben  saját sátorban (plusz 6.000 Ft befizetése esetén turistaszálláson és vasárnap estétől szobát reggelig bőséges félpanziós étkezést)."
-	}]
-},
-{
-	"kategoriaId": "siutak",
-	"kategoriaNev": "Síutak",
-	"turak": [{
-		"turaId": "forni-di-sopra",
-		"nev": "Forni di Sopra",
-		"ar": "80 - 155 EUR",
-		"arOpciok": "A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza."
-	},{
-		"turaId": "laci-bacsi-siovija",
-		"nev": "Laci Bácsi síovija",
-		"ar": "100 - 135 EUR",
-		"arOpciok": "A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza."
-	}]
-}]
+---
+- kategoriaId: kerekparturak
+  kategoriaNev: Kerékpártúrák
+  turak:
+  - turaId: gail-volgy-2018
+    nev: Kerékpáros kalandozás a Gail völgyben
+    ar: 35.000 - 72.500 Ft
+    arOpciok: ''
+  - turaId: normandia-bretagne
+    nev: Normandia – Bretagne
+    ar: 159.000 / 219.000 Ft
+    arOpciok: 'Sátorozással : 159.000 Ft <br/> Panziókban, fizető vendégszobákban : 219.000 Ft'
+  - turaId: alpok-adria-2018
+    nev: Alpok – Adria kerékpártúra
+    ar: 135.000 Ft
+    arOpciok: ''
+  - turaId: kis-balaton
+    nev: Kis Balaton környéki kerékpártúra
+    ar: 27.400 Ft
+    arOpciok: 'Egyéni utazással : 24.400 Ft <br/> Általunk szervezett kisbuszos utazással : 34.400 Ft'
+  - turaId: szloven-olasz-osztrak
+    nev: A Milleniumi vasút nyomvonalán
+    ar: 39.900 - 64.900 Ft
+    arOpciok: Az ár a vállalt szolgáltatások függvényében változhat.
+  - turaId: szloven-olasz-husvet
+    nev: Szlovén – Olasz húsvéti túra
+    regi: true
+    ar: 39.900 - 64.900 Ft
+    arOpciok: Az ár a vállalt szolgáltatások függvényében változhat.
+  - turaId: szloven-olasz
+    nev: Szlovén – Olasz hosszú hétvégi kerékpártúra
+    regi: true
+    ar: 38.900 - 64.900 Ft
+    arOpciok: Az ár a vállalt szolgáltatások függvényében változhat.
+  - turaId: skot-felfold
+    nev: Túra a Skót Felföldön
+    regi: true
+    ar: 219.000 - 269.000 Ft
+    arOpciok: 'Kisbuszos kiutazással : 269.000 Ft. <br/> Repülővel érkezőknek : 219.000
+      Ft (a repülőjegy árát nem tartalmazza). <br/> Kerékpárbérlés ha valakinek nincs:
+      8.000 Ft+ÁFA a túra teljes időtartamára.'
+  - turaId: loire-volgy
+    nev: Loire völgyi kerékpártúra
+    regi: true
+    ar: 144.900 Ft - 199.000 Ft
+    arOpciok: 'Alapár campingekben saját sátorral kisbuszos utazással : 144.900 Ft
+      <br/> Párizsig egyéni utazással, szállodás elhelyezéssel : 184.900 Ft <br/>
+      Kisbuszos utazással, tranzitszállásokkal, szállodás elhelyezéssel : 199.000
+      Ft <br/> (egyágyas felárral : napi 12 EUR).'
+  - turaId: dania-hamburg
+    nev: Dánia - Hamburg bringatúra
+    regi: true
+    ar: 124.000 - 199.000 Ft
+    arOpciok: 'Utazással, campingekben saját sátorral : 124.000 Ft <br/> Utazással
+      panziókban, szállodákban : 199.000 Ft <br/> Repülőgépes utazással panziókban
+      szállodákban : 179.000 Ft + repjegyvásárlás egyénileg. <br/> (repülőgépes utasainknak
+      ki-, és visszaszállítjuk kerékpárjukat és max 15 kg-os poggyászukat, így az
+      utazásuk csak kézipoggyásszal történik).'
+  - turaId: temze-volgy
+    nev: Temze Völgyi Kerékpártúra
+    regi: true
+    ar: 99.000 Ft
+    arOpciok: Az ár nem tartalmazza az oda-vissza út árát.  Javasolt fapados repülőjáratok
+      igénybevétele, a legkedvezőbb menetjegyek vásárlásában az OTP Travel irodái
+      minden segítséget megadnak.
+  - turaId: duna-volgy-donaueschingen-ulm
+    nev: Kérékpártúra a Duna völgyben - Donaueschingen-Ulm
+    regi: true
+    ar: 89.900 Ft
+    arOpciok: ''
+  - turaId: duna-volgy-ulm-regensburg
+    nev: Kérékpártúra a Duna völgyben - Ulm-Regensburg
+    regi: true
+    ar: 85.900 Ft
+    arOpciok: Két személyes sátor 5.000 Ft/turnus értékben bérelhető. Főtt vacsora sörrel vagy üdítővel 10 EUR értékben befizethető a helyszínen.
+  - turaId: duna-volgy-regensburg-linz
+    nev: Kérékpártúra a Duna völgyben - Regensburg-Linz
+    regi: true
+    ar: 80.400 / 99.400 Ft
+    arOpciok: 'Az augusztus 20-i hosszú hétvége meghosszabbításával : 99.400 Ft.'
+  - turaId: duna-volgy-passau-becs
+    nev: Kérékpártúra a Duna völgyben - Passau-Bécs
+    regi: true
+    ar: 80.400 Ft
+    arOpciok: 'A részvételi díj 9 éjszaka campinget foglal magában saját sátorral.
+      Azoknak akik panzióban szeretnének megszállni, éjszakánként további napi 20
+      EUR helyszíni fizetésével  van erre lehetőségük, ezt azonban a szerződés kötésekor  közölni
+      kell. Egyágyas felár : 4  EUR.'
+  - turaId: salzkammergut
+    nev: Kerékpártúra Salzkammergutnál
+    regi: true
+    ar: 89.000 Ft
+    arOpciok: A részvételi díj magában foglalja az oda-vissza autóbuszos utazást,
+      kerékpárbérlést vagy szállítást, 8 éjszaka szállást campingekben, csomagszállítást,
+      térképeket, túravezetőt, ügyeletes szerelőt.
+  - turaId: schladming-melk
+    nev: Kerékpártúra öt folyó völgyén át
+    regi: true
+    ar: 80.400 / 99.400 Ft
+    arOpciok: Bécsig történő hosszabbítással az ár 99.400 Ft. <br/> Két személyes
+      sátor 5.000 Ft/turnus értékben bérelhető, főtt vacsora sörrel vagy üdítővel
+      10 EUR értékben befizethető a helyszínen.
+  - turaId: london-parizs
+    nev: London - Párizs kerékpártúra
+    regi: true
+    ar: 105.000 Ft
+    arOpciok: Az ár nem tartalmazza a menetjegyek árát. Mindkét fővárossal repülőjáratok és autóbusz összeköttetések vannak.
+  - turaId: alpok-adria
+    nev: Alpok – Adria kerékpártúra
+    regi: true
+    ar: 134.500 Ft
+    arOpciok: ''
+  - turaId: neckar-volgy
+    nev: Neckar völgyi kerékpártúra
+    regi: true
+    ar: 84.900 / 159.000 Ft
+    arOpciok: Sátorozással  84.900 Ft. <br/> Panziókban, fizető vendégszobákban  159.000 Ft.
+
+- kategoriaId: viziturak
+  kategoriaNev: Vízitúrák
+  turak:
+  - turaId: karintia-raba
+    nev: Karintia és Rába kenuval
+    regi: true
+    ar: 69.000 / 99.000 Ft
+    arOpciok: 'Sátras ( 1 éjszaka vendégházban ) : 69.000 Ft. <br/> Apartmanban, panzióban
+      ( 1 éjszaka vendégházban ) : 99.000 Ft.'
+  - turaId: softrafting
+    nev: Softrafting-Átevezés Budapesten
+    ar: 5.900 Ft / 14 év alatt 4.300 Ft
+    arOpciok: "(Családoknak, baráti társaságoknak további kedvezmény)."
+
+- kategoriaId: vadviz
+  kategoriaNev: Vadvízi kalandok
+  turak:
+  - turaId: rafting-hetvege-salza
+    nev: Rafting hétvége a Salzán
+    ar: 22.900 Ft
+    arOpciok: A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén
+      ruhák és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és
+      a szakszerű túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért
+      tudjuk ezt  biztosítani.
+  - turaId: kedvezmenyes-salza-tura
+    nev: Kedvezményes Salza túra csoportoknak
+    regi: true
+    ar: 13.000 - 19.000 Ft
+    arOpciok: ''
+  - turaId: vadvizi-tabor-a-salzan
+    nev: Vadvízi tábor a Salzán
+    regi: true
+    ar: 89.000 Ft
+    arOpciok: Az ár magába foglalja az oda-vissza utazást, a vízreszállásokat szakképzett
+      túravezetőkkel, a vízhez transzfereket 6 éjszaka szállást campingben  saját
+      sátorban (plusz 6.000 Ft befizetése esetén turistaszálláson és vasárnap estétől
+      szobát reggelig bőséges félpanziós étkezést).
+
+- kategoriaId: siutak
+  kategoriaNev: Síutak
+  turak:
+  - turaId: forni-di-sopra
+    nev: Forni di Sopra
+    ar: 80 - 155 EUR
+    arOpciok: A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza.
+  - turaId: laci-bacsi-siovija
+    nev: Laci Bácsi síovija
+    ar: 100 - 135 EUR
+    arOpciok: A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza.
