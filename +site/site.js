@@ -29,10 +29,15 @@ function slideshow(selector, globalDelay) {
 		let lastSlideshowIdx = currSlideshowIdx;
 		while (true) {
 			currSlideshowIdx = (currSlideshowIdx + 1) % slideshows.length;
-			if (currSlideshowIdx == lastSlideshowIdx)  return;  // ha minden slideshowt megprobalt
 			let currSlideshow = slideshows[currSlideshowIdx];
 			let slides = currSlideshow.querySelectorAll('.slide');
-			if (slides.length < 2)  continue;  // ha csak 1 kep van a slideshowban, probalja a kovetkezot
+			// ha csak 1 kep van a slideshowban
+			if (slides.length < 2) {
+				// es minden slideshowt megprobalt - utolsokent a lastSlideshowIdx-et is -, akkor lepjen ki
+				if (currSlideshowIdx == lastSlideshowIdx)  return;
+				// ha van meg slideshow, probalja a kovetkezot
+				else continue;
+			}
 
 			currentSlide = currSlideshow.querySelector('.showing');
 			let currIdx = ! currentSlide  ?  -1  :  Array.prototype.indexOf.call(slides, currentSlide);
