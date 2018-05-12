@@ -15,6 +15,11 @@ defaults:
       #themecolor: #a84
       #themecolor: #eb8
 
+collections:
+  turak:
+    permalink: /:path
+    output: true
+  
 
 #markdown: kramdown
 #theme: minima
