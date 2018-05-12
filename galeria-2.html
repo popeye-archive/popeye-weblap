@@ -1,19 +1,17 @@
 ---
 title: Galéria – Popeye Leskó Kalandtúrák
-layout: weblapkeret
 css: ["carousel.css"]
-mainid: galeria
 ---
 <style>
-  #{{page.mainid}} ul.kategoria {
+  #galeria ul.kategoria {
     display: flex;
     flex-flow: column;
   }
-  #{{page.mainid}} summary {
+  #galeria summary {
     background-position: left center;
     background-repeat: no-repeat;
   }
-  #{{page.mainid}} summary img {
+  #galeria summary img {
     display: inline;
     min-width: 2em;
     min-height: 2em;
@@ -22,7 +20,7 @@ mainid: galeria
   }
 </style>
 
-<section class="main" id="{{page.mainid}}">
+<section class="main" id="galeria">
 <h1>Képgaléria</h1>
 
 {% for kat in site.data.turak.kategoriak %}

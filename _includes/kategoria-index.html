@@ -1,4 +1,4 @@
-<section class="main" id="{{page.mainid}}" mv-app="{{page.mainid}}">
+<section class="main" id="{{include.kategoriaId}}">
 {% assign kategoriaId = include.kategoriaId %}
 {% assign kat = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
 <div class="kategoria">
