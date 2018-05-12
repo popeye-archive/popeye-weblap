@@ -1,16 +1,16 @@
 <nav>
-  <img alt="Popeye logó" hidden>
-  <span grow></span>
-  <a href="/">Kerékpártúrák</a>
-  <a href="/viziturak">Vízitúrák</a>
-  <a href="/vadviz">Vadvíz</a>
-  <!--
+	<img alt="Popeye logó" hidden>
+	<span grow></span>
+	<a href="/">Kerékpártúrák</a>
+	<a href="/viziturak">Vízitúrák</a>
+	<a href="/vadviz">Vadvíz</a>
+	<!--
 	<a href="/siutak">Téli szezon</a>
 	-->
-  <a href="/kapcsolat">Kapcsolat</a>
-  <a href="http://popeyelesko.blogspot.hu/" target="_blank">Blog</a>
+	<a href="/kapcsolat">Kapcsolat</a>
+	<a href="http://popeyelesko.blogspot.hu/" target="_blank">Blog</a>
 </nav>
 <script>
-  let loc= window.location.pathname.match("/[^/]*")[0], activeNav= document.querySelector('nav a[href="'+loc+'"]');
-  if (activeNav) activeNav.classList.add('active');
+	let loc= window.location.pathname.match("/[^/]*")[0], activeNav= document.querySelector('nav a[href="'+loc+'"]');
+	if (activeNav) activeNav.classList.add('active');
 </script>
