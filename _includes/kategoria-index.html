@@ -8,7 +8,7 @@
 		{% assign turaId = leiras.turaId %}
 		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}">
 			{% assign first = true %}
-			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
+			{% assign kepek = site.data.kepek[kategoriaId][turaId] | shift %}
 			{% if kepek %} {% for kep in kepek %}
 			<div class="img slide" style="background-image:url(/kepek/{{kep}})" {% unless first %}hidden{% endunless %}></div>
 			{% assign first = false %}
