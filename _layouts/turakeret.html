@@ -16,9 +16,7 @@
 <section class="main" id="main">
 <article class="main">
 	<div class="slideshow">
-		{% if kepek %} {% for kep in kepek %}
-		<img class="slide" src-lazy="/kepek/{{kep}}">
-		{% endfor %} {% endif %}
+		{% include slideshow.html kepek=kepek %}
 		<div class="overlay">
 			<h1 itemprop="name">{{ tura.nev }}</h1>
 		</div>

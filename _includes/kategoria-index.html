@@ -7,12 +7,8 @@
 	<article class="card leiras">
 		{% assign turaId = leiras.turaId %}
 		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}">
-			{% assign first = true %}
-			{% assign kepek = site.data.kepek[kategoriaId][turaId] | shift %}
-			{% if kepek %} {% for kep in kepek %}
-			<div class="img slide" style="background-image:url(/kepek/{{kep}})" {% unless first %}hidden{% endunless %}></div>
-			{% assign first = false %}
-			{% endfor %} {% endif %}
+			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
+			{% include slideshow.html kepek=kepek tagName='div' %}
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
 
