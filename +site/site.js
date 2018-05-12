@@ -20,7 +20,7 @@ function slideshow(selector) {
 		var currSlideshow= slideshows[currSlideshowIdx];
 		var slides= currSlideshow.querySelectorAll('.slide');
 		var current= currSlideshow.querySelector('.showing');
-		var currIdx= slides.indexof(current);
+		var currIdx= slides.indexOf(current);
 
     if (0 <= currIdx)  slides[currIdx].classList.remove('showing');
 		if (slides.length) {
@@ -34,7 +34,7 @@ function slideshow(selector) {
 		currSlideshow= slideshows[currSlideshowIdx];
 		slides= currSlideshow.querySelectorAll('.slide');
 		current= currSlideshow.querySelector('.showing');
-		currIdx= slides.indexof(current);
+		currIdx= slides.indexOf(current);
 		if (slides.length) {
 			currIdx= (currIdx + 1) % slides.length;
 			if (! slides[currIdx].src)  slides[currIdx].src= slides[currIdx].getAttribute("src-lazy");
