@@ -1,7 +1,9 @@
-{% assign first = true %}{% assign tag = include.tagName %}{% if include.kepek %}{% if tag %}{% for kep in include.kepek %} 
-{% if first %}      <{{tag}} class="img slide showing" style="background-image:url(/kepek/{{kep}})"></{{tag}}> 
-{% else     %}      <{{tag}} class="img slide" src-lazy="/kepek/{{kep}}" ></{{tag}}> 
-{% assign first = false %}{% endif %}{% endfor %}{% else %}{% for kep in include.kepek %} 
-{% if first %}      <img class="slide showing" src="/kepek/{{kep}}"> 
-{% else     %}      <img class="slide" src-lazy="/kepek/{{kep}}" > 
-{% assign first = false %}{% endif %}{% endfor %}{% endif %}{% endif %}
+{% assign first = true %}{% assign tag = include.tagName %}{% if include.kepek %}{% if tag %}{% for kep in include.kepek %}{% if first
+ %}      <{{tag}} class="img slide showing" style="background-image:url(/kepek/{{kep}})"></{{tag}}>
+{% assign first = false %}{% else
+ %}      <{{tag}} class="img slide" src-lazy="/kepek/{{kep}}" ></{{tag}}> 
+{% endif %}{% endfor %}{% else %}{% for kep in include.kepek %}{% if first
+ %}      <img class="slide showing" src="/kepek/{{kep}}"> 
+{% assign first = false %}{% else
+ %}      <img class="slide" src-lazy="/kepek/{{kep}}" > 
+{% endif %}{% endfor %}{% endif %}{% endif %}
