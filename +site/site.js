@@ -2,14 +2,10 @@
 * Slideshow
 */
 
-function slideshow(selector, delay) {
+function slideshow(selector, globalDelay) {
 	var slideshows = document.querySelectorAll(selector);
 	if (! slideshows.length)  return false;
 	
-	// delay read from attribute
-	let delayData= parseInt(slideshows[0].getAttribute('data-delay'));
-	if (0 < delayData && delayData < 100)  delay = delayData;
-
 	for (let i= 0; i < slideshows.length; i++) {
 		let firstSlide = slideshows[i].querySelector('.slide');
 		let showingSlide = slideshows[i].querySelector('.showing');
@@ -17,31 +13,42 @@ function slideshow(selector, delay) {
 		if (showingSlide)  lazyLoad(showingSlide);
 	}
 	
-	var currSlideshowIdx = 0;
+	var currSlideshowIdx = slideshows.length;
 	var currentSlide, nextSlide;
-	lazyLoadNextSlide();
-	var slideInterval = setInterval(showNextSlide, delay * 1000 / slideshows.length);
+	var lastDelay, slideInterval;
+	findNextSlide();
 
 	function showNextSlide() {
 		if (currentSlide)  currentSlide.classList.remove('showing');
 		if (nextSlide)     nextSlide.classList.add('showing');
-		lazyLoadNextSlide();
+		findNextSlide();
 	}
 	
-	function lazyLoadNextSlide() {
+	function findNextSlide() {
 		// pre-load next slide in next slideshow
-		currSlideshowIdx = (currSlideshowIdx + 1) % slideshows.length;
-		let currSlideshow = slideshows[currSlideshowIdx];
-		let slides = currSlideshow.querySelectorAll('.slide');
+		let lastSlideshowIdx = currSlideshowIdx;
+		do {
+			currSlideshowIdx = (currSlideshowIdx + 1) % slideshows.length;
+			if (currSlideshowIdx == lastSlideshowIdx)  return;  // ha minden slideshowt megprobalt
+			let currSlideshow = slideshows[currSlideshowIdx];
+			let slides = currSlideshow.querySelectorAll('.slide');
+			if (slides.length < 2)  continue;  // ha csak 1 kep van a slideshowban, probalja a kovetkezot
 
-		currentSlide = currSlideshow.querySelector('.showing');
-		let currIdx = ! currentSlide  ?  -1  :  Array.prototype.indexOf.call(slides, currentSlide);
-
-		if (0 < slides.length) {
-			currIdx = (currIdx + 1) % slides.length;
+			currentSlide = currSlideshow.querySelector('.showing');
+			let currIdx = ! currentSlide  ?  -1  :  Array.prototype.indexOf.call(slides, currentSlide);
+			let nextIdx = (currIdx + 1) % slides.length;
 			nextSlide = slides[currIdx];
 			lazyLoad(nextSlide);
-		}
+			
+			let delay = parseInt(currSlideshow.getAttribute('data-delay'));
+			if (isNaN(delay) || delay < 0 || delay > 100))  delay = globalDelay;
+			if (delay != lastDelay) {
+				lastDelay = delay;
+				if (slideInterval)  clearInterval(slideInterval);
+				slideInterval = setInterval(showNextSlide, delay * 1000);
+			}
+			
+		} while (false);
 	}
 	
 	function lazyLoad(slide) {

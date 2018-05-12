@@ -8,7 +8,7 @@
 	 assign kepek = site.data.kepek[kategoriaId][turaId] %}{%
 	 assign turak = site.data.naptar | where: "turaId",turaId %}
 	<article class="card leiras">
-		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}" data-delay="3">
+		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}" data-delay="2">
 			{% include slideshow.html kepek=kepek %} 
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
