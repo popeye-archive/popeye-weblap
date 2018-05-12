@@ -13,12 +13,16 @@ defaults:
     themecolor: #743
     #themecolor: #a84
     #themecolor: #eb8
+- scope:
+    type: turak
+    path: ""
+  values:
+    layout: turakeret
 
 collections:
   turak:
     permalink: /:path
     output: true
-    layout: turakeret
   
 
 #markdown: kramdown
