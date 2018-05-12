@@ -2,10 +2,11 @@
 {% if site.google_analytics %}
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <script>
-window['GoogleAnalyticsObject']='ga';
-ga=ga||function(){(ga.q=ga.q||[]).push(arguments)};
-ga.l=1*new Date();
-ga('create', '{{ site.google_analytics }}', 'auto');
+let w=window, g='ga';
+w['GoogleAnalyticsObject']=g;
+w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};
+w[g].l=1*new Date();
+ga('create', '{{site.google_analytics}}', 'auto');
 ga('send', 'pageview');
 </script>
 {% endif %}
