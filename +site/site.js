@@ -27,7 +27,7 @@ function slideshow(selector, globalDelay) {
 	function findNextSlide() {
 		// pre-load next slide in next slideshow
 		let lastSlideshowIdx = currSlideshowIdx;
-		do {
+		while (true) {
 			currSlideshowIdx = (currSlideshowIdx + 1) % slideshows.length;
 			if (currSlideshowIdx == lastSlideshowIdx)  return;  // ha minden slideshowt megprobalt
 			let currSlideshow = slideshows[currSlideshowIdx];
@@ -47,8 +47,9 @@ function slideshow(selector, globalDelay) {
 				if (slideInterval)  clearInterval(slideInterval);
 				slideInterval = setInterval(showNextSlide, delay * 1000);
 			}
-			
-		} while (false);
+
+			break;
+		};
 	}
 	
 	function lazyLoad(slide) {
