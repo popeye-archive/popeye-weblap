@@ -1,3 +1,8 @@
+---
+nev: Normandia – Bretagne
+ar: 159.000 / 219.000 Ft
+arOpciok: 'Sátorozással : 159.000 Ft <br/> Panziókban, fizető vendégszobákban : 219.000 Ft'
+---
 ## Részletes program
 
 **1. nap:** Indulás 01:00-kor Bp-ről. Tranzitszállás Németországban.

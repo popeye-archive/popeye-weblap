@@ -1,3 +1,8 @@
+---
+nev: Kerékpáros kalandozás a Gail völgyben
+ar: 35.000 - 72.500 Ft
+arOpciok: ''
+---
 ## Kerékpáros kalandozás a Gail völgyben
 
 Rengeteg látnivalóval, pazar kerékpárutakkal vár titeket a Gail völgy. A Budapesttől 560 kilométerre levő medencében minden megvan ami egy kerékpáros hosszú hétvégéhez kell. A folyó töltésén csodálatos kerékpárút nagyszerű pihenő helyekkel, Kötschachban egy igazán színvonalas I. világháborús múzeum, no és 910 méterrel a tengerszint felett ott a csodálatos Weissensee a környék gyöngyszeme.

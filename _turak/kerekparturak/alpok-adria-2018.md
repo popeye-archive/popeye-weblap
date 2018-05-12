@@ -1,3 +1,8 @@
+---
+nev: Alpok – Adria kerékpártúra
+ar: 135.000 Ft
+arOpciok: ''
+---
 ## Az Alpoktól az Adriáig
 
 **Immár hetedik éve csináljuk a Millenium Vasút túránkat. Ennek legszebb szakasza a Tarvisio-Moggió szakasz és ezeken a hétvégi túrákon gyakran hangzott fel utasaink kívánsága: de jó lenne fenntről az Alpokból jönni és letekerni egészen a tengerig. Hát rajtunk ne múljon, az idén megszervezzük ezt is.**
