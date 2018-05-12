@@ -13,13 +13,13 @@ function slideshow(selector) {
 		if (firstSlide && ! showingSlide)  firstSlide.classList.add('showing');
 	}
 
-	//var currSlideshowIdx= 0;
-	var slideInterval= setInterval(nextSlide, 2000);
+	var currSlideshowIdx= 0;
+	var slideInterval= setInterval(nextSlide, 2000 / slideshows.length);
 
 	function nextSlide() {
-		//var currSlideshow= slideshows[currSlideshowIdx];
-		var slides= slideshows.querySelectorAll('.slide');
-		var current= slideshows.querySelector('.showing');
+		var currSlideshow= slideshows[currSlideshowIdx];
+		var slides= currSlideshow.querySelectorAll('.slide');
+		var current= currSlideshow.querySelector('.showing');
 		var currIdx= slides.indexof(current);
 
     if (0 <= currIdx)  slides[currIdx].classList.remove('showing');
@@ -28,12 +28,12 @@ function slideshow(selector) {
 			slides[currIdx].classList.add('showing');
 		}
 
-    //currSlideshowIdx= (currSlideshowIdx + 1) % slideshows.length;
+    currSlideshowIdx= (currSlideshowIdx + 1) % slideshows.length;
 
 		// pre-load next slide in next slideshow
-		//currSlideshow= slideshows[currSlideshowIdx];
-		slides= slideshows.querySelectorAll('.slide');
-		current= slideshows.querySelector('.showing');
+		currSlideshow= slideshows[currSlideshowIdx];
+		slides= currSlideshow.querySelectorAll('.slide');
+		current= currSlideshow.querySelector('.showing');
 		currIdx= slides.indexof(current);
 		if (slides.length) {
 			currIdx= (currIdx + 1) % slides.length;
