@@ -37,7 +37,7 @@ function slideshow(selector, globalDelay) {
 			currentSlide = currSlideshow.querySelector('.showing');
 			let currIdx = ! currentSlide  ?  -1  :  Array.prototype.indexOf.call(slides, currentSlide);
 			let nextIdx = (currIdx + 1) % slides.length;
-			nextSlide = slides[currIdx];
+			nextSlide = slides[nextIdx];
 			lazyLoad(nextSlide);
 			
 			let delay = parseInt(currSlideshow.getAttribute('data-delay'));
