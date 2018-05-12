@@ -8,7 +8,7 @@ defaults:
     scope:
       path: "" # minden oldalnak ez az alapértelmezés, ha üres a `path`
     values:
-      layout: turakeret
+      layout: weblapkeret
       mainid: main
       title: Popeye Leskó Kalandtúrák
       themecolor: #743
@@ -19,6 +19,7 @@ collections:
   turak:
     permalink: /:path
     output: true
+    layout: turakeret
   
 
 #markdown: kramdown
