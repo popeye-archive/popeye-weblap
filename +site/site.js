@@ -8,9 +8,7 @@ function slideshow(selector, delay) {
 	
 	// delay read from attribute
 	let delayData= parseInt(slideshows[0].getAttribute('data-delay'));
-	if (delayData != NaN)  delay = delayData;
-	// convert to millisec if it's seconds (< 100)
-	if (delay < 100)  delay = delay * 1000;
+	if (0 < delayData && delayData < 100)  delay = delayData;
 
 	for (let i= 0; i < slideshows.length; i++) {
 		let firstSlide = slideshows[i].querySelector('.slide');
@@ -22,7 +20,7 @@ function slideshow(selector, delay) {
 	var currSlideshowIdx = 0;
 	var currentSlide, nextSlide;
 	lazyLoadNextSlide();
-	var slideInterval = setInterval(showNextSlide, delay / slideshows.length);
+	var slideInterval = setInterval(showNextSlide, delay * 1000 / slideshows.length);
 
 	function showNextSlide() {
 		if (currentSlide)  currentSlide.classList.remove('showing');
