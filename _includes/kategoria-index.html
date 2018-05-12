@@ -1,27 +1,24 @@
-<section class="main" id="{{include.kategoriaId}}">
-{% assign kategoriaId = include.kategoriaId %}
-{% assign kat = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
+<section class="main" id="{{include.kategoriaId}}">{%
+ assign kategoriaId = include.kategoriaId %}{%
+ assign kat = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
 <div class="kategoria">
 	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
-	{% for leiras in kat.turak %} {% unless leiras.regi %}
+	{% for leiras in kat.turak %}{% unless leiras.regi %}{%
+	 assign turaId = leiras.turaId %}{%
+	 assign kepek = site.data.kepek[kategoriaId][turaId] %}{%
+	 assign turak = site.data.naptar | where: "turaId",turaId %}
 	<article class="card leiras">
-		{% assign turaId = leiras.turaId %}
 		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}" data-delay="3">
-			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
 			{% include slideshow.html kepek=kepek %} 
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
-
-				{% assign turak = site.data.naptar | where: "turaId",turaId %}
-				{% for tura in turak %}
-				{% if tura.idopont %}
-				<p class="idopont">{{tura.idopont}}</p>
-				{% endif %}
-				{% if tura.idopontok %} {% for idopont in tura.idopontok %}
+				{% for tura in turak %}{% if tura.idopont %}
+				<p class="idopont">{{tura.idopont}}</p>{%
+				 endif %}{%
+				 if tura.idopontok %}{% for idopont in tura.idopontok %}
 				<p class="idopont">{{idopont}}</p>
-				{% endfor %} {% endif %}
-				{% endfor %}
-
+				{% endfor %}{% endif %}{%
+				 endfor %}
 				<p>
 					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
 					<span class="button">Részletek ➺</span>
@@ -29,7 +26,6 @@
 			</div>
 		</a>
 	</article>
-	{% endunless %} {% endfor %}
+	{% endunless %}{% endfor %}
 </div>
 </section>
-<
