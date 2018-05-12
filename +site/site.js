@@ -13,13 +13,13 @@ function slideshow(selector) {
 		if (firstSlide && ! showingSlide)  firstSlide.classList.add('showing');
 	}
 
-	var currSlideshowIdx= 0;
+	//var currSlideshowIdx= 0;
 	var slideInterval= setInterval(nextSlide, 2000);
 
 	function nextSlide() {
-		var currSlideshow= slideshows[currSlideshowIdx];
-		var slides= nextSlideshow.querySelectorAll('.slide');
-		var current= nextSlideshow.querySelector('.showing');
+		//var currSlideshow= slideshows[currSlideshowIdx];
+		var slides= slideshows.querySelectorAll('.slide');
+		var current= slideshows.querySelector('.showing');
 		var currIdx= slides.indexof(current);
 
     if (0 <= currIdx)  slides[currIdx].classList.remove('showing');
@@ -28,12 +28,12 @@ function slideshow(selector) {
 			slides[currIdx].classList.add('showing');
 		}
 
-    currSlideshowIdx= (currSlideshowIdx + 1) % slideshows.length;
+    //currSlideshowIdx= (currSlideshowIdx + 1) % slideshows.length;
 
 		// pre-load next slide in next slideshow
-		currSlideshow= slideshows[currSlideshowIdx];
-		slides= nextSlideshow.querySelectorAll('.slide');
-		current= nextSlideshow.querySelector('.showing');
+		//currSlideshow= slideshows[currSlideshowIdx];
+		slides= slideshows.querySelectorAll('.slide');
+		current= slideshows.querySelector('.showing');
 		currIdx= slides.indexof(current);
 		if (slides.length) {
 			currIdx= (currIdx + 1) % slides.length;
