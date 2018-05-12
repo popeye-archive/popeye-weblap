@@ -11,6 +11,6 @@
   <a href="http://popeyelesko.blogspot.hu/" target="_blank">Blog</a>
 </nav>
 <script>
-  let loc= window.location.pathname, activeNav= document.querySelector('nav a[href="'+loc+'"]');
+  let loc= window.location.pathname.match("/[^/]*")[0], activeNav= document.querySelector('nav a[href="'+loc+'"]');
   if (activeNav) activeNav.classList.add('active');
 </script>
