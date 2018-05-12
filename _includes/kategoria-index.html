@@ -8,7 +8,6 @@
 		{% assign turaId = leiras.turaId %}
 		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}">
 			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
-			{% include slideshow.html kepek=kepek tagName='div' %}
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
 
