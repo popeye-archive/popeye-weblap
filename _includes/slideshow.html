@@ -1,4 +1,5 @@
-{% assign first = true %}{% assign tag = include.tagName %}{% if include.kepek %}{% if tag %}{% for kep in include.kepek %}{% if first
+{% assign first = true %}{% assign tag = include.tagName %}
+{% if include.kepek %}{% if tag %}{% for kep in include.kepek %}{% if first
  %}      <{{tag}} class="img slide showing" style="background-image:url(/kepek/{{kep}})"></{{tag}}>
 {% assign first = false %}{% else
  %}      <{{tag}} class="img slide" src-lazy="/kepek/{{kep}}" ></{{tag}}> 
