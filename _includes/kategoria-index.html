@@ -10,7 +10,7 @@
 			{% assign first = true %}
 			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
 			{% if kepek %} {% for kep in kepek %}
-			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep}}">
+			<div class="img slide" style="background-image:url(/kepek/{{kep}})" {% unless first %}hidden{% endunless %}></div>
 			{% assign first = false %}
 			{% endfor %} {% endif %}
 			<div class="overlay">

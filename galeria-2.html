@@ -30,19 +30,16 @@ css: ["carousel.css"]
 <li class="tura">
   <details>
     <summary class="img">
-      <!-- {% if tura.miniKep %} style="background-image:url(/kepek/{{tura.miniKep.ut}})" {% endif %} -->
-      <a href="#{{kat.kategoriaId}}/{{tura.turaId}}">
-        {% if tura.miniKep %} <img src="/kepek/{{tura.miniKep.ut}}"> {% endif %}
+      <!-- {% if tura.kepek %} <img src="/kepek/{{tura.kepek[0]}}"> {% endif %} -->
+      <a href="#{{kat.kategoriaId}}/{{tura.turaId}}" {% if tura.kepek %}class="img" style="background-image:url(/kepek/{{tura.kepek[0]}})"{% endif %} >
         {{tura.nev}}
       </a>
     </summary>
     <div class="carousel  imageViewer gallery_page">
       <ul class="content-cont cf">
         {% for kep in tura.kepek %}
-        <li class="cf" id="{{tura.turaId}}-{{kep.nev}}">
-          <div class="img" style="{background:/kepek/{{kep.ut}}}"></div>
-          <img src="/kepek/{{kep.ut}} hidden">
-          <img src="/kepek/{{kat.kategoriaId}}/{{tura.turaId}}/{{kep.nev}}" hidden>
+        <li class="cf" id="{{kep}}">
+          <div class="img" style="background:url(/kepek/{{kep}})"></div>
         </li>
         {% endfor %}
       </ul>
@@ -51,7 +48,7 @@ css: ["carousel.css"]
         <div class="right"><span class="control"></span></div>
         <ul>
           {% for kep in tura.kepek %}
-          <li class="{{tura.turaId}}-{{kep.nev}}">
+          <li class="{{kep}}">
             <span class="l"></span>
             <span class="r"></span>
           </li>
