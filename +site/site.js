@@ -20,7 +20,7 @@ function slideshow(selector) {
 
 	function showNextSlide() {
     if (currentSlide)  currentSlide.classList.remove('showing');
-    if (nextSlide)  currentSlide.classList.add('showing');
+    if (nextSlide)  nextSlide.classList.add('showing');
 		lazyLoadNextSlide();
 	}
 	
