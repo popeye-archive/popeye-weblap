@@ -1,4 +1,5 @@
-<script src="/+site/site.js?v={{ site.github.build_revision }}"></script>
+{% assign ver = site.github.build_revision | truncate 8,'' %}
+<script src="/+site/site.js?v={{ver}}"></script>
 {% if site.google_analytics %}
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <script>
