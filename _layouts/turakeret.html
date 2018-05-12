@@ -1,12 +1,11 @@
-{% assign path = page.url | split: "/" %}
-{% assign kategoriaId = path[1] %}
-{% assign turaFile = path[2] | split: "." %}
-{% assign turaId = turaFile[0] %}
-{% assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
-{% assign tura = kategoria.turak | where: "turaId",turaId | first %}
-{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
-{% include html-head.html title=tura.nev kepek=kepek %}
-
+{% assign path = page.url | split: "/" %}{%
+ assign kategoriaId = path[1] %}{%
+ assign turaFile = path[2] | split: "." %}{%
+ assign turaId = turaFile[0] %}{%
+ assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}{%
+ assign tura = kategoria.turak | where: "turaId",turaId | first %}{%
+ assign kepek = site.data.kepek[kategoriaId][turaId] %}{%
+ include html-head.html title=tura.nev kepek=kepek %}
 <body>
 <header id="fejlec">
 {% include fejlec.html %}
