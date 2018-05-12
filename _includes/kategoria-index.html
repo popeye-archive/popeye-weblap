@@ -6,8 +6,9 @@
 	{% for leiras in kat.turak %} {% unless leiras.regi %}
 	<article class="card leiras">
 		{% assign turaId = leiras.turaId %}
-		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}">
+		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}" data-delay="3">
 			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
+			{% include slideshow.html kepek=kepek %} 
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
 
@@ -31,3 +32,4 @@
 	{% endunless %} {% endfor %}
 </div>
 </section>
+<

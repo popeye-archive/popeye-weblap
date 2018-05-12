@@ -2,9 +2,15 @@
 * Slideshow
 */
 
-function slideshow(selector) {
+function slideshow(selector, delay) {
 	var slideshows = document.querySelectorAll(selector);
 	if (! slideshows.length)  return false;
+	
+	// delay read from attribute
+	let delayData= parseInt(slideshows[0].getAttribute('data-delay'));
+	if (delayData != NaN)  delay = delayData;
+	// convert to millisec if it's seconds (< 100)
+	if (delay < 100)  delay = delay * 1000;
 
 	for (let i= 0; i < slideshows.length; i++) {
 		let firstSlide = slideshows[i].querySelector('.slide');
@@ -16,7 +22,7 @@ function slideshow(selector) {
 	var currSlideshowIdx = 0;
 	var currentSlide, nextSlide;
 	lazyLoadNextSlide();
-	var slideInterval = setInterval(showNextSlide, slideshow.delay / slideshows.length);
+	var slideInterval = setInterval(showNextSlide, delay / slideshows.length);
 
 	function showNextSlide() {
 		if (currentSlide)  currentSlide.classList.remove('showing');
@@ -49,8 +55,7 @@ function slideshow(selector) {
 	}
 }
 
-slideshow.delay= 5000;
-slideshow('.slideshow');
+slideshow('.slideshow', 5);
 
 
 
