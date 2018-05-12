@@ -41,7 +41,7 @@ function slideshow(selector, globalDelay) {
 			lazyLoad(nextSlide);
 			
 			let delay = parseInt(currSlideshow.getAttribute('data-delay'));
-			if (isNaN(delay) || delay < 0 || delay > 100))  delay = globalDelay;
+			if (isNaN(delay) || delay < 0 || delay > 100)  delay = globalDelay;
 			if (delay != lastDelay) {
 				lastDelay = delay;
 				if (slideInterval)  clearInterval(slideInterval);
