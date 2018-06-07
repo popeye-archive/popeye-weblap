@@ -13,6 +13,9 @@
 {% if page.css %}{% for css in page.css
 %}<link rel="stylesheet" href="/+site/{{css}}?v={{ver}}" />
 {% endfor %}{% endif %}<!-- -->
+{% if page.absolutecss %}{% for css in page.absolutecss
+%}<link rel="stylesheet" href="{{css}}" />
+{% endfor %}{% endif %}<!-- -->
 <link rel="apple-touch-icon" sizes="152x152" href="/+site/icons/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/+site/icons/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/+site/icons/favicon-16x16.png" />
