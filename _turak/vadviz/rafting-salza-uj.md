@@ -4,5 +4,25 @@ mainid: main
 title: rafting-salza-uj
 themecolor: 
 date: 2018-06-08 00:00:00 +0000
+nev: Rafting hétvége a Salzán
+ar: 22.900 Ft
+arOpciok: A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén ruhák
+  és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és a szakszerű
+  túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért tudjuk ezt biztosítani.
+regi: false
+redirect_from: ''
 published: false
 ---
+\## Ismertető
+
+Tizenhét éve vagyunk otthon a Salza völgyében. A kristálytiszta zöld víz, az Alpok fantasztikus hegyvonulata csodálatos látványt nyújt, igazi paradicsoma ez a vadvízi evezés szerelmeseinek. A Salzán a számunkra engedélyezett két -, és háromszemélyes hajókban nemcsak a már gyakorlott túrázók, hanem a teljesen kezdők is élvezik ezt a programot. Az úszni tudáson kívül semmilyen előképzettség nem szükséges a részvételhez, azok akik az átlagnál félősebbek, vagy nem bíznak magukban , gyakorlottabb társukkal vagy túravezetővel tehetik meg a távot. Az ilyen túrákon az első napon a sima víztől jutunk el a közepesnél valamivel nehezebbig, majd másnap egy kicsit ennél is izgalmasabb szakasz következik.
+
+\## Mikor?
+
+Májustól októberig minden hétvégén.
+
+Egy ilyen túra után jól esik egy hangulatos vacsora közben a túratársakkal megbeszélni a nap eseményeit. Nálunk szokássá vált, hogy a bázisunk étkezősátrában megszervezzük a vacsorát is, melyen a részvétel természetesen nem kötelező. Grillparty sörrel vagy üdítővel: 2.800 Ft, bográcsos vacsora sörrel vagy üdítővel: 2.500 Ft
+
+Szívesen és díjmentesen segítünk a szállásfoglalásban is. A közelben színvonalas panziók és magánházak találhatók , ahol reggelivel már 29 EURO/fő/éj ártól vannak szállások. Sátorozni 8 EURO/fő ártól lehet, míg a turistaszálláson 15 EURO-tól van hely. Mivel a távolság Bp-től csak 450 km és ebből 380 km autópálya, így akár szombat korai indulással is számolhatunk, természetesen kényelmesebb már pénteken kiérkezni.
+
+Részvételi díj: 22.900 Ft
