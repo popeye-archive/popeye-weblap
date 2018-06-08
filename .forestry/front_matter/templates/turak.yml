@@ -3,50 +3,47 @@ hide_body: false
 is_partial: false
 fields:
 - name: nev
-  label: Nev
+  label: Cím
   type: text
   hidden: false
   default: ''
 - name: ar
-  label: Ar
+  label: "Ár"
   type: text
   hidden: false
   default: ''
+  description: pl. 10.000 Ft - 20.000 Ft
 - name: arOpciok
-  label: Aropciok
+  label: "Ár opciók"
   type: text
   hidden: false
   default: ''
+  description: 'pl. Sátorozással : 159.000 Ft  Panziókban, fizető vendégszobákban
+    : 219.000 Ft'
+- type: boolean
+  name: regi
+  label: Régi
+  description: Nem jelenik meg a honlapon
 - name: date
   label: Date
   type: datetime
-  hidden: false
+  hidden: true
   default: ''
 - name: redirect_from
   label: Redirect from
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: title
   label: Title
   type: text
-  hidden: false
+  hidden: true
   default: Popeye Leskó Kalandtúrák
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: turakeret
-- name: mainid
-  label: Mainid
-  type: text
-  hidden: false
-  default: main
-- name: themecolor
-  label: Themecolor
-  type: text
-  hidden: false
-  default: 
 pages:
 - _turak/viziturak/softrafting.html
 - _turak/viziturak/karintia-raba.html
