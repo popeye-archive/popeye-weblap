@@ -45,6 +45,7 @@ fields:
   hidden: true
   default: turakeret
 pages:
+- _turak/vadviz/rafting-salza-uj.md
 - _turak/viziturak/softrafting.html
 - _turak/viziturak/karintia-raba.html
 - _turak/viziturak/index.html

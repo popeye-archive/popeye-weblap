@@ -4,7 +4,7 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 collections: 
-upload_dir: kepek/+fel
+upload_dir: kepek
 public_path: "/kepek"
 front_matter_path: ''
 use_front_matter_path: false
