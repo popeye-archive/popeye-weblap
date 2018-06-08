@@ -11,11 +11,27 @@ backendB:
 media_folder: "/kepek/+fel"
 
 collections:
-- name: "blog" # Used in routes, e.g., /admin/collections/blog
-  label: "Blog" # Used in the UI
+- name: "turak"    # Used in routes: /admin/collections/turak
+  label: "Túrák"    # Used in the UI
+  folder: "_turak"    # _turak/:kategoriaId/:turaId
+  create: true    # Allow users to create new documents in this collection
+  fields:    # The fields for each document, usually in front matter
+  - {label: "Layout", name: "layout", widget: "hidden", default: "turakeret"}
+  - {label: "Cím", name: "nev", widget: "string"}
+  - {label: "Ár", name: "ar", widget: "string"}
+  - {label: "Ár opciók", name: "arOpciok", widget: "string"}
+  - {label: "Régi", name: "regi", widget: "bool"}
+  - {label: "Tól", name: "idoponttol", widget: "datetime"}
+  - {label: "Ig", name: "idopontig", widget: "datetime"}
+  - {label: "Időpontok", name: "idopontok", widget: "string"}
+  - {label: "Kép", name: "kep", widget: "image"}
+  - {label: "Képek", name: "kepek", widget: "list of image"}
+  - {label: "Body", name: "body", widget: "markdown"}
+- name: "blog"    # Used in routes: /admin/collections/blog
+  label: "Blog"    # Used in the UI
   folder: "_posts"
-  create: true # Allow users to create new documents in this collection
-  fields: # The fields for each document, usually in front matter
+  create: true    # Allow users to create new documents in this collection
+  fields:    # The fields for each document, usually in front matter
   - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
   - {label: "Title", name: "title", widget: "string"}
   - {label: "Dátum", name: "date", widget: "datetime"}
