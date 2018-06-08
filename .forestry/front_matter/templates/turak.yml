@@ -1,0 +1,82 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: nev
+  label: Nev
+  type: text
+  hidden: false
+  default: ''
+- name: ar
+  label: Ar
+  type: text
+  hidden: false
+  default: ''
+- name: arOpciok
+  label: Aropciok
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: redirect_from
+  label: Redirect from
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: Popeye Leskó Kalandtúrák
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: turakeret
+- name: mainid
+  label: Mainid
+  type: text
+  hidden: false
+  default: main
+- name: themecolor
+  label: Themecolor
+  type: text
+  hidden: false
+  default: 
+pages:
+- _turak/viziturak/softrafting.html
+- _turak/viziturak/karintia-raba.html
+- _turak/viziturak/index.html
+- _turak/vadviz/vadvizi-tabor-a-salzan.html
+- _turak/vadviz/rafting-hetvege-salza.html
+- _turak/vadviz/kedvezmenyes-salza-tura.html
+- _turak/vadviz/index.html
+- _turak/siutak/laci-bacsi-siovija.html
+- _turak/siutak/index.html
+- _turak/siutak/forni-di-sopra.html
+- _turak/kerekparturak/temze-volgy.html
+- _turak/kerekparturak/szloven-olasz.html
+- _turak/kerekparturak/szloven-olasz-osztrak.html
+- _turak/kerekparturak/szloven-olasz-husvet.html
+- _turak/kerekparturak/skot-felfold.html
+- _turak/kerekparturak/schladming-melk.html
+- _turak/kerekparturak/salzkammergut.html
+- _turak/kerekparturak/normandia-bretagne.md
+- _turak/kerekparturak/neckar-volgy.html
+- _turak/kerekparturak/london-parizs.html
+- _turak/kerekparturak/loire-volgy.html
+- _turak/kerekparturak/kis-balaton.html
+- _turak/kerekparturak/karintia-raba.html
+- _turak/kerekparturak/index.html
+- _turak/kerekparturak/gail-volgy-2018.md
+- _turak/kerekparturak/duna-volgy-ulm-regensburg.html
+- _turak/kerekparturak/duna-volgy-regensburg-linz.html
+- _turak/kerekparturak/duna-volgy-passau-becs.html
+- _turak/kerekparturak/duna-volgy-donaueschingen-ulm.html
+- _turak/kerekparturak/dania-hamburg.html
+- _turak/kerekparturak/alpok-adria.html
+- _turak/kerekparturak/alpok-adria-2018.md
