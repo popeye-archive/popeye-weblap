@@ -45,12 +45,12 @@ fields:
   hidden: true
   default: turakeret
 pages:
+- _turak/vadviz/rafting-hetvege-salza.html
 - _turak/vadviz/rafting-salza-uj.md
 - _turak/viziturak/softrafting.html
 - _turak/viziturak/karintia-raba.html
 - _turak/viziturak/index.html
 - _turak/vadviz/vadvizi-tabor-a-salzan.html
-- _turak/vadviz/rafting-hetvege-salza.html
 - _turak/vadviz/kedvezmenyes-salza-tura.html
 - _turak/vadviz/index.html
 - _turak/siutak/laci-bacsi-siovija.html
