@@ -1,23 +1,16 @@
 ---
-layout: turakeret
-mainid: main
-title: rafting-salza-uj
-themecolor: 
-date: 2018-06-08 00:00:00 +0000
-nev: Rafting hétvége a Salzán
+cim: Rafting hétvége a Salzán
 ar: 22.900 Ft
-arOpciok: A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén ruhák
-  és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és a szakszerű
-  túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért tudjuk ezt biztosítani.
+arOpciok: A túrákon  a részvételi díj tartalmazza a két vízreszállást, a neoprén ruhák és védőeszközök bérlését, a beöltözéstől a vízig történő transzfert és a szakszerű túravezetést. Azok számára, akik kiutazást is kérnek 11.500 Ft-ért tudjuk ezt biztosítani.
 regi: false
-redirect_from: ''
+date: 2018-06-08 00:00:00 +0000
 published: false
 ---
-\## Ismertető
+## Ismertető
 
 Tizenhét éve vagyunk otthon a Salza völgyében. A kristálytiszta zöld víz, az Alpok fantasztikus hegyvonulata csodálatos látványt nyújt, igazi paradicsoma ez a vadvízi evezés szerelmeseinek. A Salzán a számunkra engedélyezett két -, és háromszemélyes hajókban nemcsak a már gyakorlott túrázók, hanem a teljesen kezdők is élvezik ezt a programot. Az úszni tudáson kívül semmilyen előképzettség nem szükséges a részvételhez, azok akik az átlagnál félősebbek, vagy nem bíznak magukban , gyakorlottabb társukkal vagy túravezetővel tehetik meg a távot. Az ilyen túrákon az első napon a sima víztől jutunk el a közepesnél valamivel nehezebbig, majd másnap egy kicsit ennél is izgalmasabb szakasz következik.
 
-\## Mikor?
+## Mikor?
 
 Májustól októberig minden hétvégén.
 
