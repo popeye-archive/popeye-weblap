@@ -1,4 +1,19 @@
 ---
+- kategoriaId: siutak
+  kategoriaNev: Síutak
+  turak:
+  - turaId: forni-di-sopra
+    nev: A hely
+  - turaId: szallas
+    nev: A szállás
+  - turaId: berletarak
+    nev: Bérletárak
+  - turaId: etkezes
+    nev: Étkezés
+  - turaId: palyak
+    nev: A pályák
+  - turaId: laci-bacsi-siovija
+    nev: Laci Bácsi síovija
 - kategoriaId: kerekparturak
   kategoriaNev: Kerékpártúrák
   turak:
@@ -154,14 +169,3 @@
       sátorban (plusz 6.000 Ft befizetése esetén turistaszálláson és vasárnap estétől
       szobát reggelig bőséges félpanziós étkezést).
 
-- kategoriaId: siutak
-  kategoriaNev: Síutak
-  turak:
-  - turaId: forni-di-sopra
-    nev: Forni di Sopra
-    ar: 80 - 155 EUR
-    arOpciok: A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza.
-  - turaId: laci-bacsi-siovija
-    nev: Laci Bácsi síovija
-    ar: 100 - 135 EUR
-    arOpciok: A választott szállástól és turnustól függ az ár, a síbérlet árát nem tartalmazza.
