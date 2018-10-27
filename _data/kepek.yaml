@@ -1,4 +1,43 @@
 ---
+siutak:
+  forni-di-sopra:
+  - siutak/forni-di-sopra/2018-hely1.jpg
+  - siutak/forni-di-sopra/2018-hely2.jpg
+  - siutak/forni-di-sopra/2018-hely3.jpg
+  szallas:
+  - siutak/szallas/Villa-Verde-kivulrol-1.jpg
+  - siutak/szallas/Villa-Verde-bar.jpg
+  - siutak/szallas/Villa-Verde-havazas.jpg
+  arak-idopontok:
+  - siutak/szallas/Villa-Verde-kivulrol-2.jpg
+  berletarak:
+  - siutak/berletarak/skipass-teaser-2.png
+  - siutak/berletarak/bérletárakhoz.jpg
+  - siutak/palyak/Forni-2017-bassa.jpg
+  etkezes:
+  - siutak/etkezes/tálalva.jpg
+  - siutak/etkezes/vadas-vacsora.jpg
+  - siutak/etkezes/reggeli.jpg
+  palyak:
+  - siutak/palyak/Forni-2017-bassa.jpg
+  - siutak/palyak/kezdőpálya1.jpg
+  - siutak/palyak/nagypálya1.jpg
+  - siutak/palyak/nagypálya2.jpg
+  - siutak/palyak/varmost-panoramica.jpg
+  - siutak/palyak/2009-020.jpg
+  - siutak/palyak/2009-039.jpg
+  - siutak/palyak/2009-157.jpg
+  - siutak/palyak/2009-175.jpg
+  laci-bacsi-siovija:
+  - siutak/laci-bacsi-siovija/síovi-31.jpg
+  - siutak/laci-bacsi-siovija/ovisí3.jpg
+  - siutak/laci-bacsi-siovija/síovi-11.jpg
+  - siutak/laci-bacsi-siovija/síovi-32.jpg
+  - siutak/laci-bacsi-siovija/síovi-2.jpg
+  - siutak/laci-bacsi-siovija/síovi-33.jpg
+  - siutak/laci-bacsi-siovija/síovi-1.jpg
+  - siutak/laci-bacsi-siovija/síovi-7.jpg
+  - siutak/laci-bacsi-siovija/síovi-35.jpg
 kerekparturak:
   gail-volgy-2018:
   - kerekparturak/gail-volgy/Gail1.jpg
@@ -168,41 +207,3 @@ vadviz:
   - vadviz/vadvizi-tabor-a-salzan/pict-0044.jpg
   - vadviz/vadvizi-tabor-a-salzan/pict-0014.jpg
   - vadviz/vadvizi-tabor-a-salzan/pict-0118.jpg
-siutak:
-  forni-di-sopra:
-  - siutak/forni-di-sopra/2018-hely1.jpg
-  - siutak/forni-di-sopra/2018-hely2.jpg
-  - siutak/forni-di-sopra/2018-hely3.jpg
-  - siutak/forni-di-sopra/Villa-Verde-kivulrol.jpg
-  - siutak/forni-di-sopra/Villa-Verde-bar.jpg
-  - siutak/forni-di-sopra/2009-020.jpg
-  - siutak/forni-di-sopra/2009-039.jpg
-  - siutak/forni-di-sopra/2009-157.jpg
-  - siutak/forni-di-sopra/2009-175.jpg
-  - siutak/forni-di-sopra/kép-151.jpg
-  - siutak/forni-di-sopra/varmost-panoramica.jpg
-  - siutak/forni-di-sopra/forni-pályatérkép.jpg
-  szallas:
-  - siutak/szallas/szállás-havas3.jpg
-  - siutak/szallas/szállás1.jpg
-  berletarak:
-  - siutak/berletarak/bérletárakhoz.jpg
-  etkezes:
-  - siutak/etkezes/reggeli.jpg
-  - siutak/etkezes/tálalva.jpg
-  - siutak/etkezes/vadas-vacsora.jpg
-  palyak:
-  - siutak/palyak/Forni-2017-bassa.jpg
-  - siutak/palyak/kezdőpálya1.jpg
-  - siutak/palyak/nagypálya1.jpg
-  - siutak/palyak/nagypálya2.jpg
-  laci-bacsi-siovija:
-  - siutak/laci-bacsi-siovija/síovi-31.jpg
-  - siutak/laci-bacsi-siovija/ovisí3.jpg
-  - siutak/laci-bacsi-siovija/síovi-11.jpg
-  - siutak/laci-bacsi-siovija/síovi-32.jpg
-  - siutak/laci-bacsi-siovija/síovi-2.jpg
-  - siutak/laci-bacsi-siovija/síovi-33.jpg
-  - siutak/laci-bacsi-siovija/síovi-1.jpg
-  - siutak/laci-bacsi-siovija/síovi-7.jpg
-  - siutak/laci-bacsi-siovija/síovi-35.jpg
