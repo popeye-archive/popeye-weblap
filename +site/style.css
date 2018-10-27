@@ -67,8 +67,8 @@ a {
 	color: #ffdd99;
 	color: wheat;
 	color: burlywood;
-	color: #f0f080;
 	color: #ffddbb;
+	color: #f0f080;
 }
 /*
 a:visited, a:focus, a:hover, a:active {
@@ -499,6 +499,9 @@ article.card>a {
 
 article.card:hover>a {
 	color: inherit;
+	color: lightgoldenrodyellow;
+	color: goldenrod;
+	color: gold;
 }
 
 img {
