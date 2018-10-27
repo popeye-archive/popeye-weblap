@@ -504,6 +504,77 @@ article.card:hover>a {
 	color: gold;
 }
 
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	bottom: 1em;
+	left: 0em;
+	z-index: 3;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.overlay>p, .overlay>h4 {
+	padding: 0.4em 1em;
+	margin: auto;
+	/* opacity: 0.8; */
+	background-color: #22445599;
+}
+
+.overlay>span {
+	padding: 0.4em 1em;
+	/* opacity: 0.8; */
+	background-color: #22445599;
+}
+
+.overlay>div {
+    padding: 0;
+}
+
+.overlay .idopont {
+	font-size: 0.8em;
+	color: goldenrod;
+	color: gold;
+}
+
+.overlay .idopont .fontos {
+	font-size: 1.1em;
+	font-weight: bolder;
+	color: yellow;
+	background: #f759;
+	border-radius: 0.25em;
+	padding: 0.25em;
+	margin: 0.5em;
+}
+
+.overlay .ar {
+	font-size: 0.8em;
+	color: goldenrod;
+	color: gold;
+	color: #ffb860;
+}
+
+.overlay .button {
+	font-size: 0.9em;
+	padding: 2px 0.6em 2px;
+	margin-left: 1em;
+	border-radius: 4px;
+	background: #4477aa99;
+	/* border: #4477aa99 solid 3px */
+	/* box-shadow: 0 0 4px 3px #804000ff; */
+}
+
+.overlay .button:hover {
+	background: #449966;
+	border-color: #449966;
+}
+
+
+/*
+* Slideshow
+*/
+
 img {
 	object-fit: cover;
 }
@@ -527,53 +598,6 @@ article.card .img {
 	box-shadow: inset 0 0 1.5em 0.5em #804000d0;
 }
 
-article.card h4 {
-}
-
-article.card .idopont {
-	font-size: 0.8em;
-	color: goldenrod;
-	color: gold;
-}
-
-article.card .idopont .fontos {
-	font-size: 1.1em;
-	font-weight: bolder;
-	color: yellow;
-	background: #f759;
-	border-radius: 0.25em;
-	padding: 0.25em;
-	margin: 0.5em;
-}
-
-article.card .ar {
-	font-size: 0.8em;
-	color: goldenrod;
-	color: gold;
-	color: #ffb860;
-}
-
-article.card .button {
-	font-size: 0.9em;
-	padding: 2px 0.6em 2px;
-	margin-left: 1em;
-	border-radius: 4px;
-	background: #4477aa99;
-	/* border: #4477aa99 solid 3px */
-	/* box-shadow: 0 0 4px 3px #804000ff; */
-}
-
-article.card .button:hover {
-	background: #449966;
-	border-color: #449966;
-}
-
-
-/*
-* Slideshow
-*/
-
-
 .slideshow {
 	position: relative;
 }
@@ -596,23 +620,6 @@ article.card .button:hover {
 .showing {
 	opacity: 1;
 	z-index: 2;
-}
-
-.overlay {
-	position: absolute;
-	width: 100%;
-	bottom: 1em;
-	left: 0em;
-	z-index: 3;
-	display: flex;
-	flex-flow: column nowrap;
-}
-
-.overlay>* {
-	padding: 0.4em 1em;
-	margin: auto;
-	/* opacity: 0.8; */
-	background-color: #22445599;
 }
 
 /*

@@ -19,10 +19,14 @@
 				<p class="idopont">{{idopont}}</p>
 				{% endfor %}{% endif %}{%
 				 endfor %}
+				{% if tura.ar %}
 				<p>
 					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
 					<span class="button">Részletek ➺</span>
 				</p>
+				{% else %}
+				<p class="button">Részletek ➺</p>
+				{% endif %}
 			</div>
 		</a>
 	</article>
