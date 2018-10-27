@@ -4,7 +4,7 @@
 
 function slideshow(selector, globalDelay) {
 	var slideshows = document.querySelectorAll(selector);
-	if (! slideshows.length)  return false;
+	if (slideshows.length < 2)  return false;
 	
 	for (let i= 0; i < slideshows.length; i++) {
 		let firstSlide = slideshows[i].querySelector('.slide');
