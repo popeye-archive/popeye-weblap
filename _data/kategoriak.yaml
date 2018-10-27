@@ -8,6 +8,8 @@
     nev: A szállás
   - turaId: berletarak
     nev: Bérletárak
+  - turaId: arak-idopontok
+    nev: Árak és időpontok
   - turaId: etkezes
     nev: Étkezés
   - turaId: palyak
