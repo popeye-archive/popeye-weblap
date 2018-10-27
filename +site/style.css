@@ -555,12 +555,16 @@ article.card:hover>a {
 	color: #ffb860;
 }
 
+.overlay>.button {
+	margin: 0.2em auto;
+}
+
 .overlay .button {
 	font-size: 0.9em;
 	padding: 2px 0.6em 2px;
 	margin-left: 1em;
 	border-radius: 4px;
-	background: #4477aa99;
+	background: ##4477aaee;
 	/* border: #4477aa99 solid 3px */
 	/* box-shadow: 0 0 4px 3px #804000ff; */
 }
