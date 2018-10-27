@@ -560,9 +560,12 @@ article.card:hover>a {
 }
 
 .overlay>p .button {
+	margin-left: 1em;
+}
+
+.overlay .button {
 	font-size: 0.9em;
 	padding: 2px 0.6em 2px;
-	margin-left: 1em;
 	border-radius: 4px;
 	background: #4477aaee;
 	/* border: #4477aa99 solid 3px */
