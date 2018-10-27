@@ -14,6 +14,7 @@
 
 <section class="main" id="main">
 <article class="main">
+{% unless page.kepekNelkul %}
 	<div class="slideshow">
     {% include slideshow.html kepek=kepek %} 
 		<div class="overlay">
@@ -22,6 +23,7 @@
 {% endunless %}
 		</div>
 	</div>
+{% endunless %}
 	<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="offer" hidden>
 		<div class="price">
 			<p>Ár: <span itemprop="price">{{ tura.ar }}</p>
