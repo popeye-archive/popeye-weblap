@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem 'jekyll', '~> 3.5.2'
+gem 'jekyll', '~> 3.6.3'
 gem 'jekyll-redirect-from'
 gem 'jekyll-theme-midnight'
