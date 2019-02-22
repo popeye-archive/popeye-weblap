@@ -3,35 +3,18 @@ title: Naptár — Popeye Leskó Kalandtúrák
 published: true
 ---
 <section class="main" id="naptar">
-{% for tura in site.data.naptar %}
-	{% assign kategoriaId = tura.kategoriaId %}
-	{% assign turaId = tura.turaId %}
-
-	{% if tura.idopont %}
-	<h4 class="idopont">{{tura.idopont}}</h4>
-	{% endif %}
-	{% if tura.idopontok %} {% for idopont in tura.idopontok %}
-	<h4 class="idopont">{{idopont}}</h4>
-	{% endfor %} {% endif %}
+{% for turaUtvonal in site.data.naptar %}
+	{% assign katEsTuraId = turaUtvonal | split:"/" %}
+	{% assign kategoriaId = katEsTuraId | first %}
+	{% assign turaId      = katEsTuraId | last %}
 
 	<article class="card tura">
-
-		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}">
+		<a class="slideshow" href="/{{turaUtvonal}}">
 			{% assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
 			{% assign leiras = kategoria.turak | where: "turaId",turaId | first %}
 			{% assign kepek = site.data.kepek[kategoriaId][turaId] %}
-			{% assign first = true %}
-			{% if kepek %} {% for kep in kepek %}
-			<img class="slide" src{%unless first%}-async{%endunless%}="/kepek/{{kep}}">
-			{% assign first = false %}
-			{% endfor %} {% endif %}
-			<div class="overlay">
-				<h4>{{leiras.nev}}</h4>
-				<p>
-					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
-					<span class="button">Részletek ➺</span>
-				</p>
-			</div>
+			{% include slideshow.html kepek=kepek %} 
+			{% include turainfo.html leiras=leiras %} 
 		</a>
 	</article>
 </div>
