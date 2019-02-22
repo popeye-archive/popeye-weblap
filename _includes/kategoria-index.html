@@ -5,17 +5,16 @@
 	<span id="kategoriaId" hidden>{{kat.kategoriaId}}</span>
 	{% for leiras in kat.turak %}{% unless leiras.regi %}{%
 	 assign turaId = leiras.turaId %}{%
-	 assign kepek = site.data.kepek[kategoriaId][turaId] %}{%
-	 assign turak = site.data.naptar | where: "turaId",turaId %}
+	 assign kepek = site.data.kepek[kategoriaId][turaId] %}
 	<article class="card leiras">
 		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}" data-delay="2">
 			{% include slideshow.html kepek=kepek %} 
 			<div class="overlay">
 				<h4>{{leiras.nev}}</h4>
-				{% for tura in turak %}{% if tura.idopont %}
-				<p class="idopont">{{tura.idopont}}</p>{%
+				{% if leiras.idopont %}
+				<p class="idopont">{{leiras.idopont}}</p>{%
 				 endif %}{%
-				 if tura.idopontok %}{% for idopont in tura.idopontok %}
+				 if leiras.idopontok %}{% for idopont in leiras.idopontok %}
 				<p class="idopont">{{idopont}}</p>
 				{% endfor %}{% endif %}{%
 				 endfor %}
