@@ -5,7 +5,7 @@ published: true
 <section class="main" id="naptar">
 {% for turaUtvonal in site.data.naptar %}
 	{% assign katEsTuraId = turaUtvonal | split:"/" %}
-	{% assign kategoriaId = katEsTuraId[1] %}
+	{% assign kategoriaId = katEsTuraId[0] %}
 	{% assign turaId      = katEsTuraId | last %}
 
 	<article class="card tura">
