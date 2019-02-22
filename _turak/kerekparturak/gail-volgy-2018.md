@@ -7,9 +7,10 @@ arOpciok: ''
 
 Rengeteg látnivalóval, pazar kerékpárutakkal vár titeket a Gail völgy. A Budapesttől 560 kilométerre levő medencében minden megvan ami egy kerékpáros hosszú hétvégéhez kell. A folyó töltésén csodálatos kerékpárút nagyszerű pihenő helyekkel, Kötschachban egy igazán színvonalas I. világháborús múzeum, no és 910 méterrel a tengerszint felett ott a csodálatos Weissensee a környék gyöngyszeme.
 
-Időpont: 2019. április 12–14.
+**Időpont:** 2019. április 12–14.
 
-## A program : 
+
+## A program :
 
 **április 12. péntek:** Kisbuszunk a kora délutáni órákban indul Budapestről, egyéni utasaink az esti órákban érkeznek Köstendorfba
 
@@ -23,5 +24,4 @@ Részvételi díj :  oda-vissza utazással , luxus színvonalú apartmanokban, t
 Kerékpárbérlés a 3 napra : 7.500 Ft.
 
 A szálláson főzési lehetőség van.
-
 

@@ -78,10 +78,10 @@ Augusztus 24 – szeptember 2. napokon 179.000 Ft, amely magába foglal 10 éjsz
 nagyszerű szállást mobile home épületekben, valamennyi transzfert Edinburghtól Edinburghig,
 a kerékpárok és csomagok szállítását és bérlését, túravezetőt, ügyeletes szerelőt.
 
-Ellátás: önellátás, a túra 2-9. napja között főtt étkezést a helyszínen történő befizetéssel biztosítani
+**Ellátás:** önellátás, a túra 2-9. napja között főtt étkezést a helyszínen történő befizetéssel biztosítani
 tudunk. A vacsora ára sörrel vagy üdítővel: 2.800 Ft/fő/nap.
 
-A velünk történő kiutazás költségei: 15.000 Ft + 18.000 Ft kompdíj alvókabinban valamint az
+A velünk történő **kiutazás költségei:** 15.000 Ft + 18.000 Ft kompdíj alvókabinban valamint az
 útközbeni szállásdíj.
 
 Tekintettel a vártnál is nagyobb érdeklődésre és a létszámhelyekre ( 16-18 főre tervezzük a túrát ) a

@@ -2,12 +2,13 @@
 nev: Strassbourg – Verdun
 ar: 70.000 Ft + szállásdíjak
 arOpciok: 'Szállás panziókban, fizető vendég szobákban 10 éjszaka reggeli nélkül: 300 € <br/> Szállás sátorozással campingekben, illetve hivatalos sátorozó helyeken: 100 €'
-Indulási időpont: 2019. június 26.
 ---
 ## Elzásztól az első világháború mementójáig
 
 Képzeld el kedves túrázó, hogy 1992-t írunk. Nem sokkal vagyunk a rendszerváltás után, megalakulnak az első gazdasági társaságok és mi sem akartunk belőle kimaradni. Kenukat és trailert vásároltunk és úgy gondoltuk, hogy egy igazán nagy durranással kezdünk: meghirdettünk hát egy Strassburg–Párizs kenutúrát, amit akkor két részletben meg is csináltunk. Fantasztikus élményeket hozott a túra, amit — nem is lennénk Magyarország — egy „vállalkozó” a természetbarát szövetség vízitúra részlegének akkori vezetőnőjével gyorsan le is nyúlt. A következő évben jártunk először a Loire-on, és mivel honfitársainknak sikerült erősen magyarellenessé tenni a környéket, azóta sem jártunk arra.
 Egészen mostanáig. A csatorna és a Meuse partján ugyanis kerékpárút is épült, és úgy gondoltuk: a fantasztikus Elzászt összekötjük a történelemkönyvekből ismert, de magyar csoportok által kevésbé járt helyszínnel, és reméljük, hogy ott nyugaton a helyzet nem változatlan. Mindenesetre a sátras táborhelyek mellett akinek igénye lesz rá panziókban, illetve fizető vendégszobákban foglalunk szállásokat. Ha már nosztalgia: kenus csoportunk is lesz, az útvonalat ők más ütemezéssel teszik meg velünk egy időben.
+
+**Időpont:** 2019. június 26 – július 6.
 
 
 ## Részletes program
@@ -32,8 +33,6 @@ Egészen mostanáig. A csatorna és a Meuse partján ugyanis kerékpárút is é
 **10. nap:** Utazás Passau környékére, útközben a sinsheimi technikai múzeumot tekinthetjük meg.
 
 **11. nap:** Hazautazás Passauból.
-
-Időpont: 2019. június 26 – július 6.
 
 
 ## Részvételi díj:
