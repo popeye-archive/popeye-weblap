@@ -5,12 +5,8 @@ published: true
 <section class="main" id="naptar">
 {% for turaUtvonal in site.data.naptar %}
 	{% assign katEsTuraId = turaUtvonal | split:"/" %}
-	{% assign kategoriaId = katEsTuraId | first %}
-	{% assign turaId      = katEsTuraId | last %}
-	{% assign miez        = katEsTuraId[0] %}
-	{% assign esez        = katEsTuraId[1] %}
-	<br>jó: {{ katEsTuraId[0] }} / {{ katEsTuraId[1] }}
-	<br>mi?: {{ miez }} / {{ esez }}
+	{% assign kategoriaId = katEsTuraId[0] %}
+	{% assign turaId      = katEsTuraId[1] %}
 	<article class="card tura">
 		<a class="slideshow" href="/{{turaUtvonal}}">
 			{% assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
