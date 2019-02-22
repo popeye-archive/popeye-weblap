@@ -1,6 +1,6 @@
 ---
 nev: Skócia 2019
-ar: 179.000 Ft (augusztus 24–szeptember 2-ig)
+ar: 179.000 Ft + kiutazás
 arOpciok: 'A kiutazás velünk: 15.000 Ft + 18.000 Ft kompdíj (alvókabinban) + útközbeni szállásdíj. <br> Vacsora ára sörrel vagy üdítővel: 2.800 Ft/fő/nap. '
 ---
 Ami a gyalogos túrázóknál a spanyol El Camino, a motorosoknál Amerikában a 66-os út,
