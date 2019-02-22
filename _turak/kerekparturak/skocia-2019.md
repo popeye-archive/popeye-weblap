@@ -12,18 +12,20 @@ Utasaink érkezhetnek repülővel, mi minden csomagjukat és a kerékpárjukat k
 a repülőjegy árát a részvételi díj nem tartalmazza, viszont csomag nélküli fapados utazással
 ez a költség nem számottevő, valamint utazhatnak a mi kisbuszunkkal is.
 
+Időpont: 2019. augusztus 22 – szeptember 4.
+
 
 ## Részletes program
 
-**augusztus 22:** Elutazás a németországi tranzittáborhelyre. Útközben városnézés Regensburgban,
-Nürnbergben vagy Würzburgban.
+**augusztus 22:** Elutazás a németországi tranzittáborhelyre.
+Útközben városnézés Regensburgban, Nürnbergben vagy Würzburgban.
 
 **augusztus 23:** Továbbutazás Rotterdamba, közben rövid városnézés Utrechtben vagy Bredában, este
 kompátkelés, érkezés másnep reggel Hullba
 
 **augusztus 24:** Reggel kikötés Hullban, majd továbbutazás Edinburghbe, ahol találkozás az aznap
-repülőgéppel érkezőkkel, majd továbbutazás Boat of Gartenbe. Hull és Edinburgh között rövid
-látogatás a bűbájos Yorkban ( nagyon szép óváros, fantasztikus gótikus apátság )
+repülőgéppel érkezőkkel, majd továbbutazás Boat of Gartenbe.
+Hull és Edinburgh között rövid látogatás a bűbájos Yorkban ( nagyon szép óváros, fantasztikus gótikus apátság )
 
 **augusztus 25:** Reggeli után a kerékpárok átvétele. Túra a Loch Inchez ami a Grampian hegy lábánál
 fekszik. A nap folyamán útba ejtjük a környék legnagyobb turisztikai központját Aviemort, és a
@@ -64,8 +66,8 @@ környékére.
 
 **szeptember 1:** Egész napos városnézés Edinburghben, beutazás kisbusszal.
 
-**szeptember 2:** Hazautazás Edinburghből, utasainkat a repülőtérre szállítjuk, a velünk hazautazóknak
-éjszaka a kompon.
+**szeptember 2:** Hazautazás Edinburghből, utasainkat a repülőtérre szállítjuk,
+a velünk hazautazóknak éjszaka a kompon.
 
 **szeptember 3:** A velünk hazautazóknak szállás Passau környékén.
 

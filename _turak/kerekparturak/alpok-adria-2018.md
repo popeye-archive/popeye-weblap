@@ -10,7 +10,7 @@ arOpciok: ''
 A túra dátuma : 2018. július 25 - augusztus 2.
 
 
-## Részletes program :
+## Részletes program:
 
 **1. nap:** Elutazás Spittalba, délután és késő este szabad program a városban
 
@@ -31,7 +31,9 @@ A túra dátuma : 2018. július 25 - augusztus 2.
 **9. nap:** Reggel felutazunk a Doberdóra. Nagyapáink első világháborús vérzivatarának emléke megér egy látogatást. San Martino del Carsoban , ahol a magyar vezérkar törzshelye volt a helyiek- bár ellenségeik voltunk- nagy szeretettel őrzik a magyar emlékeket is. Megnézzük még a Szent Mihály hegyi kazamatákat és a visintini katonatemetőt. Délután indulunk vissza Budapestre éskezés a késő esti órákban.
 
 
-Részvételi díj : 135.000 Ft amely tartalmazza az oda-vissza utazást, a kerékpárszállítást, a napi csomagszállítást, 8 éjszakát panziókban, fizető vendég szobákban reggelivel, térképeket, tartalék kerékpárt, transzfereket. ( kerékpár bérelhető 8.000 Ft/ túra/fő )
+## Részvételi díj:
+
+135.000 Ft amely tartalmazza az oda-vissza utazást, a kerékpárszállítást, a napi csomagszállítást, 8 éjszakát panziókban, fizető vendég szobákban reggelivel, térképeket, tartalék kerékpárt, transzfereket. ( kerékpár bérelhető 8.000 Ft/ túra/fő )
 
 
 

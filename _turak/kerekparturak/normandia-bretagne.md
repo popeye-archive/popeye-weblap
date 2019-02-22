@@ -3,6 +3,8 @@ nev: Normandia – Bretagne
 ar: 159.000 / 219.000 Ft
 arOpciok: 'Sátorozással : 159.000 Ft <br/> Panziókban, fizető vendégszobákban : 219.000 Ft'
 ---
+**Időpont:** 2018. június 28 – július 09.
+
 ## Részletes program
 
 **1. nap:** Indulás 01:00-kor Bp-ről. Tranzitszállás Németországban.
@@ -30,8 +32,6 @@ A középkori vár impozáns építmény, mely 1382-1387 között épült. Itt l
 **11. nap:** Éjfél után indulunk , ezt az éjszakát átutazzuk táborhely Passau környékén.
 
 **12. nap:** Hazautazás Bp-re, érkezés a késő délutáni órákban.
-
-Időpont: 2018. június 28 – július 09.
 
 
 ## Részvételi díj:
