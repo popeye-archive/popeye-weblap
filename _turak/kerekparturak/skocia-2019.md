@@ -75,7 +75,7 @@ környékére.
 ## Részvételi díj:
 
 Augusztus 24 – szeptember 2. napokon 179.000 Ft, amely magába foglal 10 éjszaka
-nagyszerű szállást mobile home épületekben, valamennyi transzfert Edinburghtól Edinburghig,
+nagyszerű szállást mobile home épületekben, valamennyi transzfert Edinburgh-tól Edinburgh-ig,
 a kerékpárok és csomagok szállítását és bérlését, túravezetőt, ügyeletes szerelőt.
 
 **Ellátás:** önellátás, a túra 2-9. napja között főtt étkezést a helyszínen történő befizetéssel biztosítani
