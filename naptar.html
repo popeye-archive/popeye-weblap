@@ -7,7 +7,10 @@ published: true
 	{% assign katEsTuraId = turaUtvonal | split:"/" %}
 	{% assign kategoriaId = katEsTuraId | first %}
 	{% assign turaId      = katEsTuraId | last %}
-	{{ katEsTuraId[0] }} / {{ katEsTuraId[1] }}
+	{% assign miez        = katEsTuraId[0] %}
+	{% assign esez        = katEsTuraId[1] %}
+	<br>jó: {{ katEsTuraId[0] }} / {{ katEsTuraId[1] }}
+	<br>mi?: {{ miez }} / {{ esez }}
 	<article class="card tura">
 		<a class="slideshow" href="/{{turaUtvonal}}">
 			{% assign kategoria = site.data.kategoriak | where: "kategoriaId",kategoriaId | first %}
