@@ -24,65 +24,66 @@
     nev: Kerékpáros kalandozás a Gail völgyben
     ar: 35.000 - 72.500 Ft
     arOpciok: ''
-    datum: 2019. április 12–14.
+    idopont: 2019. április 12–14.
     
   - turaId: szloven-olasz-osztrak
     nev: A Milleniumi vasút nyomvonalán
     ar: 39.900 - 64.900 Ft
     arOpciok: Az ár a vállalt szolgáltatások függvényében változhat.
-    datum: 2019. április 19–21.
+    idopont: 2019. április 19–21.
     
   - turaId: kis-balaton
     nev: Kis Balaton környéki kerékpártúra
     ar: 27.400 Ft
     arOpciok: 'Egyéni utazással : 24.400 Ft <br/> Általunk szervezett kisbuszos utazással : 34.400 Ft'
-    datum: 2019. május 3–5.
+    idopont: 2019. május 3–5.
     
   - turaId: strassbourg-verdun
     nev: Strassbourg – Verdun
     ar: 70.000 Ft + szállásdíjak
     arOpciok: 'Szállás panziókban, fizető vendég szobákban 10 éjszaka reggeli nélkül: 300 € <br/> Szállás sátorozással campingekben, illetve hivatalos sátorozó helyeken: 100 €'
-    datum: 2019. június 26 – július 6.
+    idopont: 2019. június 26 – július 6.
     
   - turaId: skocia-2019
     nev: Skócia 2019
     ar: 179.000 Ft + kiutazás
     arOpciok: 'A kiutazás velünk: 15.000 Ft + 18.000 Ft kompdíj (alvókabinban) + útközbeni szállásdíj. <br> Vacsora ára sörrel vagy üdítővel: 2.800 Ft/fő/nap. '
-    datum: 2019. augusztus 22 – szeptember 4.
+    idopont: 2019. augusztus 22 – szeptember 4.
     
   - turaId: normandia-bretagne
+    regi: true
     nev: Normandia – Bretagne
     ar: 159.000 / 219.000 Ft
     arOpciok: 'Sátorozással : 159.000 Ft <br/> Panziókban, fizető vendégszobákban : 219.000 Ft'
     
   - turaId: szloven-olasz-husvet
-    nev: Szlovén – Olasz húsvéti túra
     regi: true
+    nev: Szlovén – Olasz húsvéti túra
     ar: 39.900 - 64.900 Ft
     arOpciok: Az ár a vállalt szolgáltatások függvényében változhat.
   - turaId: szloven-olasz
-    nev: Szlovén – Olasz hosszú hétvégi kerékpártúra
     regi: true
+    nev: Szlovén – Olasz hosszú hétvégi kerékpártúra
     ar: 38.900 - 64.900 Ft
     arOpciok: Az ár a vállalt szolgáltatások függvényében változhat.
   - turaId: skot-felfold
-    nev: Túra a Skót Felföldön
     regi: true
+    nev: Túra a Skót Felföldön
     ar: 219.000 - 269.000 Ft
     arOpciok: 'Kisbuszos kiutazással : 269.000 Ft. <br/> Repülővel érkezőknek : 219.000
       Ft (a repülőjegy árát nem tartalmazza). <br/> Kerékpárbérlés ha valakinek nincs:
       8.000 Ft+ÁFA a túra teljes időtartamára.'
   - turaId: loire-volgy
-    nev: Loire völgyi kerékpártúra
     regi: true
+    nev: Loire völgyi kerékpártúra
     ar: 144.900 Ft - 199.000 Ft
     arOpciok: 'Alapár campingekben saját sátorral kisbuszos utazással : 144.900 Ft
       <br/> Párizsig egyéni utazással, szállodás elhelyezéssel : 184.900 Ft <br/>
       Kisbuszos utazással, tranzitszállásokkal, szállodás elhelyezéssel : 199.000
       Ft <br/> (egyágyas felárral : napi 12 EUR).'
   - turaId: dania-hamburg
-    nev: Dánia - Hamburg bringatúra
     regi: true
+    nev: Dánia - Hamburg bringatúra
     ar: 124.000 - 199.000 Ft
     arOpciok: 'Utazással, campingekben saját sátorral : 124.000 Ft <br/> Utazással
       panziókban, szállodákban : 199.000 Ft <br/> Repülőgépes utazással panziókban
