@@ -9,23 +9,7 @@
 	<article class="card leiras">
 		<a class="slideshow" href="/{{kategoriaId}}/{{turaId}}" data-delay="2">
 			{% include slideshow.html kepek=kepek %} 
-			<div class="overlay">
-				<h4>{{leiras.nev}}</h4>
-				{% if leiras.idopont %}
-				<p class="idopont">{{leiras.idopont}}</p>{%
-				 endif %}{%
-				 if leiras.idopontok %}{% for idopont in leiras.idopontok %}
-				<p class="idopont">{{idopont}}</p>
-				{% endfor %}{% endif %}
-				{% if leiras.ar %}
-				<p>
-					<span class="ar" alt="{{leiras.arOpciok}}">{{leiras.ar}}</span>
-					<span class="button">Részletek ➺</span>
-				</p>
-				{% else %}
-				<p class="button">Részletek ➺</p>
-				{% endif %}
-			</div>
+			{% include turainfo.html leiras=leiras %} 
 		</a>
 	</article>
 	{% endunless %}{% endfor %}
