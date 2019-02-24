@@ -14,9 +14,7 @@ Rengeteg látnivalóval, pazar kerékpárutakkal vár titeket a Gail völgy. A B
 
 **április 11. csütörtök:** Kisbuszunk *csütörtökön* a kora délutáni órákban indul Budapestről, egyéni utasaink is ezen a napon az esti órákban érkeznek Köstendorfba.
 
-**április 12. péntek:** A velünk utazókkal kisbuszunk Budapestről reggel 5 órakor indul.
-Rövid szombathelyi pihenő után 11 óra körül érkezünk szállásunkra Köstendorfba, ahol 11.30-kor találkozunk az egyénileg gépkocsival érkezőkkel.
-12.30-kor indulunk Kötschachba, ahol megnézzük az I. világháborús múzeumot, majd a Gail töltésén kerekezünk vissza a szállásunkra ( kb 48 km )
+**április 12. péntek:** Délelőtt indulunk Kötschachba, ahol megnézzük az I. világháborús múzeumot, majd a Gail töltésén kerekezünk vissza a szállásunkra ( kb 48 km )
 
 **április 13. szombat:** Korán reggel átutazunk Tarvisioba, majd az egyéni utasok gépkocsijait Moggioba visszük a sofőröket vissza transzferáljuk Tarvisioba.
 A Millenium túra legfenomenálisabb szakaszát tekerjük és este érkezünk vissza Tarvisioba.
