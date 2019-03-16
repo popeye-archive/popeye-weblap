@@ -2,16 +2,19 @@
 title: Naptár — Popeye Leskó Kalandtúrák
 published: true
 ---
+<style>
+	.kategoria { font-size: 1.2em; color: #ffb860; }
+</style>
+
+
 <section class="main" id="naptar">
 <table>
 <tbody>
-	{% for kat in site.data.kategoriak %}
-	{% assign kategoriaId = kat.kategoriaId %}
-	<th class="kategoria">
-		<td colspan="4">
-			{{kat.kategoriaNev}}
-		</td>
-	</th>
+
+{% for kat in site.data.kategoriak %}
+{% assign kategoriaId = kat.kategoriaId %}
+<details>
+	<summary class="kategoria">{{kat.kategoriaNev}}</summary>
 
 	{% for leiras in kat.turak %}{% unless leiras.regi %}{%
 	 assign turaId = leiras.turaId %}{%
@@ -43,7 +46,9 @@ published: true
 	</tr>
 	{% endunless %}{% endfor %}
 
-	{% endfor %}
+</details>
+{% endfor %}
+
 </tbody>
 </table>
 </section>
