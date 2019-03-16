@@ -6,15 +6,23 @@ published: true
 	.kategoria { font-size: 1.2em; color: #ffb860; }
 </style>
 
+<script>
+function toggle(elem) {
+	<!-- var style = document.getElementById(id).style -->
+	elem.style.display = elem.style.display == "none" ? "" : "none"
+}
+</script>
 
 <section class="main" id="naptar">
 <table>
-<tbody>
 
-{% for kat in site.data.kategoriak %}
-{% assign kategoriaId = kat.kategoriaId %}
-<details>
-	<summary class="kategoria">{{kat.kategoriaNev}}</summary>
+	{% for kat in site.data.kategoriak %}
+	{% assign kategoriaId = kat.kategoriaId %}
+	<tr>
+		<!-- <td colspan="4" class="kategoria" onclick="toggle('{{kategoriaId}}')"> {{kat.kategoriaNev}} </td> -->
+		<td colspan="4" class="kategoria" onclick="toggle(this.parentElement.nextSibling)"> {{kat.kategoriaNev}} </td>
+	</tr>
+	<tbody id="{{kategoriaId}}">
 
 	{% for leiras in kat.turak %}{% unless leiras.regi %}{%
 	 assign turaId = leiras.turaId %}{%
@@ -46,9 +54,8 @@ published: true
 	</tr>
 	{% endunless %}{% endfor %}
 
-</details>
-{% endfor %}
+	</tbody>
+	{% endfor %}
 
-</tbody>
 </table>
 </section>
