@@ -1,22 +1,4 @@
 ---
-- kategoriaId: siutak
-  kategoriaNev: Síutak
-  turak:
-  - turaId: forni-di-sopra
-    nev: A hely
-  - turaId: szallas
-    nev: A szállás
-  - turaId: berletarak
-    nev: Bérletárak
-  - turaId: arak-idopontok
-    nev: Árak és időpontok
-  - turaId: etkezes
-    nev: Étkezés
-  - turaId: palyak
-    nev: A pályák
-  - turaId: laci-bacsi-siovija
-    nev: Laci Bácsi síovija
-
 - kategoriaId: kerekparturak
   kategoriaNev: Kerékpártúrák
   turak:
@@ -208,4 +190,22 @@
       túravezetőkkel, a vízhez transzfereket 6 éjszaka szállást campingben  saját
       sátorban (plusz 6.000 Ft befizetése esetén turistaszálláson és vasárnap estétől
       szobát reggelig bőséges félpanziós étkezést).
+
+- kategoriaId: siutak
+  kategoriaNev: Síutak
+  turak:
+  - turaId: forni-di-sopra
+    nev: A hely
+  - turaId: szallas
+    nev: A szállás
+  - turaId: berletarak
+    nev: Bérletárak
+  - turaId: arak-idopontok
+    nev: Árak és időpontok
+  - turaId: etkezes
+    nev: Étkezés
+  - turaId: palyak
+    nev: A pályák
+  - turaId: laci-bacsi-siovija
+    nev: Laci Bácsi síovija
 
