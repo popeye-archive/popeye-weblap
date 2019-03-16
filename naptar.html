@@ -8,7 +8,6 @@ published: true
 
 <script>
 function toggle(elem) {
-	<!-- var style = document.getElementById(id).style -->
 	elem.style.display = elem.style.display == "none" ? "" : "none"
 }
 </script>
@@ -18,11 +17,12 @@ function toggle(elem) {
 
 	{% for kat in site.data.kategoriak %}
 	{% assign kategoriaId = kat.kategoriaId %}
-	<tr>
-		<!-- <td colspan="4" class="kategoria" onclick="toggle('{{kategoriaId}}')"> {{kat.kategoriaNev}} </td> -->
-		<td colspan="4" class="kategoria" onclick="toggle(this.parentElement.nextSibling)"> {{kat.kategoriaNev}} </td>
-	</tr>
-	<tbody id="{{kategoriaId}}">
+	<tbody id="th-{{kategoriaId}}">
+		<tr onclick="toggle(this.parentElement.nextSibling)">
+			<td colspan="4" class="kategoria"> {{kat.kategoriaNev}} </td>
+		</tr>
+	</tbody>
+	<tbody id="tb-{{kategoriaId}}">
 
 	{% for leiras in kat.turak %}{% unless leiras.regi %}{%
 	 assign turaId = leiras.turaId %}{%
