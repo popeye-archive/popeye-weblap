@@ -1,6 +1,6 @@
 ---
 nev: Strassbourg – Verdun
-ar: 70.000 Ft + szállásdíjak
+ar: 79.000 Ft + szállásdíjak
 arOpciok: 'Szállás panziókban, fizető vendég szobákban 10 éjszaka reggeli nélkül: 300 € <br/> Szállás sátorozással campingekben, illetve hivatalos sátorozó helyeken: 100 €'
 ---
 ## Elzásztól az első világháború mementójáig
@@ -37,7 +37,7 @@ Egészen mostanáig. A csatorna és a Meuse partján ugyanis kerékpárút is é
 
 ## Részvételi díj:
 
-Az alapár oda-vissza kisbuszos utaztatással, kerékpár és csomagszállítással, térképekkel, túravezetéssel, szervezéssel 70.000 Ft + szállásdíjak.
+Az alapár oda-vissza kisbuszos utaztatással, kerékpár és csomagszállítással, térképekkel, túravezetéssel, szervezéssel 79.000 Ft + szállásdíjak.
 * Szállás panziókban, fizető vendég szobákban 10 éjszaka reggeli nélkül: 300 €
 * Szállás sátorozással campingekben, illetve hivatalos sátorozó helyeken: 100 €
 * Kerékpárbérlés a túra teljes idejére 10.000 Ft

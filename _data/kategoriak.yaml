@@ -24,7 +24,7 @@
     
   - turaId: strassbourg-verdun
     nev: Strassbourg – Verdun
-    ar: 70.000 Ft + szállásdíjak
+    ar: 79.000 Ft + szállásdíjak
     arOpciok: 'Szállás panziókban, fizető vendég szobákban 10 éjszaka reggeli nélkül: 300 € <br/> Szállás sátorozással campingekben, illetve hivatalos sátorozó helyeken: 100 €'
     idopont: 2019. június 26 – július 6.
     
@@ -139,7 +139,7 @@
   - turaId: alpok-adria
     regi: true
     nev: Alpok – Adria kerékpártúra
-    ar: 134.500 Ft
+    ar: 135.000 Ft
     arOpciok: ''
 
   - turaId: neckar-volgy
