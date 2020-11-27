@@ -1,2 +1,1 @@
-### Popeye Leskó Kalandtúrák weblap
-http://popeyelesko.hu
+### Popeye Leskó Kalandtúrák weblap (2018)
